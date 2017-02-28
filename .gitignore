@@ -1,2 +1,6 @@
 
 app/model/pdo\.inc\.php
+
+*.xml
+
+*.iml
