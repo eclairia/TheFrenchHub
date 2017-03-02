@@ -31,62 +31,72 @@
 		}
 	}
 
-	function selecttable($table, $options=array())
-	{
-		global $pdo;
+function select_table($table, $options=array(), $and=array())
+{
+    global $pdo;
 
-		try
-		{
-			$sql = " SELECT * FROM " . $table;
+    /*$nb_table = count($table);
+    echo $nb_table;
+    exit;*/
 
-			if((isset($options['wherecolumn'])) && (isset($options['wherevalue'])))
-			{
-				$sql .=  " WHERE "  . $options["wherecolumn"] . '="' . $options["wherevalue"] . '"';
-			}
+    try
+    {
+        $sql = "SELECT * FROM ";
 
-			if(isset($options['orderby']))
-			{
-				$sql .=  " ORDER BY " . $options["orderby"];
-			}
+        $i = 1;
+        while ($i <= count($table) )
+        {
+            $sql .= " " . $table["table".$i];
+            $i++;
+        }
 
-			if(isset($options['order']))
-			{
-				$sql .= '  ' . $options["order"];				
-			}
+        if ((isset($options["where_column"])) && (isset($options["where_value"])))
+        {
+            $sql .= " WHERE " . $options["where_column"] . " = " . $options["where_value"];
+        }
 
-			if(isset($options['limit']))
-			{
-				$sql .= ' LIMIT ';
-				 if(isset($options["offset"]))
-				 {
-				 	$sql .= $options['offset'] . ' , ';
-				 }
+        if ((isset($and)) && (isset($and)))
+        {
+            $i = 1;
+            while ($i <= count($and)/2 )
+            {
+                $sql .= " AND " . $and["and_column".$i] . " = " . $and["and_value".$i];
+                $i++;
+            }
+        }
 
-				 $sql .= $options["limit"];
+        if (isset($options["orderby"]))
+        {
+            $sql .= " ORDER BY " . $options["orderby"];
+        }
 
-				 //echo $sql;
-			}
+        if (isset($options["order"]))
+        {
+            $sql .= " " . $options["order"];
+        }
 
-			//var_dump($options); 
+        if (isset($options["limit"]))
+        {
+            $sql .= " LIMIT ";
+            if (isset($options["offset"]))
+            {
+                $sql .= $options["offset"] . ", ";
+            }
+            $sql .= $options["limit"];
+        }
 
-			$query = $pdo->query($sql);
+        // echo $sql; exit;
 
-			$query->execute();
-			
-			$result = $query->fetchAll();
-
-			//On supprime le curseur
-			$query->closeCursor();
-
-			//On retourne tous les enregistrements selectionnées
-			return $result;		
-		}
-
-		catch(Exception $e)
-		{
-			die("Problème avec la base de données: " . $e->getMessage());
-		}
-	}	
+        $query = $pdo->query($sql);
+        $data = $query->fetchAll();
+        $query->closeCursor();
+        return $data;
+    }
+    catch (Exception $e)
+    {
+        die('Erreur SQL :' .$e->getMessage());
+    }
+}
 
 	function deletetable($table, $options=array())
 	{
