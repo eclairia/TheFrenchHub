@@ -3,8 +3,8 @@
 	define("PAGE_LANG", "fr");
 	define("PAGE_CHARSET", "utf-8");
 
-	define("DEFAULT_MODULE", "project");
-	define("DEFAULT_ACTION", "list");
+	define("DEFAULT_MODULE", "static");
+	define("DEFAULT_ACTION", "home");
 
 	define("PAGINATION_ARTICLES", 3);
 
