@@ -1,5 +1,5 @@
 <?php
-    $projects = select_table( array("table1" => "tfh_project") );
+    $projects = select_table( array("table1" => "tfh_projects") );
 
 
     define("PAGE_TITLE", "Liste des projets");

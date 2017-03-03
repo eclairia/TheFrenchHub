@@ -2,7 +2,7 @@
     include_once "app/view/layout/header_back.inc.php";
 ?>
 
-<div class="row">
+<div class="table-responsive">
     <table class="table table-hover">
         <thead>
             <tr>
@@ -32,7 +32,7 @@
                 {
             ?>
                 <?php
-                    $status = ($project['project_confirmation'] == 0) ? 'danger' : 'success;'
+                    $status = ($project['project_confirmation'] == 0) ? 'danger' : 'success';
                 ?>
 
                 <tr <?= 'class="' . $status . '"'?> >
