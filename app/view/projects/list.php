@@ -2,58 +2,89 @@
     include_once "app/view/layout/header_back.inc.php";
 ?>
 
-<div class="table-responsive">
-    <table class="table table-hover">
-        <thead>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
             <tr>
                 <th>
-                    Nom du projet
+                    <p class="text-center">
+                        Nom du projet
+                    </p>
                 </th>
-                <th>
-                    Nombre de membres
+                <th class="text-center">
+                    <p class="text-center">
+                        Nombre de membres
+                    </p>
                 </th>
-                <th>
-                    Date de début
+                <th class="text-center">
+                    <p class="text-center">
+                        Date de début
+                    </p>
                 </th>
-                <th>
-                    Date de fin
+                <th class="text-center">
+                    <p class="text-center">
+                        Date de fin
+                    </p>
                 </th>
-                <th>
-                    Confirmation
+                <th class="text-center">
+                    <p class="text-center">
+                        Confirmation
+                    </p>
                 </th>
-                <th>
-                    Présentation du projet
+                <th class="text-center">
+                    <p class="text-center">
+                        Présentation du projet
+                    </p>
+                </th>
+                <th class="text-center">
+                    <p class="text-center">
+                        Confirmer le projet
+                    </p>
+                </th>
+                <th class="text-center">
+                    <p class="text-center">
+                        Refuser le projet
+                    </p>
                 </th>
             </tr>
-        </thead>
-        <tbody>
+            </thead>
+            <tbody>
             <?php
-                foreach ($projects as $project)
-                {
-            ?>
+            foreach ($projects as $project)
+            {
+                ?>
                 <?php
-                    $status = ($project['project_confirmation'] == 0) ? 'danger' : 'success';
+                $status = ($project['project_confirmation'] == 0) ? 'danger' : 'success';
                 ?>
 
                 <tr <?= 'class="' . $status . '"'?> >
                     <td>
-                        <?= $project['project_name']; ?>
+                        <p class="text-center">
+                            <?= $project['project_name']; ?>
+                        </p>
                     </td>
 
                     <td>
-                        <?= $project['project_nb_members']; ?>
+                        <p class="text-center">
+                            <?= $project['project_nb_members']; ?>
+                        </p>
                     </td>
 
                     <td>
-                        <?= $project['project_begin_date']; ?>
+                        <p class="text-center">
+                            <?= $project['project_begin_date']; ?>
+                        </p>
+                    </td>
+
+                    <td >
+                        <p class="text-center">
+                            <?= $project['project_end_date']; ?>
+                        </p>
                     </td>
 
                     <td>
-                        <?= $project['project_end_date']; ?>
-                    </td>
-
-                    <td>
-                        <?php
+                        <p class="text-center">
+                            <?php
                             if ($project['project_confirmation'] ==0)
                             {
                                 echo 'Non confirmé';
@@ -62,18 +93,100 @@
                             {
                                 echo 'Confirmé';
                             }
-                        ?>
+                            ?>
+                        </p>
                     </td>
 
                     <td>
                         Fichier de Présentation du projet
                     </td>
+                    <th>
+                        <div class=" btn-group-sm text-center" data-toggle="modal" data-target="#confirmModal">
+                            <button type="button" id="confirm" class="btn btn-success btn-lg" onclick="accepter('<?= $project['project_ID']; ?>');">
+                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </th>
+                    <th>
+                        <div class=" btn-group-sm text-center" data-toggle="modal" data-target="#refuseModal">
+                            <button type="button" id="refuse" class="btn btn-danger btn-lg" onclick="refuser('<?= $project['project_ID']; ?>');">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </th>
                 </tr>
-            <?php
-                }
+                <?php
+            }
             ?>
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
 </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Voulez vous valider le projet ?</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <button type="button" id="validerProjet" class="btn btn-lg btn-success">Confirmer</button>
+                    <button type="button" class="btn btn-lg btn-danger" data-dismiss="modal">Annuler</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="refuseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Voulez vous refuser le projet ?</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <button type="button" id="refuserProjet" class="btn btn-lg btn-success">Oui</button>
+                    <button type="button" class="btn btn-lg btn-danger" data-dismiss="modal">Annuler</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function accepter (id) {
+            $('#confirmModal').on('show.bs.modal', function (event) {
+                var confirm = $('#confirm');
+                var button = $(event.confirm); // Button that triggered the modal
+                var recipient = button.data('whatever') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this);
+                modal.find('.modal-title').text('New message to ' + recipient);
+                modal.find('.modal-body input').val(recipient);
+            });
+            $('#validerProjet').click(function () {
+                $(location).attr('href','?module=projects&action=list&id='+ id +'&status=accepted');
+            });
+        }
+
+
+        function refuser (id) {
+            $('#refuseModal').on('show.bs.modal', function (event) {
+                var confirm = $('#refuse');
+                var button = $(event.confirm); // Button that triggered the modal
+                var recipient = button.data('whatever') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this);
+                modal.find('.modal-title').text('New message to ' + recipient);
+                modal.find('.modal-body input').val(recipient);
+            });
+            $('#refuserProjet').click(function () {
+                $(location).attr('href','?module=projects&action=list&id='+ id +'&status=accepted');
+            });
+        }
+    </script>
 <?php
-    include_once "app/view/layout/header_back.inc.php";
+    include_once "app/view/layout/footer_back.inc.php";
