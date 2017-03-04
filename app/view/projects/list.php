@@ -2,7 +2,7 @@
     include_once "app/view/layout/header_back.inc.php";
 ?>
 
-    <div class="table-responsive">
+    <div class="table-responsive" xmlns="http://www.w3.org/1999/html">
         <table class="table table-hover">
             <thead>
             <tr>
@@ -88,14 +88,24 @@
                     <td>
                         <p class="text-center">
                             <?php
-                            if ($project['project_confirmation'] ==0)
-                            {
-                                echo 'Non confirmé';
-                            }
-                            else
-                            {
-                                echo 'Confirmé';
-                            }
+                                if ($project['project_confirmation'] == 0)
+                                {
+                            ?>
+                                    <a href="?module=project&action=justification&fname=<?= $project['user_first_name']; ?>&lname=<?= $project['user_last_name']; ?>"> Informez <?= $project['user_first_name']; ?> <?= $project['user_last_name']; ?> du refus de son projet </a> <br>
+                                    <?php
+                                        if($project['user_prevent'] == 1)
+                                        {
+                                    ?>
+                                            <span class="label label-success text-center">Prévenu</span>
+                                    <?php
+                                        }
+                                    ?>
+                            <?php
+                                }
+                                else
+                                {
+                                    echo 'Confirmé';
+                                }
                             ?>
                         </p>
                     </td>
@@ -147,11 +157,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Voulez vous refuser le projet ?</h4>
+                    <h4 class="modal-title" id="myModalLabel">Pourquoi voulez-vous refuser le projet ?</h4>
                 </div>
                 <div class="modal-body text-center">
-                    <button type="button" id="refuserProjet" class="btn btn-lg btn-success">Oui</button>
+                    <button type="button" id="refuserProjet" class="btn btn-lg btn-success"> Oui </button>
                     <button type="button" class="btn btn-lg btn-danger" data-dismiss="modal">Annuler</button>
+                </div>
+                <div class="modal-footer">
+
                 </div>
             </div>
         </div>

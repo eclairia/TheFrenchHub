@@ -25,8 +25,9 @@ function refuser (id, mail, name) {
 		var modal = $(this);
 		//modal.find('.modal-title').text('New message to ' + recipient);
 		modal.find('.modal-body input').val(recipient);
-	});
-	$('#refuserProjet').click(function () {
-		$(location).attr('href','?module=projects&action=list&id='+ id +'&mail='+ mail + '&name='+ name +'&status=refused');
+
+        $('#refuserProjet').click(function() {
+            $(location).attr('href','?module=projects&action=list&id='+ id +'&status=refused');
+        });
 	});
 }

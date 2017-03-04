@@ -4,12 +4,10 @@
         $status = ($_GET['status'] == 'accepted') ? 1 : 0;
         include_once "app/model/projects/update_status.php";
         $retour =  update_status($_GET['id'], $status);
-        if ($retour)
+        if ( ($retour) && ($status == 1) )
         {
             include_once('lib/mail.php');
-            if ($status == 1)
-            {
-                $message_html = '<html>
+            $message_html = '<html>
                                 <body>
                                     <div>
                                         <p>
@@ -18,38 +16,25 @@
                                         Votre projet a été accepté. Vous pouvez dès à présent profiter des offres que nous proposons. 
                                     </div>
                                 </body>
-                            </html>';
-            }
-            else
-            {
-                $message_html = '<html>
-                                <body>
-                                    <div>
-                                        <p>
-                                            Bonjour <b>' . $_GET['name'] . '<b>
-                                        </p>
-                                        Votre projet a été refusé. 
-                                    </div>
-                                </body>
-                            </html>';
-            }
+                             </html>';
 
             if(sendmail(MAIL_EXPEDITEUR, NOM_EXPEDITEUR, MAIL_EXPEDITEUR, $_GET["mail"], '',
                 'Demande de validation de votre projet : Mise à jour', '', $message_html, ''))
             {
                 location('projects', 'list', "notif=ok");
-                exit;
             }
             else
             {
                 location('projects', 'list', "notif=nmail");
-                exit;
             }
+        }
+        elseif (($retour) && ($status == 0))
+        {
+            location('projects', 'list', "notif=ok");
         }
         else
         {
             location('projects', 'list', "notif=nok");
-            exit;
         }
     }
 
