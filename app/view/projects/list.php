@@ -105,14 +105,14 @@
                     </td>
                     <th>
                         <div class=" btn-group-sm text-center" data-toggle="modal" data-target="#confirmModal">
-                            <button type="button" id="confirm" class="btn btn-success btn-lg" onclick="accepter('<?= $project['project_ID']; ?>');">
+                            <button type="button" id="confirm" class="btn btn-success btn-lg" onclick="accepter('<?= $project['project_ID']; ?>', '<?= $project['user_mail']; ?>', '<?= $project['user_first_name']; ?>');">
                                 <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                             </button>
                         </div>
                     </th>
                     <th>
                         <div class=" btn-group-sm text-center" data-toggle="modal" data-target="#refuseModal">
-                            <button type="button" id="refuse" class="btn btn-danger btn-lg" onclick="refuser('<?= $project['project_ID']; ?>');">
+                            <button type="button" id="refuse" class="btn btn-danger btn-lg" onclick="refuser('<?= $project['project_ID']; ?>', '<?= $project['user_mail']; ?>', '<?= $project['user_first_name']; ?>');">
                                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                             </button>
                         </div>

@@ -47,6 +47,10 @@ function select_table($table, $options=array(), $and=array())
         while ($i <= count($table) )
         {
             $sql .= " " . $table["table".$i];
+            if ( (count($table) > 1) && ($i != count($table)) )
+            {
+                $sql .= ",";
+            }
             $i++;
         }
 
@@ -85,7 +89,7 @@ function select_table($table, $options=array(), $and=array())
             $sql .= $options["limit"];
         }
 
-        // echo $sql; exit;
+        //echo $sql; exit;
 
         $query = $pdo->query($sql);
         $data = $query->fetchAll();

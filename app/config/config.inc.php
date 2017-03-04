@@ -13,3 +13,6 @@
 	define("USER_LAMBDA", 0);
 
 	define("SALT", "gt5zfgty7qg!yegh8");
+
+    define("MAIL_EXPEDITEUR", "thefrenchhub@gmail.com");
+    define("NOM_EXPEDITEUR", "The French Hub");
