@@ -52,9 +52,12 @@
             <?php
             foreach ($projects as $project)
             {
-                ?>
-                <?php
-                $status = ($project['project_confirmation'] == 0) ? 'danger' : 'success';
+                if ($project['project_confirmation'] == 0)
+                    $status = 'danger';
+                else if ($project['project_confirmation'] == 1)
+                    $status = 'success';
+                else if ($project['project_confirmation'] == 2)
+                    $status = 'default'
                 ?>
 
                 <tr <?= 'class="' . $status . '"'?> >
