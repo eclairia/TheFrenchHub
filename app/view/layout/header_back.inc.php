@@ -18,7 +18,7 @@
 				<h2 class="text-center">The French Hub</h2>
 			</div>
 			<div class="col-lg-2 text-center">
-				<p><a class="btn btn-danger btn-lg" href="#" role="button"><span class="glyphicon glyphicon-off"></span> Se déconnecter</a></p>
+				<p><a class="btn btn-danger btn-lg" href="?module=admin&action=logout" role="button"><span class="glyphicon glyphicon-off"></span> Se déconnecter</a></p>
 			</div>
 		</header>
 		<div class="row">
