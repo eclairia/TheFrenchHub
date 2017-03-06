@@ -24,16 +24,15 @@
 		{
 			$_SESSION["admin"] = $retour;
 
-			if($retour["admin_level"] == 1)
+			if($_SESSION["admin"]["admin_level"] == 2)
 			{
-				$_SESSION["admin_level"] = ADMIN_LEVEL;
+				$_SESSION["admin_level"] = USER_SUPER_ADMIN;
 				location("admin", "index", "notif=ok");
 			}
-
-			else
-			{
-				$_SESSION["level"] = USER_PROJECT;
-				location("projects", "index", "notif=nok");
-			}	
+			else if($_SESSION["admin"]["admin_level"] == 1)
+            {
+                $_SESSION["admin_level"] = USER_ADMIN;
+                location("admin", "index", "notif=ok");
+            }
 		}
 	}
