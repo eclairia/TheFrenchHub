@@ -34,3 +34,15 @@
 			location($module, $action, "&notif=admin");
 		}
 	}
+
+function erreur($e)
+{
+    if(ENV == "DEV")
+    {
+        die('Erreur technique :' .$e->getMessage());
+    }
+    else
+    {
+        die('Erreur technique !');
+    }
+}
