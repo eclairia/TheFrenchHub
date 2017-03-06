@@ -91,7 +91,7 @@
                                 if ($project['project_confirmation'] == 0)
                                 {
                             ?>
-                                    <a href="?module=project&action=justification&fname=<?= $project['user_first_name']; ?>&lname=<?= $project['user_last_name']; ?>"> Informez <?= $project['user_first_name']; ?> <?= $project['user_last_name']; ?> du refus de son projet </a> <br>
+                                    <a href="?module=projects&action=justification&projectid=<?= $project['project_ID']; ?>"> Informez <?= $project['user_first_name']; ?> <?= $project['user_last_name']; ?> du refus de son projet </a> <br>
                                     <?php
                                         if($project['user_prevent'] == 1)
                                         {
@@ -122,7 +122,7 @@
                     </th>
                     <th>
                         <div class=" btn-group-sm text-center" data-toggle="modal" data-target="#refuseModal">
-                            <button type="button" id="refuse" class="btn btn-danger btn-lg" onclick="refuser('<?= $project['project_ID']; ?>', '<?= $project['user_mail']; ?>', '<?= $project['user_first_name']; ?>');">
+                            <button type="button" id="refuse" class="btn btn-danger btn-lg" onclick="refuser('<?= $project['project_ID']; ?>');">
                                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                             </button>
                         </div>

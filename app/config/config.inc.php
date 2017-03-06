@@ -16,3 +16,5 @@
 
     define("MAIL_EXPEDITEUR", "thefrenchhub@gmail.com");
     define("NOM_EXPEDITEUR", "The French Hub");
+
+    define("ENV", "DEV");

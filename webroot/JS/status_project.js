@@ -15,9 +15,8 @@ function accepter (id, mail, name) {
 }
 
 
-function refuser (id, mail, name) {
+function refuser (id) {
 	$('#refuseModal').on('show.bs.modal', function (event) {
-		var confirm = $('#refuse');
 		var button = $(event.confirm); // Button that triggered the modal
 		var recipient = button.data('whatever') // Extract info from data-* attributes
 		// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
