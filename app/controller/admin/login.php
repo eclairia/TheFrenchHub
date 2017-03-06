@@ -26,7 +26,7 @@
 
 			if($retour["admin_level"] == 1)
 			{
-				$_SESSION["admin_level"] = USER_ADMIN;
+				$_SESSION["admin_level"] = ADMIN_LEVEL;
 				location("admin", "index", "notif=ok");
 			}
 

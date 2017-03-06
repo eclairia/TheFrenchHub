@@ -1,5 +1,7 @@
 <?php
-
+	
+	//protection("admin", "admin", "new", "USER_LEVEL");
+	
 	if(empty($_POST))
 	{
 		//Appel de la vue correspondante
@@ -10,6 +12,7 @@
 
 	else
 	{
+		$_POST["admin_level"] = intval($_POST["admin_level"]);
 		$_POST["admin_password"] = md5($_POST["admin_password"] . SALT);
 
 		//Appel du modele pour insérer un administrateur

@@ -21,14 +21,14 @@
 			location($module, $action, "notif=protection");
 		}
 
-		if(!isset($_SESSION["level"]))
+		if(!isset($_SESSION["admin"]))
 		{
 			//header("Location:?module=". $module . "&action=" . $action . "&notif=protection");
 			//exit;
-			location($module, $action, "&notif=protection");
+			location($module, $action, "notif=protection");
 		}
 
-		if($_SESSION["level"] < $level)
+		if($_SESSION["admin"] < $level)
 		{
 			//header("Location:?module=". $module . "&action=" . $action . "&notif=admin");
 			location($module, $action, "&notif=admin");
