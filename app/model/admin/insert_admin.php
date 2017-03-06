@@ -15,7 +15,7 @@
 			$query->bindValue(':admin_mail', $admin["admin_mail"], PDO::PARAM_STR);
 			$query->bindValue(':admin_login', $admin["admin_login"], PDO::PARAM_STR);
 			$query->bindValue(':admin_password', $admin["admin_password"], PDO::PARAM_STR);
-			$query->bindValue(':admin_level', $admin["admin_level"], PDO::PARAM_INT);
+			$query->bindValue(':admin_level', $_POST["status_admin"], PDO::PARAM_INT);
 
 			$query->execute();
 
