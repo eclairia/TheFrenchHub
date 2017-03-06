@@ -28,7 +28,7 @@
                 location('projects', 'list', "notif=nmail");
             }
         }
-        elseif (($retour) && ($status == 0))
+        else if (($retour) && ($status == 0))
         {
             location('projects', 'list', "notif=ok");
         }

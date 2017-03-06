@@ -1,0 +1,1 @@
+<a href="?module=admin&action=logout">Se déconnecter</a>
