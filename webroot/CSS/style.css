@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 7vh;
+  border-bottom: 3px solid #282D2E;
+  align-items: center;
+}
+
+#lienlogohome {
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #282D2E;
+  align-items: center;
+}
+
+#navleft a img {
+  height: 6vh;
+  width: auto;
+  margin-right: 10px;
+}
+
+#navleft {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: 10px;
+}
+
+#navright {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 40px;
+}
+
+#txtlogo {
+  font-size: 1.6em;
+}
+
+.linknavdiv {
+  height: 90%;
+}
+
+.linknav {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #282D2E;
+  height: 100%;
+}
+
+.linknav:hover {
+  border-bottom: 3px solid #FA5501;
+  color: #FA5501;
+  padding-bottom: 2vh;
+}
+
+/* ----> HOME <---- */
+
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 70vh;
+  background-color: #EBF7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contentheaderhome {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  align-items: center;
+}
+
+#h1header {
+  font-size: 5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FA5501;
+}
+
+#textheader {
+  color: #282D2E;
+  font-size: 1.8em;
+}
+
+#linkheader {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 40px;
+  border: 3px solid #FA5501;
+  text-decoration: none;
+  color: #282D2E;
+  font-size: 1.4em;
+  background-color: #EBF7F7;
+}
+
+#linkheader:hover {
+  background-color: #FA5501;
+  color:#EBF7F7;
+}
+
+/* NOS SERVICES */
+
+#presentationhome {
+  width: 100vw;
+  margin-top: 10vh;
+}
+
+.titlerubriquehome {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rubriquehome {
+  color: #62D3D0;
+  font-size: 2em;
+  margin-bottom: 1.5vh;
+}
+
+.soulignement {
+  width: 5vw;
+  height: 0.3vh;
+  background-color: #FA5501;
+}

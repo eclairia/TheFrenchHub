@@ -3,29 +3,29 @@
 	<head>
 		<title></title>
 		<meta charset="utf-8"/>
-		<link rel='stylesheet' type="text/css" href='../webroot/CSS/style.css' />
+		<link rel='stylesheet' type="text/css" href='webroot/CSS/style.css' />
 	</head>
 
 <body>
 
 	<nav>
-		<a href="../home.php">
-	  	<div id="navleft">
 
-				<div id="logotype"></div>
-				<div id="txtlogo"></div>
+	  <div id="navleft">
+			<a id="lienlogohome" href="home.php">
+				<div id="logotype"><img src="webroot/IMG/logo.png"></img></div>
+				<div id="txtlogo">the french hub</div>
+      </a>
+		</div>
 
-			</div>
-		</a>
 
 		<div id="navright">
 
-			<div><a href="#">Le concept</a></div>
-			<div><a href="#">Nos offres</a></div>
-			<div><a href="#">Actualités</a></div>
-			<div><a href="#">L'équipe</a></div>
-			<div><a href="#">Connexion</a></div>
-			<div><a href="#">Inscription</a></div>
+			<div class="linknavdiv"><a class="linknav" href="#">Le concept</a></div>
+			<div class="linknavdiv"><a class="linknav" href="#">Nos offres</a></div>
+			<div class="linknavdiv"><a class="linknav" href="#">Actualités</a></div>
+			<div class="linknavdiv"><a class="linknav" href="#">L'équipe</a></div>
+			<div class="linknavdiv"><a class="linknav" href="#">Connexion</a></div>
+			<div class="linknavdiv"><a class="linknav" href="#">Inscription</a></div>
 
 		</div>
 	</nav>
@@ -34,9 +34,9 @@
 
 		  <div id="contentheaderhome">
 
-				<div><h1></h1></div>
-				<div><h2></h2></div>
-				<div><a></a></div>
+				<div><h1 id="h1header">the french hub</h1></div>
+				<div><p id="textheader">Le nouvel incubateur collaboratif</p></div>
+				<div><a id="linkheader" href="#">En savoir plus</a></div>
 
 			</div>
 
@@ -44,10 +44,13 @@
 
 	<div id="presentationhome">
 
-			<div></div>
+			<div class="titlerubriquehome">
+				<div><h2 class="rubriquehome">Nos services</h2></div>
+				<div class="soulignement"></div>
+			</div>
 
 			<div>
-				<div>
+					<div>
 				  	<div></div>
 						<div></div>
 						<div></div>
@@ -134,7 +137,7 @@
 					<div class="logosocial">
 
 					</div>
-					
+
 					<div class="logosocial">
 
 					</div>
