@@ -1,9 +1,25 @@
-<?php include_once("app/view/layout/header.inc.php"); ?>
-
-	<form method="POST" action="?module=admin&action=login" id="form_login">
-		<label>Login: </label> <input type="text" name="admin_login"><br /><br />
-		<label>Mot de passe: </label> <input type="password" name="admin_password"><br /><br />
-		<input type="submit">
-	</form>
-
-<?php include_once("app/view/layout/footer.inc.php"); ?>
+<!DOCTYPE html>
+<html lang="<?= PAGE_LANG ?>">
+    <head>
+        <meta charset="<?= PAGE_CHARSET ?>">
+        <title><?= PAGE_TITLE ?></title>
+        <link rel='stylesheet' type="text/css" href='webroot/CSS/bootstrap.min.css' />
+        <link rel='stylesheet' type="text/css" href='webroot/CSS/style.css' />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script src="webroot/JS/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4">
+                    <form method="POST" action="?module=admin&action=login" id="form_login">
+                        <label for="admin_login">Login: </label> <input type="text" id="admin_login" class="form-control" name="admin_login"><br /><br />
+                        <label for="admin_password">Mot de passe: </label> <input type="password" id="admin_password" class="form-control" name="admin_password"><br /><br />
+                        <input type="submit" class="btn btn-lg btn-success" value="Se connecter">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="webroot/JS/bootstrap.min.js"></script>
+    </body>
+</html>
