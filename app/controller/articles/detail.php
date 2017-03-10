@@ -5,11 +5,15 @@
 		$articles = selecttable("tfh_articles", 
 							array(
 								"idcolumn" => "article_id",
-								"idvalue" => $_GET["id"]
+								"idvalue" => $_GET["id"],
+								"orderby" => "article_id",
+								"order" => "DESC"						
 							));
 
-		$article = $articles[0];
+		// var_dump($articles_pictures_url);
+		// die();
 
+		$article = $articles[0];
 		//Appel de la vue correspondante	
 		define("APP_LANG", "fr");
 		define("PAGE_TITLE", "Détail d'un article");

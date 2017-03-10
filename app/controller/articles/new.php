@@ -14,15 +14,12 @@
 	{
 		//Appel du modele pour insérer un article
 		include_once("app/model/articles/upload_pictures.php");
-		$upload_pictures = upload_pictures($_POST, $_FILES);
+		$article_picture_url = upload_pictures($_POST, $_FILES);
 		include_once("app/model/articles/insert_article.php");
-		$retour = insert_article($_POST, $_FILES, $_SESSION["admin"]["admin_ID"]
-			);
-		include_once("app/model/articles/insert_url_articles.php");
-		$retour = intval($retour);
-		$retour2 = insert_url_articles($upload_pictures, $retour, $_FILES);
+		$_SESSION["admin"]["admin_ID"] = intval($_SESSION["admin"]["admin_ID"]);
+		$retour = insert_article($_POST, $_FILES, $_SESSION["admin"]["admin_ID"], $article_picture_url);
 
-		if(!$retour && !$retour2)
+		if(!$retour)
 		{
 			location("articles", "new", "notif=nok");
 		}
