@@ -9,7 +9,7 @@ nav {
   justify-content: space-between;
   width: 100vw;
   height: 7vh;
-  border-bottom: 3px solid #282D2E;
+  border-bottom: 1px solid #282D2E;
   align-items: center;
 }
 
@@ -85,7 +85,7 @@ header {
 }
 
 #h1header {
-  font-size: 5em;
+  font-size: 4.5em;
   font-weight: bold;
   text-transform: uppercase;
   color: #FA5501;
@@ -94,17 +94,17 @@ header {
 
 #textheader {
   color: #282D2E;
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin-bottom: 7vh;
 }
 
 #linkheader {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   border-radius: 40px;
-  border: 3px solid #FA5501;
+  border: 1px solid #FA5501;
   text-decoration: none;
   color: #282D2E;
   font-size: 1.4em;
@@ -134,11 +134,11 @@ header {
 .rubriquehome {
   color: #62D3D0;
   font-size: 1.5em;
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
 }
 
 .soulignement {
   width: 5vw;
-  height: 0.3vh;
+  height: 0.2vh;
   background-color: #FA5501;
 }
