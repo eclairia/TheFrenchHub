@@ -280,6 +280,7 @@ header {
 }
 
   #rejoigneznoushome {
+    margin-bottom: 7vh;
   }
 
   #contentparallax {
@@ -298,7 +299,7 @@ header {
   }
 
   #titlerejoignez {
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: 'Open Sans', sans-serif;
     color: #FA5501;
     font-weight: bold;
@@ -307,7 +308,7 @@ header {
 
   #textrejoignez {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
     margin-bottom: 7vh;
   }
@@ -322,10 +323,83 @@ header {
     border: 1px solid #FA5501;
     text-decoration: none;
     color:white;
-    font-size: 1.2em;
+    font-size: 1em;
     background-color: #FA5501;
   }
 
   #boutonrejoignez:hover {
     background-color: rgba(0, 0, 0, 0);
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 0;
+    height: 14vh;
+    width: 100%;
+    border-top: 1px solid #282D2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #liensfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5vw;
+    text-align: left;
+  }
+
+  .linkfooter {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #282D2E;
+    font-weight: bold;
+  }
+
+  .linkfooter:hover {
+    color: #FA5501;
+  }
+
+  #logofooter {
+  height: 12vh;
+}
+
+  #socialnetwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5vw;
+  }
+
+  #reseauxtxt {
+    text-transform: uppercase;
+    color: #FA5501;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+  }
+
+  #linksocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logosocial {
+    opacity: 0.4;
+    margin-top: 1vh;
+  }
+
+  .logosocial:hover {
+    opacity: 1;
+  }
+
+  .space {
+    margin-bottom: 0.3vh;
+  }
+
+  .spaceright {
+    margin-right: 0.3vw;
   }
