@@ -406,7 +406,7 @@ header {
   /* ----> SIGNUP <---- */
 
   #contentinscription {
-    height: 90vh;
+    height: 78vh;
     width: 100%;
     overflow: hidden;
     background: url(../IMG/bg-inscription.png);
@@ -429,6 +429,7 @@ header {
     justify-content: space-between;
     border-bottom: 1px solid #282D2E;
     margin-bottom: 0.3vh;
+    padding-left: 0.3vw;
   }
 
   #formsignup {
@@ -457,6 +458,7 @@ header {
   .borderform {
     border: none;
     border-bottom: 1px solid #282D2E;
+    padding-left: 0.3vw;
   }
 
 input::-webkit-input-placeholder {
@@ -495,3 +497,86 @@ input::-webkit-input-placeholder {
   font-weight: normal;
   text-transform: uppercase;
 }
+
+  /* ----> LOGIN <---- */
+
+  #contentlogin {
+    height: 78vh;
+    width: 100%;
+    overflow: hidden;
+    background: url(../IMG/bg-login.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #formlogin {
+    width: 30vw;
+    height: 45vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #loginright {
+    width: 25vw;
+    height: 35vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #titlelogin {
+    font-family: 'Open Sans', sans-serif;
+    color: #FA5501;
+    font-size: 1.7em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 5vh;
+  }
+
+  .borderform2 {
+    border: none;
+    border-bottom: 1px solid #282D2E;
+    padding-left: 0.3vw;
+    margin-bottom: 2vh;
+  }
+
+  #inscrire {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+    border-radius: 40px;
+    border: 1px solid #FA5501;
+    text-decoration: none;
+    color:white;
+    font-size: 1em;
+    background-color: #FA5501;
+  }
+
+  #inscrire:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  #grdtxtlogin {
+    font-family: 'Open Sans', sans-serif;
+    color:#FA5501;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+
+  #txtlogin {
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    font-size: 1em;
+    margin-bottom: 5vh;
+    text-align: center;
+  }
