@@ -45,8 +45,14 @@ else
     // Si la requête a été traitée avec succès
     if ($liste_param_paypal['ACK'] == 'Success')
     {
-        echo "<h1>Youpii, le paiement a été effectué</h1>"; // On affiche la page avec les remerciements, et tout le tralala...
+        define("APP_LANG", "fr");
+        define("PAGE_TITLE", "Succès de la commande");
+        include_once('app/view/users/return.php');
+
+        sleep(5);
         // Mise à jour de la base de données & traitements divers...
+        // include_once('app/model/commandes/update.php');
+        // $retour = check_command();
         //mysql_query("UPDATE commandes SET etat='OK' WHERE id_commande='".$liste_param_paypal['TRANSACTIONID']."'");
     }
     else // En cas d'échec, affiche la première erreur trouvée.
@@ -54,3 +60,7 @@ else
 }
 // On ferme notre session cURL.
 curl_close($ch);
+?>
+
+<!--TODO:  Modèle pour l'update de l'état de la commande-->
+<!--TODO:  Redirection sur traitement.php avec paramètre get token après update-->
