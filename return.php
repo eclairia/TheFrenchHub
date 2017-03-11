@@ -7,7 +7,7 @@
  */
 
 session_start();
-include("paypal_api.php"); // On importe la page créée précédemment
+include("lib/paypal_api.php"); // On importe la page créée précédemment
 $requete = construit_url_paypal(); // Construit les options de base
 
 // On ajoute le reste des options
