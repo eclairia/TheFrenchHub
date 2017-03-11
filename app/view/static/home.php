@@ -7,7 +7,7 @@
 	</head>
 
 <body>
-
+	<!-- Navigation -->
 	<nav>
 
 	  <div id="navleft">
@@ -29,7 +29,9 @@
 
 		</div>
 	</nav>
+	<!-- Fin Navigation -->
 
+	<!-- Header -->
 	<header>
 
 		  <div id="contentheaderhome">
@@ -41,7 +43,9 @@
 			</div>
 
 	</header>
+	<!-- Fin Header -->
 
+	<!-- Nos Services -->
 	<div id="presentationhome">
 
 			<div class="titlerubriquehome">
@@ -76,11 +80,26 @@
 			</div></center>
 	</div>
 
+	<!-- Fin Nos Services -->
+
+	<!-- Experience -->
 	<div id="slidercommenthome">
 
-	</div>
+		<div class="titlerubriquehome">
+			<div><h2 class="rubriquehome">Ils ont vécu l'expérience</h2></div>
+			<div class="soulignement"></div>
+		</div>
 
+	</div>
+	<!-- Fin Experience -->
+
+	<!-- Nos Partenaires -->
 	<div id="partenaireshome">
+
+		<div class="titlerubriquehome">
+			<div><h2 class="rubriquehome">Nos partenaires</h2></div>
+			<div class="soulignement"></div>
+		</div>
 
 		<div id="imgpartenaires">
 
@@ -99,23 +118,37 @@
 		</div>
 
 	</div>
+	<!-- Fin Nos Partenaires -->
 
+	<!-- Nous rejoindre -->
 	<div id="rejoigneznoushome">
 
-		<div id="titlerejoignez">
+		<div id="contentparallax">
 
-		</div>
+  		<div id="parallax">
 
-		<div id="textrejoignez">
+				<div id="absolutehome">
+					<div>
+						<p id="titlerejoignez">Prêt à rejoindre l'aventure The French Hub ?</p>
+					</div>
 
-		</div>
+					<div>
+						<p id="textrejoignez">Rejoignez-nous et vivez l'expérience en vous inscrivant</p>
+					</div>
 
-		<div id="boutonrejoignez">
+					<div>
+						<a id="boutonrejoignez" href="#">Inscrivez-vous maintenant</a>
+					</div>
+		 		</div>
+          <div style="height:40vh;">&nbsp;</div>
+      </div>
+  	</div>
 
-		</div>
 
-	</div>
+  </div>
+	<!-- Fin Nous rejoindre -->
 
+	<!-- Footer -->
 	<footer>
 
 			<div id="liensfooter">
@@ -151,6 +184,10 @@
 			</div>
 
 	</footer>
+	<!-- Fin Footer -->
+	<!-- Script -->
+	<script src="webroot/JS/parallax.js" type="text/javascript"></script>
+	<!-- Fin script -->
 
 	</body>
 
