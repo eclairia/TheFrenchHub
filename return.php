@@ -7,7 +7,7 @@
  */
 
 session_start();
-include("fonction_api.php"); // On importe la page créée précédemment
+include("paypal_api.php"); // On importe la page créée précédemment
 $requete = construit_url_paypal(); // Construit les options de base
 
 // On ajoute le reste des options
@@ -47,7 +47,7 @@ else
     {
         echo "<h1>Youpii, le paiement a été effectué</h1>"; // On affiche la page avec les remerciements, et tout le tralala...
         // Mise à jour de la base de données & traitements divers...
-        mysql_query("UPDATE commandes SET etat='OK' WHERE id_commande='".$liste_param_paypal['TRANSACTIONID']."'");
+        //mysql_query("UPDATE commandes SET etat='OK' WHERE id_commande='".$liste_param_paypal['TRANSACTIONID']."'");
     }
     else // En cas d'échec, affiche la première erreur trouvée.
     {echo "<p>Erreur de communication avec le serveur PayPal.<br />".$liste_param_paypal['L_SHORTMESSAGE0']."<br />".$liste_param_paypal['L_LONGMESSAGE0']."</p>";}
