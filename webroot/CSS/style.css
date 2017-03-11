@@ -355,7 +355,7 @@ header {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     color: #282D2E;
-    font-weight: bold;
+    font-size: 0.8em;
   }
 
   .linkfooter:hover {
@@ -376,9 +376,8 @@ header {
   #reseauxtxt {
     text-transform: uppercase;
     color: #FA5501;
-    font-weight: bold;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   #linksocial {
@@ -388,6 +387,7 @@ header {
   }
 
   .logosocial {
+    height: 4vh;
     opacity: 0.4;
     margin-top: 1vh;
   }
