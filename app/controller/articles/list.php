@@ -1,8 +1,8 @@
 <?php
 
-	$articles = selecttable("tfh_articles", "orderby => article_id", "order => DESC");
+    $articles = select_table(
+                array("table1" => "tfh_articles"),
+                array("orderby => article_id",
+                      "order => DESC"));
 
-	if($articles)
-	{
-		include_once("app/view/articles/list.php");
-	}
+    include_once("app/view/articles/list.php");
