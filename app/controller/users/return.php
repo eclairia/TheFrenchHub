@@ -14,7 +14,7 @@ $requete = construit_url_paypal(); // Construit les options de base
 // La fonction urlencode permet d'encoder au format URL les espaces, slash, deux points, etc.)
 $requete = $requete."&METHOD=DoExpressCheckoutPayment".
     "&TOKEN=".htmlentities($_GET['token'], ENT_QUOTES). // Ajoute le jeton qui nous a été renvoyé
-    "&AMT=10.0".
+    "&AMT=". $_GET['price'] .
     "&CURRENCYCODE=EUR".
     "&PayerID=".htmlentities($_GET['PayerID'], ENT_QUOTES). // Ajoute l'identifiant du paiement qui nous a également été renvoyé
     "&PAYMENTACTION=sale";
