@@ -1,5 +1,6 @@
 <?php
-
+    ini_set('display_errors', '1');
+    ini_set('error_reporting', E_ALL);
 	//On récupère l'adresse IP du client en prévoyant le cas du proxy
 	$ip = !empty( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR'];
 	//On fabrique une chaine avec l'IP et le type de navigateur
