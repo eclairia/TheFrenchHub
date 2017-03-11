@@ -549,10 +549,10 @@ input::-webkit-input-placeholder {
 
   #inscrire {
     font-family: 'Open Sans', sans-serif;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-    padding-top: 1.2vh;
-    padding-bottom: 1.2vh;
+    padding-left: 2.2vw;
+    padding-right: 2.2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     border-radius: 40px;
     border: 1px solid #FA5501;
     text-decoration: none;
@@ -568,9 +568,9 @@ input::-webkit-input-placeholder {
   #grdtxtlogin {
     font-family: 'Open Sans', sans-serif;
     color:#FA5501;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
   }
 
   #txtlogin {
