@@ -1,24 +1,9 @@
 <?php
 
-//Récupérer les infos du fichier reçu
-// echo "Votre nom est: " . $_POST['ch_nom'] . "<br />";
-// echo "Votre prénom est: " . $_POST['ch_prenom'] . "<br />";
-
-// echo "Les infos de votre fichiers: " . "<br />";
-// echo "-- Le nom: " . $_FILES['ch_file']['name'] . "<br />";
-// echo "-- Le type: " . $_FILES['ch_file']['type'] . "<br />";
-// echo "-- Le nom temp: " . $_FILES['ch_file']['tmp_name'] . "<br />";
-// echo "-- Le code: " . $_FILES['ch_file']['error'] . "<br />";
-
 //Contrôler l'extension
 
 function upload_pictures($data, $file)
 {
-	// var_dump($_POST);
-	// var_dump($data["article_file"]);
-	// var_dump($_FILES);
-	// die();
-
 	$extension = array('jpeg', 'jpg', 'gif', 'png');
 	$extension_upload =strtolower( substr( strrchr($file['article_file']["name"], '.') ,1) );
 
@@ -74,6 +59,9 @@ function upload_pictures($data, $file)
 
 	imagedestroy($image);
 
+	//Récupération du nom de l'image et de son extension jpg seulement pour le moment
 	$url = $url . "." . $extension_upload;
+
+	//On retourne l'url pour la récupérer dans la vue
 	return $url;
 }

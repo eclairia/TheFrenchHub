@@ -1,5 +1,5 @@
 <?php
-	if(isset($_GET["id"]))
+	if(isset($_GET["id"]) || ($_POST["article_id"]))
 	{
 		$_GET["id"] = intval($_GET["id"]);
 		$articles = selecttable("tfh_articles", 
@@ -22,5 +22,5 @@
 
 	else
 	{
-		location("admin", "login", "notif=nok");		
+		location("articles", "list", "notif=nok");
 	}
