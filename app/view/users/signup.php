@@ -6,7 +6,7 @@
 
     <div id="titresignup"><h1 id="titleinscription">inscription</h1></div>
 
-    <form id="formsignup" method="post">
+    <form id="formsignup" method="post" action="#">
 
       <div id="civility" class="formwidth">
 

@@ -580,3 +580,156 @@ input::-webkit-input-placeholder {
     margin-bottom: 3vh;
     text-align: center;
   }
+
+/* ----> EQUIPE <---- */
+
+#contentequipe {
+  width:100%;
+}
+
+#backgroundequipe {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../IMG/bg-team.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#blackteam {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rotatetitle {
+  width: 13vw;
+  height: 25vh;
+  border: 2px solid white;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#titreequipe {
+  transform: rotate(-45deg);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#membres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vh;
+  width: 100%;
+}
+
+#teamhaut {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 7vh;
+}
+
+#teambas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 7vh;
+}
+
+.divmember {
+  width: 13vw;
+  height: 25vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#amel {
+  background: url(../IMG/amel.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#guillaume {
+  background: url(../IMG/guillaume.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#carla {
+  background: url(../IMG/carla.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#louis {
+  background: url(../IMG/louis.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#adrien {
+  background: url(../IMG/adrien.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#romain {
+  background: url(../IMG/romain.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.teamdisplaynone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.textnone {
+  color: #FA5501;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: center;
+}
+
+.poles {
+  text-transform: none;
+  color: white;
+}
+
+.divmember:hover .teamdisplaynone {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5vh;
+}
