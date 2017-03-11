@@ -759,7 +759,7 @@ input::-webkit-input-placeholder {
 
 #logoanim{
     height: 30vh;
-    margin-right: 15vh;
+    margin-right: 15vw;
     position: relative;
     top: 25vh;
     z-index: 3;
@@ -788,6 +788,7 @@ input::-webkit-input-placeholder {
 
 #textconceptleft {
   margin-left: 15vh;
+  width: 50%;
 }
 
 #titleconcept {
@@ -800,13 +801,22 @@ input::-webkit-input-placeholder {
   margin-bottom: 4vh;
 }
 
-#txtconcept {
+.txtconcept {
   width: 30vw;
   color: #282D2E;
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-size: 1em;
   text-align: left;
+}
+
+#twopara {
+  display: flex;
+  flex-direction: column;
+}
+
+.botspace {
+  margin-bottom: 2vh;
 }
 
 #othercontentconcept {
