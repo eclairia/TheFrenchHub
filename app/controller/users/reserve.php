@@ -10,8 +10,8 @@ $requete = construit_url_paypal(); // Construit les options de base
 
 // La fonction urlencode permet d'encoder au format URL les espaces, slash, deux points, etc.)
 $requete = $requete."&METHOD=SetExpressCheckout".
-    "&CANCELURL=".urlencode("http://ghulin.eemi.tech/2a/tfh/cancel.php").
-    "&RETURNURL=".urlencode("http://ghulin.eemi.tech/2a/tfh/return.php").
+    "&CANCELURL=".urlencode("http://127.0.0.1/EEMI_2016/final_project/TheFrenchHub/cancel.php").
+    "&RETURNURL=".urlencode("http://127.0.0.1/EEMI_2016/final_project/TheFrenchHub/return.php").
     "&AMT=10.0".
     "&CURRENCYCODE=EUR".
     "&DESC=".urlencode("Magnifique oeuvre d'art (que mon fils de 3 ans a peint.)").

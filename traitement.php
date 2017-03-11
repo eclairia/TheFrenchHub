@@ -31,6 +31,6 @@ else
     // Si la requête a été traitée avec succès
 
     // Mise à jour de la base de données & traitements divers... Exemple :
-    mysql_query("INSERT INTO client(nom, prenom) VALUE('".$liste_param_paypal['FIRSTNAME']."', '".$liste_param_paypal['LASTNAME']."')");
+    //mysql_query("INSERT INTO client(nom, prenom) VALUE('".$liste_param_paypal['FIRSTNAME']."', '".$liste_param_paypal['LASTNAME']."')");
 }
 curl_close($ch);
