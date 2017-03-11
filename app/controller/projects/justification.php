@@ -1,4 +1,5 @@
 <?php
+    protection("admin", "admin", "login", USER_ADMIN);
     if (!isset($_POST['project_refusal_justification']))
     {
         $infos_mail = select_table(array(

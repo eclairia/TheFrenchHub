@@ -1,0 +1,582 @@
+* {
+  margin: 0;
+}
+
+html {
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+    font-family: 'neoubold';
+    src: url('../fonts/neou-bold-webfont.woff2') format('woff2'),
+         url('../fonts/neou-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 7vh;
+  border-bottom: 1px solid #282D2E;
+  align-items: center;
+}
+
+#lienlogohome {
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #282D2E;
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+}
+
+#navleft a img {
+  height: 6vh;
+  width: auto;
+  margin-right: 10px;
+}
+
+#navleft {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: 10px;
+}
+
+#navright {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-right: 40px;
+}
+
+#txtlogo {
+  font-size: 1.2em;
+}
+
+.linknavdiv {
+  height: 90%;
+}
+
+.linknav {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+  color: #282D2E;
+  height: 100%;
+}
+
+.linknav:hover {
+  border-bottom: 3px solid #FA5501;
+  color: #FA5501;
+  padding-bottom: 2vh;
+}
+
+/* ----> HOME <---- */
+
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../IMG/bg1.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #EBF7F7;
+}
+
+#contentheaderhome {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+}
+
+#h1header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FA5501;
+  margin-bottom: 2vh;
+}
+
+#textheader {
+  font-family: 'Open Sans', sans-serif;
+  color: #282D2E;
+  font-size: 1.4em;
+  margin-bottom: 7vh;
+}
+
+#linkheader {
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  padding-top: 1.2vh;
+  padding-bottom: 1.2vh;
+  border-radius: 40px;
+  border: 1px solid #FA5501;
+  text-decoration: none;
+  color: #282D2E;
+  font-size: 1.2em;
+  background-color: #EBF7F7;
+}
+
+#linkheader:hover {
+  background-color: #FA5501;
+  color:#EBF7F7;
+}
+
+/* NOS SERVICES */
+
+#presentationhome {
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.titlerubriquehome {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rubriquehome {
+  font-family: 'Open Sans', sans-serif;
+  color: #62D3D0;
+  font-size: 1.7em;
+  margin-bottom: 0.7vh;
+}
+
+.soulignement {
+  width: 5vw;
+  height: 0.2vh;
+  background-color: #FA5501;
+}
+
+#presentationhaut {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 7vh;
+}
+
+.detailpresentation {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.detailservicetitle {
+  font-size: 1.2;
+  font-weight: bold;
+  color: #282D2E;
+  text-transform: uppercase;
+  margin-bottom: 1vh;
+  font-family: Neoubold;
+  letter-spacing: 0.4em;
+}
+
+.detailservicetexte {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  color: #CCCCCC;
+  margin-bottom: 7vh;
+}
+
+.detailpresentation img {
+  height: 9vh;
+  margin-bottom: 2vh;
+}
+
+/* ILS ONT VECU L'EXPERIENCE */
+
+#slidercommenthome {
+  background-color: #EBF7F7;
+  padding-top: 3vh;
+  margin-top: 3vh;
+  width: 100%;
+  height: 40vh;
+  }
+
+  /* NOS PARTENAIRES */
+
+  #partenaireshome {
+    margin-top: 10vh;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #partenairesflex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #partenairesleft, #partenairesright {
+    display: flex;
+    flex-direction: column;
+    width:25vw;
+  }
+
+  #logospartenaires {
+    display: flex;
+    width: 60vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .margbot {
+    margin-bottom: 5vh;
+  }
+
+  .twologos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logopartenaires {
+    width: 10vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    opacity: 0.4;
+  }
+
+  .logopartenaires:hover {
+    opacity: 1;
+  }
+
+  /* NOUS REJOINDRE */
+
+  #parallax {
+   background:url(../IMG/bg2.jpg) fixed;
+   background-size:cover;
+   opacity: 1;
+   box-shadow: 1px 1px 120px #333333 inset;
+   position: relative;
+}
+
+  #rejoigneznoushome {
+  }
+
+  #contentparallax {
+  }
+
+  #absolutehome {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #titlerejoignez {
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    color: #FA5501;
+    font-weight: bold;
+    margin-bottom: 3vh;
+  }
+
+  #textrejoignez {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 7vh;
+  }
+
+  #boutonrejoignez {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+    border-radius: 40px;
+    border: 1px solid #FA5501;
+    text-decoration: none;
+    color:white;
+    font-size: 1em;
+    background-color: #FA5501;
+  }
+
+  #boutonrejoignez:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 0;
+    height: 14vh;
+    width: 100%;
+    border-top: 1px solid #282D2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #liensfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5vw;
+    text-align: left;
+  }
+
+  .linkfooter {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #282D2E;
+    font-size: 0.8em;
+  }
+
+  .linkfooter:hover {
+    color: #FA5501;
+  }
+
+  #logofooter {
+  height: 12vh;
+}
+
+  #socialnetwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5vw;
+  }
+
+  #reseauxtxt {
+    text-transform: uppercase;
+    color: #FA5501;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+  }
+
+  #linksocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logosocial {
+    height: 4vh;
+    opacity: 0.4;
+    margin-top: 1vh;
+  }
+
+  .logosocial:hover {
+    opacity: 1;
+  }
+
+  .space {
+    margin-bottom: 0.3vh;
+  }
+
+  .spaceright {
+    margin-right: 0.3vw;
+  }
+
+  /* ----> SIGNUP <---- */
+
+  #contentinscription {
+    height: 78vh;
+    width: 100%;
+    overflow: hidden;
+    background: url(../IMG/bg-inscription.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #forminscription {
+    height: 65vh;
+    width: 30vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #civility {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #282D2E;
+    margin-bottom: 0.3vh;
+    padding-left: 0.3vw;
+  }
+
+  #formsignup {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  #pcivil {
+    font-size: 1em;
+  }
+
+  .formwidth {
+    width: 15vw;
+    height: 4vh;
+    color: #282D2E;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0.3vh;
+  }
+
+  .borderform {
+    border: none;
+    border-bottom: 1px solid #282D2E;
+    padding-left: 0.3vw;
+  }
+
+input::-webkit-input-placeholder {
+    color: #282D2E;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.boutonform {
+  background-color: white;
+  border: 1px solid #62D3D0;
+  margin-top: 2vh;
+  border-radius: 25px;
+  color: #62D3D0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.boutonform:hover {
+  background-color: #62D3D0;
+  color: white;
+}
+
+#titresignup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+#titleinscription {
+  font-family: 'Open Sans', sans-serif;
+  color: #62D3D0;
+  font-size: 1.7em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+  /* ----> LOGIN <---- */
+
+  #contentlogin {
+    height: 78vh;
+    width: 100%;
+    overflow: hidden;
+    background: url(../IMG/bg-login.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #formlogin {
+    width: 30vw;
+    height: 45vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #loginright {
+    width: 25vw;
+    height: 35vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #titlelogin {
+    font-family: 'Open Sans', sans-serif;
+    color: #FA5501;
+    font-size: 1.7em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 5vh;
+  }
+
+  .borderform2 {
+    border: none;
+    border-bottom: 1px solid #282D2E;
+    padding-left: 0.3vw;
+    margin-bottom: 2vh;
+  }
+
+  #inscrire {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 2.2vw;
+    padding-right: 2.2vw;
+    padding-top: 0.8vh;
+    padding-bottom: 0.8vh;
+    border-radius: 40px;
+    border: 1px solid #FA5501;
+    text-decoration: none;
+    color:white;
+    font-size: 1em;
+    background-color: #FA5501;
+    }
+
+  #inscrire:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  #grdtxtlogin {
+    font-family: 'Open Sans', sans-serif;
+    color:#FA5501;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+
+  #txtlogin {
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    font-size: 0.8em;
+    margin-bottom: 3vh;
+    text-align: center;
+  }

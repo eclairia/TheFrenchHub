@@ -1,4 +1,5 @@
 <?php
+    protection("admin", "admin", "login", USER_ADMIN);
     if (isset($_GET['id']))
     {
         $status = ($_GET['status'] == 'accepted') ? 1 : 0;
