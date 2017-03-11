@@ -1,47 +1,12 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title></title>
-		<meta charset="utf-8"/>
-		<link rel='stylesheet' type="text/css" href='webroot/CSS/style.css' />
-	</head>
-
-<body>
-	<!-- Navigation -->
-	<nav>
-
-	  <div id="navleft">
-			<a id="lienlogohome" href="home.php">
-				<div id="logotype"><img src="webroot/IMG/logo.png"></img></div>
-				<div id="txtlogo">the french hub</div>
-      </a>
-		</div>
-
-
-		<div id="navright">
-
-			<div class="linknavdiv"><a class="linknav" href="#">Le concept</a></div>
-			<div class="linknavdiv"><a class="linknav" href="#">Nos offres</a></div>
-			<div class="linknavdiv"><a class="linknav" href="#">Actualités</a></div>
-			<div class="linknavdiv"><a class="linknav" href="#">L'équipe</a></div>
-			<div class="linknavdiv"><a class="linknav" href="#">Connexion</a></div>
-			<div class="linknavdiv"><a class="linknav" href="#">Inscription</a></div>
-
-		</div>
-	</nav>
-	<!-- Fin Navigation -->
+	<?php include_once 'app/view/layout/header_front.inc.php'; ?>
 
 	<!-- Header -->
 	<header>
-
-		  <div id="contentheaderhome">
-
+			<div id="contentheaderhome">
 				<div><h1 id="h1header">the french hub</h1></div>
 				<div><p id="textheader">Le nouvel incubateur collaboratif</p></div>
 				<div><a id="linkheader" href="#">En savoir plus</a></div>
-
 			</div>
-
 	</header>
 	<!-- Fin Header -->
 
@@ -197,57 +162,4 @@
 	<!-- Fin Nous rejoindre -->
 
 	<!-- Footer -->
-	<footer>
-
-			<div id="liensfooter">
-				<a class="linkfooter space" href="#">Contact</a>
-				<a class="linkfooter space" href="#">Plan du site</a>
-				<a class="linkfooter space" href="#">Mentions légales</a>
-				<a class="linkfooter" href="#">Conditions générales de vente</a>
-			</div>
-
-			<div>
-
-				<img id="logofooter" src="webroot/IMG/logo_footer.png" />
-
-			</div>
-
-			<div id="socialnetwork">
-
-				<div id="textsocial">
-					<p id="reseauxtxt">rejoignez-nous sur</p>
-				</div>
-
-				<div id="linksocial">
-
-					<div>
-						<a href="#">
-						<img class="logosocial spaceright" src="webroot/IMG/fb.png" />
-						</a>
-					</div>
-
-					<div>
-						<a href="#">
-						<img class="logosocial spaceright" src="webroot/IMG/twitter.png" />
-						</a>
-					</div>
-
-					<div>
-						<a href="#">
-						<img class="logosocial" src="webroot/IMG/insta.png" />
-						</a>
-					</div>
-
-				</div>
-
-			</div>
-
-	</footer>
-	<!-- Fin Footer -->
-	<!-- Script -->
-	<script src="webroot/JS/parallax.js" type="text/javascript"></script>
-	<!-- Fin script -->
-
-	</body>
-
-</html>
+	<?php include_once 'app/view/layout/footer_front.inc.php'; ?>

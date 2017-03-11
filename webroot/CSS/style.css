@@ -280,7 +280,6 @@ header {
 }
 
   #rejoigneznoushome {
-    margin-bottom: 7vh;
   }
 
   #contentparallax {
@@ -403,3 +402,96 @@ header {
   .spaceright {
     margin-right: 0.3vw;
   }
+
+  /* ----> SIGNUP <---- */
+
+  #contentinscription {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    background: url(../IMG/bg-inscription.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #forminscription {
+    height: 65vh;
+    width: 30vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #civility {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #282D2E;
+    margin-bottom: 0.3vh;
+  }
+
+  #formsignup {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  #pcivil {
+    font-size: 1em;
+  }
+
+  .formwidth {
+    width: 15vw;
+    height: 4vh;
+    color: #282D2E;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0.3vh;
+  }
+
+  .borderform {
+    border: none;
+    border-bottom: 1px solid #282D2E;
+  }
+
+input::-webkit-input-placeholder {
+    color: #282D2E;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.boutonform {
+  background-color: white;
+  border: 1px solid #62D3D0;
+  margin-top: 2vh;
+  border-radius: 25px;
+  color: #62D3D0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.boutonform:hover {
+  background-color: #62D3D0;
+  color: white;
+}
+
+#titresignup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+#titleinscription {
+  font-family: 'Open Sans', sans-serif;
+  color: #62D3D0;
+  font-size: 1.7em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
