@@ -98,24 +98,72 @@
 
 		<div class="titlerubriquehome">
 			<div><h2 class="rubriquehome">Nos partenaires</h2></div>
-			<div class="soulignement"></div>
+			<div class="soulignement margbot"></div>
 		</div>
 
+	<div id="partenairesflex">
 		<div id="imgpartenaires">
 
 		</div>
 
 		<div id="logospartenaireshome">
 
-			<div id="titlepartenaireshome">
-
-			</div>
-
 			<div id="logospartenaires">
+
+				<div id="partenairesleft">
+
+					<div class="twologos">
+
+						<div><img class="logopartenaires" src="webroot/IMG/frenchtech.png"></img></div>
+						<div><img class="logopartenaires" src="webroot/IMG/500.png"></div>
+
+					</div>
+
+					<div class="twologos">
+
+						<div><img class="logopartenaires" src="webroot/IMG/sosv.png"></div>
+						<div><img class="logopartenaires" src="webroot/IMG/10000-startups.png"></div>
+
+					</div>
+
+					<div class="twologos">
+
+						<div><img class="logopartenaires" src="webroot/IMG/ef.png"></div>
+						<div><img class="logopartenaires" src="webroot/IMG/techcrunch.png"></div>
+
+					</div>
+
+				</div>
+
+				<div id="partenairesright">
+
+					<div class="twologos">
+
+						<div><img class="logopartenaires" src="webroot/IMG/twosigma.png"></div>
+						<div><img class="logopartenaires" src="webroot/IMG/atlanta.jpg"></div>
+
+					</div>
+
+					<div class="twologos">
+
+						<div><img class="logopartenaires" src="webroot/IMG/a16z.png"></div>
+						<div><img class="logopartenaires" src="webroot/IMG/techstars.png"></div>
+
+					</div>
+
+					<div class="twologos">
+
+						<div><img class="logopartenaires" src="webroot/IMG/launchpad.png"></div>
+						<div><img class="logopartenaires" src="webroot/IMG/crunchfund.png"></div>
+
+					</div>
+
+				</div>
 
 			</div>
 
 		</div>
+	</div>
 
 	</div>
 	<!-- Fin Nos Partenaires -->
