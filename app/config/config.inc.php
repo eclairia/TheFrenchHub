@@ -18,3 +18,5 @@
     define("NOM_EXPEDITEUR", "The French Hub");
 
     define("ENV", "DEV");
+
+    define("LOGO_FOR_PAYPAL_URL", "http://ghulin.eemi.tech/2a/tfh/logo.png");

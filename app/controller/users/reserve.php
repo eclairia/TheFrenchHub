@@ -10,13 +10,13 @@ $requete = construit_url_paypal(); // Construit les options de base
 
 // La fonction urlencode permet d'encoder au format URL les espaces, slash, deux points, etc.)
 $requete = $requete."&METHOD=SetExpressCheckout".
-    "&CANCELURL=".urlencode("http://127.0.0.1/EEMI_2016/final_project/TheFrenchHub/cancel.php").
-    "&RETURNURL=".urlencode("http://127.0.0.1/EEMI_2016/final_project/TheFrenchHub/return.php").
-    "&AMT=10.0".
+    "&CANCELURL=".urlencode("http://". $_SERVER['SERVER_NAME'] . substr($_SERVER['REQUEST_URI'], 0, strrpos($_SERVER['REQUEST_URI'], '/', 20)+1) ."?module=users&action=cancel").
+    "&RETURNURL=".urlencode("http://". $_SERVER['SERVER_NAME'] . substr($_SERVER['REQUEST_URI'], 0, strrpos($_SERVER['REQUEST_URI'], '/', 20)+1) ."?module=users&action=return&price=" . $_GET['price']).
+    "&AMT=". $_GET['price'] .
     "&CURRENCYCODE=EUR".
-    "&DESC=".urlencode("Magnifique oeuvre d'art (que mon fils de 3 ans a peint.)").
+    "&DESC=".urlencode("Votre réservation pour la Nouvelles-Zélande").
     "&LOCALECODE=FR".
-    "&HDRIMG=".urlencode("http://ghulin.eemi.tech/2a/tfh/logo.png");
+    "&HDRIMG=".urlencode(LOGO_FOR_PAYPAL_URL);
 
 // Affiche la chaîne pour vérifier que la chaîne est bien formatée :
 //echo $requete;
@@ -53,6 +53,3 @@ else
     }
 }
 curl_close($ch);
-
-define("PAGE_TITLE", "Page de connexion");
-include_once("app/view/users/reserve.php");
