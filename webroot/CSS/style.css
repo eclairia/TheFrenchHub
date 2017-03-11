@@ -529,6 +529,7 @@ input::-webkit-input-placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   #titlelogin {
@@ -559,7 +560,7 @@ input::-webkit-input-placeholder {
     color:white;
     font-size: 1em;
     background-color: #FA5501;
-  }
+    }
 
   #inscrire:hover {
     background-color: rgba(0, 0, 0, 0);
@@ -576,7 +577,17 @@ input::-webkit-input-placeholder {
   #txtlogin {
     font-family: 'Open Sans', sans-serif;
     color:white;
-    font-size: 1em;
-    margin-bottom: 5vh;
+    font-size: 0.8em;
+    margin-bottom: 3vh;
     text-align: center;
+  }
+
+  #logologin {
+    height: 20vh;
+  }
+
+  #logofrenchlogin {
+    position: absolute;
+    top: -10vh;
+    right: -5vw;
   }
