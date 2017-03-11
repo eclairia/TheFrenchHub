@@ -27,7 +27,6 @@
 
   <div id="loginright">
 
-    <div id="logofrenchlogin"><img src="webroot/IMG/logo03.png" id="logologin"/></div>
     <div><p id="grdtxtlogin">Pas de compte ?<br/>Inscrivez vous maintenant !</p></div>
     <div><p id="txtlogin">Créez votre compte The French Hub <br/> et lancez vous dans l'aventure.</p></div>
     <div><a id="inscrire" href="signup.php">S'inscrire</a></div>
