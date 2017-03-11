@@ -622,7 +622,8 @@ input::-webkit-input-placeholder {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 #membres {
