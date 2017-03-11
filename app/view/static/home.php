@@ -49,31 +49,31 @@
 				<div class="soulignement"></div>
 			</div>
 
-			<div>
-					<div>
-				  	<div></div>
-						<div></div>
-						<div></div>
+			<div id="presentationhaut">
+					<div class="detailpresentation">
+				  	<div><img src="webroot/IMG/icons/1.png"></img></div>
+						<div class="detailservicetitle">Un logement</div>
+						<div class="detailservicetexte">The French Hub met à votre disposition un logement afin de vous simplifier la vie.</div>
 					</div>
 
-					<div>
-				  	<div></div>
-						<div></div>
-						<div></div>
+					<div class="detailpresentation">
+				  	<div><img src="webroot/IMG/icons/3.png"></div>
+						<div class="detailservicetitle">Des espaces de travail</div>
+						<div class="detailservicetexte">Afin d’optimiser votre temps et votre implantation, des espaces de travail sont disponibles.</div>
 					</div>
 
-					<div>
-				  	<div></div>
-						<div></div>
-						<div></div>
+					<div class="detailpresentation">
+				  	<div><img src="webroot/IMG/icons/2.png"></div>
+						<div class="detailservicetitle">Un advisory board</div>
+						<div class="detailservicetexte">Vous disposerez d’un advisory board, composé d’expatriés Français.</div>
 					</div>
 			</div>
 
-			<div>
-				  <div></div>
-					<div></div>
-					<div></div>
-			</div>
+			<center><div class="detailpresentation down">
+				  <div><img src="webroot/IMG/icons/4.png"></div>
+					<div class="detailservicetitle">Une incubation</div>
+					<div class="detailservicetexte">The French Hub réinvente l’incubation sous forme d’incubation collaborative.</div>
+			</div></center>
 	</div>
 
 	<div id="slidercommenthome">
