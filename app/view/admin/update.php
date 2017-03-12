@@ -1,4 +1,4 @@
-<?php include("app/view/layout/header.inc.php"); ?>
+<?php include("app/view/layout/header_back.inc.php"); ?>
 
 	<div class="container-fluid form_insert_user">
 
@@ -17,9 +17,18 @@
 		        </tr>		        
 
 		        <tr>
+		          <td><label for="admin_login" class="label-update-users">Admin login: </label></td>
+		          <td><input name="admin_login" type="text" id="admin_login" class="input-update-users" required /></td>
+		        </tr>
+
+		        <tr>
 		          <td><label for="admin_password" class="label-update-users">Admin password: </label></td>
 		          <td><input type="password" name="admin_password" id="admin_password" class="input-update-users" required ></td>
-		        </tr>		        	        
+		        </tr>
+
+		        <tr>
+		          <td><input name="admin_id" type="hidden" id="admin_id" class="input-update-users" value="<?= $_GET['id']; ?>" required /></td>
+		        </tr>	        
 
 		        <tr>
 		          <td></td>
@@ -31,4 +40,4 @@
 
 	</div>
 
-<?php include("app/view/layout/footer.inc.php"); ?>
+<?php include("app/view/layout/footer_back.inc.php"); ?>

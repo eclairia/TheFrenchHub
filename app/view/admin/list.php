@@ -1,4 +1,5 @@
-<?php include("app/view/layout/header.inc.php"); ?>
+<?php include_once("app/view/layout/header_back.inc.php"); ?>
+
 
 	<div class="container-fluid all-articles">
 		
@@ -11,7 +12,6 @@
 			//Pour chaque utilisateur du tableau
 			foreach($admins as $admin)
 			{?>
-				<?php var_dump($admin); ?>
 				<div class="container liste_users">
 
 					<p>
@@ -24,11 +24,12 @@
 					 	Pseudo: <?= $admin['admin_login']; ?>
 					</p>
 					<p>
-						<a href='?module=admin&action=update&id="<?= $admin['admin_ID'] ?>"'>Modifier les données de l'administrateur</a>
+						<a href='?module=admin&action=update&id=<?= $admin['admin_ID'] ?>'>Modifier les données de l'administrateur</a>
 					</p>
 				</div>
 
 			<?php } ?>
 	</div>
 
-<?php include("app/view/layout/footer.inc.php"); ?>
+<?php include_once("app/view/layout/footer_back.inc.php"); ?>
+

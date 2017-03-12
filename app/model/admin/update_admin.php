@@ -10,6 +10,7 @@
 		// var_dump($admin_password);
 		// var_dump($admin_id);
 		// die();
+		
 		try
 		{
 			$req = "UPDATE tfh_admin SET admin_name = :admin_name, admin_mail = :admin_mail, admin_login = :admin_login, admin_password = :admin_password WHERE admin_ID = :admin_id";
