@@ -4,7 +4,6 @@
 	<meta charset="<?= PAGE_CHARSET ?>">
 	<title><?= PAGE_TITLE ?></title>
 	<link rel='stylesheet' type="text/css" href='webroot/CSS/bootstrap.min.css' />
-	<link rel='stylesheet' type="text/css" href='webroot/CSS/style.css' />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<script src="webroot/JS/jquery-3.1.1.min.js"></script>
 </head>
