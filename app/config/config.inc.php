@@ -2,7 +2,6 @@
 
 	define("PAGE_LANG", "fr");
 	define("PAGE_CHARSET", "utf-8");
-	define("PAGE_TITLE", "test");
 
 	define("DEFAULT_MODULE", "static");
 	define("DEFAULT_ACTION", "home");
