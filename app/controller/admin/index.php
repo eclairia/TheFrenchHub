@@ -11,4 +11,5 @@
          	array("orderby => articles_id",
 	 			  "order => DESC"));
 
+    define("PAGE_TITLE", "Index");
 	include_once("app/view/admin/index.php");
