@@ -10,7 +10,7 @@
 
 		<div>
 
-			<img id="logofooter" src="webroot/IMG/logo_footer.png" />
+			<img id="logofooter" src="webroot/IMG/logo_footer.png" alt=""/>
 
 		</div>
 
@@ -24,19 +24,19 @@
 
 				<div>
 					<a href="#">
-					<img class="logosocial spaceright" src="webroot/IMG/fb.png" />
+					<img class="logosocial spaceright" src="webroot/IMG/fb.png" alt=""/>
 					</a>
 				</div>
 
 				<div>
 					<a href="#">
-					<img class="logosocial spaceright" src="webroot/IMG/twitter.png" />
+					<img class="logosocial spaceright" src="webroot/IMG/twitter.png" alt="" />
 					</a>
 				</div>
 
 				<div>
 					<a href="#">
-					<img class="logosocial" src="webroot/IMG/insta.png" />
+					<img class="logosocial" src="webroot/IMG/insta.png" alt=""/>
 					</a>
 				</div>
 

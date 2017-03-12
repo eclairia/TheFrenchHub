@@ -23,7 +23,7 @@
 
 				<div>
 
-					<img id="logoanim" src="webroot/IMG/logo3d.png"/>
+					<img id="logoanim" src="webroot/IMG/logo3d.png" alt=""/>
 
 				</div>
 
