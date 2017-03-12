@@ -18,12 +18,12 @@
       </div>
 
       <div>
-        <input class="formwidth borderform" name="user_lastname" type="text" placeholder="Nom" required></input>
+        <input class="formwidth borderform" name="user_last_name" type="text" placeholder="Nom" required></input>
 
       </div>
 
       <div>
-        <input class="formwidth borderform" name="user_firstname" type="text" placeholder="Prénom" required></input>
+        <input class="formwidth borderform" name="user_first_name" type="text" placeholder="Prénom" required></input>
       </div>
 
       <div>

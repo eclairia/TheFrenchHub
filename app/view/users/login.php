@@ -6,7 +6,7 @@
 
     <div id="titrelogin"><h1 id="titlelogin">Connexion</h1></div>
 
-    <form id="formlogin" method="post">
+    <form id="formlogin" method="post" action="?module=users&action=login">
 
       <div>
         <input class="formwidth borderform2 " name="user_login" type="text" placeholder="Identifiant" required></input>
@@ -29,7 +29,7 @@
 
     <div><p id="grdtxtlogin">Pas de compte ?<br/>Inscrivez vous maintenant !</p></div>
     <div><p id="txtlogin">Créez votre compte The French Hub <br/> et lancez vous dans l'aventure.</p></div>
-    <div><a id="inscrire" href="signup.php">S'inscrire</a></div>
+    <div><a id="inscrire" href="?module=users&action=signup">S'inscrire</a></div>
 
   </div>
 
