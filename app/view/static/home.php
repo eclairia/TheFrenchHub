@@ -48,14 +48,50 @@
 	<!-- Fin Nos Services -->
 
 	<!-- Experience -->
-	<div id="slidercommenthome">
+		<div id="slidercommenthome">
+			<div class="titlerubriquehome">
+				<div><h2 class="rubriquehome">Ils ont vécu l'expérience</h2></div>
+				<div class="soulignement"></div>
+			</div>
 
-		<div class="titlerubriquehome">
-			<div><h2 class="rubriquehome">Ils ont vécu l'expérience</h2></div>
-			<div class="soulignement"></div>
+			<div id="slider">
+				<ul id="contentSlider">
+					<li>
+						<div>
+
+						</div>
+
+						<div>
+							<div>
+
+							</div>
+
+							<div>
+
+							</div>
+
+							<div>
+
+							</div>
+
+							<div>
+
+							</div>
+						</div>
+
+						<div>
+							<div id="upSlide">
+
+							</div>
+
+							<div id="downSlide">
+
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
-
-	</div>
 	<!-- Fin Experience -->
 
 	<!-- Nos Partenaires -->
@@ -162,4 +198,5 @@
 	<!-- Fin Nous rejoindre -->
 
 	<!-- Footer -->
+	<script type="text/javascript" src="webroot/JS/sliderTestimonials"></script>
 	<?php include_once 'app/view/layout/footer_front.inc.php'; ?>
