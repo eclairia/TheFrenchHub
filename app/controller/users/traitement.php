@@ -6,7 +6,7 @@
  * Time: 02:47
  */
 
-include("fonction_api.php");
+include("lib/paypal_api.php");
 $requete = construit_url_paypal();
 $requete = $requete."&METHOD=GetExpressCheckoutDetails".
     "&TOKEN=".htmlentities($_GET['token'], ENT_QUOTES); // Ajoute le jeton
@@ -34,3 +34,6 @@ else
     //mysql_query("INSERT INTO client(nom, prenom) VALUE('".$liste_param_paypal['FIRSTNAME']."', '".$liste_param_paypal['LASTNAME']."')");
 }
 curl_close($ch);
+?>
+<!--TODO:  Modèle pour l'insert ?-->
+<!--TODO:  Redirection sur son tableau de bord ?-->

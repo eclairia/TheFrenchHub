@@ -1,14 +1,13 @@
 <?php
-	$nb_admins = counttable("tfh_admin");
-	$admins = selecttable("tfh_admin", array(
-			"orderby => article_id",
-			"order => DESC"
-		));
+    protection("admin", "admin", "login", USER_ADMIN);
 
-	if($admins)
-	{
-		//Appel de la vue correspondante
-		define("APP_LANG", "fr");
-		define("PAGE_TITLE", 'Liste des administrateurs');		
-		include_once("app/view/admin/list.php");
-	}
+	$nb_admins = counttable("tfh_admin");
+	$admins = select_table(
+	    array("table1" => "tfh_admin"),
+        array("orderby => admin_id",
+			  "order => DESC"));
+
+    //Appel de la vue correspondante
+    define("APP_LANG", "fr");
+    define("PAGE_TITLE", 'Liste des administrateurs');
+    include_once("app/view/admin/list.php");
