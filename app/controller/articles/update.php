@@ -12,12 +12,11 @@
 
 	else
 	{
+		$_POST["article_id"] = intval($_POST["article_id"]);		
 		//Appel du modele pour modifier les données d'un article
 		include_once("app/model/articles/upload_pictures.php");
 		$article_picture_url = upload_pictures($_POST, $_FILES);
 		include_once("app/model/articles/update_article.php");
-		$_POST["article_id"] = intval($_POST["article_id"]);
-
 		$retour = update_article($_POST, $article_picture_url);
 
 		if(!$retour)
