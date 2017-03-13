@@ -9,7 +9,7 @@
 
 			<div class="form-group col-lg-12 col-sm-12">
 				<label for="article_content">Contenu: </label>
-				<textarea name="article_content" class="form-control" id="article_content value="<?= $article[0]['article_content']; ?> rows="10" cols="100" required ></textarea>
+				<textarea name="article_content" class="form-control" id="article_content" rows="10" cols="100" required ><?= $article[0]['article_content']; ?></textarea>
 			</div>
 
 			<div class="form-group col-lg-6 col-sm-6">
