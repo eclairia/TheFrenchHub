@@ -18,12 +18,7 @@
 
         );
 		//Appel de la vue correspondante
-<<<<<<< HEAD
-		define("APP_LANG", "fr");
-		define("PAGE_TITLE", 'Modifier les données d\'un article');
-=======
 		define("PAGE_TITLE", "Modifier les données d'un article");
->>>>>>> b802626ff4a6451c192d0180b06812262b5e18df
 		include_once("app/view/articles/update.php");
 	}
 	else
