@@ -1,8 +1,13 @@
 <?php
 
-	// protection("admin", "admin", "login", "USER_ADMIN");
+	protection("admin", "admin", "login", "USER_ADMIN");
 
-	if(!isset($_POST["article_title"]))
+	if(empty($_GET['id']))
+	{
+		location("articles", "list", "notif=noid");
+	}
+
+	else if(!isset($_POST["article_title"]))
 	{
 		//Appel de la vue correspondante
 		define("APP_LANG", "fr");
