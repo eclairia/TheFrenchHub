@@ -26,6 +26,10 @@
 					<p>
 						<a href='?module=admin&action=update&id=<?= $admin['admin_ID'] ?>'>Modifier les données de l'administrateur</a>
 					</p>
+
+					<p>
+						<a href="?module=admin&action=delete&id=<?= $admin['admin_ID']; ?>" onclick="return confirm('Etes vous sûr ?')">Suprimer l'administrateur</a>
+					</p>					
 				</div>
 
 			<?php } ?>

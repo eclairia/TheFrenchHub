@@ -7,5 +7,5 @@
 		<p><?= $article["article_content"]; ?></p>
 		<p><?= $article["article_date"]; ?></p>
 		<a href="?module=articles&action=update&id=<?= $article['article_id']; ?>">Modifier le contenu de l'article</a><br>
-		<a href="?module=articles&action=delete&id=<?= $article['article_id']; ?>">Supprimer l'article</a><br><br>
+		<a href="?module=articles&action=delete&id=<?= $article['article_id']; ?>" onclick="return confirm('Etes-vous sûr ?')">Supprimer l'article</a><br><br>
 	<?php } ?>
