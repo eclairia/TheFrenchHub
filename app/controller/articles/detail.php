@@ -2,7 +2,7 @@
 	if(isset($_GET["id"]) || ($_POST["article_id"]))
 	{
 		$_GET["id"] = intval($_GET["id"]);
-		$articles = select_table("table1" => "tfh_articles", 
+		$articles = select_table(array("table1" => "tfh_articles"), 
 							array(
 								"idcolumn" => "article_id",
 								"idvalue" => $_GET["id"],

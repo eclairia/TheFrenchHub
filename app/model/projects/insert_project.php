@@ -14,7 +14,7 @@
 			$query->bindValue(':project_name', $project["project_name"], PDO::PARAM_STR);
 			$query->bindValue(':project_nb_members', $project["project_nb_members"], PDO::PARAM_INT);
 			$query->bindValue(':project_begin_date', $project["project_begin_date"], PDO::PARAM_STR);			
-			$query->bindValue(':project_end_date', $project["project_end_date"], PDO::PARAM_STR);						
+			$query->bindValue(':project_end_date', $project["project_end_date"], PDO::PARAM_STR);			
 
 			$query->execute();
 

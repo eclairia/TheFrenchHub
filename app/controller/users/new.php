@@ -24,7 +24,7 @@
 
 		if(!$retour)
 		{
-			location("users", "new", "notif=ok");		
+			location("users", "list", "notif=ok");		
 		}
 
 		else
