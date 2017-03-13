@@ -4,8 +4,13 @@
 
 function upload_pictures($data, $file)
 {
+
+	// var_dump($data);
+	// var_dump($file);
+	// die();
+
 	$extension = array('jpeg', 'jpg', 'gif', 'png');
-	$extension_upload =strtolower( substr( strrchr($file['article_picture_url']["name"], '.') ,1) );
+	$extension_upload =strtolower( substr( strrchr($file['article_file']["name"], '.') ,1) );
 
 	if(in_array($extension_upload, $extension))
 	{
@@ -18,17 +23,17 @@ function upload_pictures($data, $file)
 	}
 
 	//Connaître les dimensions d'une image
-	$sizes = getimagesize($file['article_picture_url']['tmp_name']);
+	$sizes = getimagesize($file['article_file']['tmp_name']);
 	echo "Largeur: " . ($sizes[0]) . "pixels <br />";
 	echo "Longueur: " . ($sizes[1]) . "pixels <br />";
 
 	//Déplacer le fichier reçu
 
 	$url = md5(uniqid(rand(), true));
-	$exp = explode(".", $file['article_picture_url']['name']);
+	$exp = explode(".", $file['article_file']['name']);
 	echo "Nouveau nom:  {$url} <br />";
 
-	if(move_uploaded_file($file['article_picture_url']['tmp_name'], "webroot/IMG/".$url.".".$exp[count($exp)-1]))
+	if(move_uploaded_file($file['article_file']['tmp_name'], "webroot/IMG/".$url.".".$exp[count($exp)-1]))
 	{
 		echo "Le fichier a bien été enregistré <br />";
 	}

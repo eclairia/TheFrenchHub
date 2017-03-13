@@ -67,7 +67,7 @@ include_once("app/view/layout/header_back.inc.php"); ?>
                     </td>
 
                     <td >
-                        <a href="?module=articles&action=modif&id=<?= $article['article_ID']; ?>"><div class=" btn-group-sm text-center">
+                        <a href="?module=articles&action=update&id=<?= $article['article_ID']; ?>"><div class=" btn-group-sm text-center">
                             <button type="button" id="confirm" class="btn btn-primary btn-lg">
                                 <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                             </button>

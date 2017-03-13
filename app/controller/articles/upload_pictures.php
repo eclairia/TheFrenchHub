@@ -1,15 +1,4 @@
 <?php
-
-//Récupérer les infos du fichier reçu
-// echo "Votre nom est: " . $_POST['ch_nom'] . "<br />";
-// echo "Votre prénom est: " . $_POST['ch_prenom'] . "<br />";
-
-// echo "Les infos de votre fichiers: " . "<br />";
-// echo "-- Le nom: " . $_FILES['ch_file']['name'] . "<br />";
-// echo "-- Le type: " . $_FILES['ch_file']['type'] . "<br />";
-// echo "-- Le nom temp: " . $_FILES['ch_file']['tmp_name'] . "<br />";
-// echo "-- Le code: " . $_FILES['ch_file']['error'] . "<br />";
-
 //Contrôler l'extension
 
 function upload_pictures($data, $file)

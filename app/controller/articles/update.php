@@ -12,7 +12,7 @@
 		//Appel de la vue correspondante
 		define("APP_LANG", "fr");
 		define("PAGE_TITLE", 'Modifier les données d\'un article');
-		include_once("app/view/articles/modif.php");
+		include_once("app/view/articles/update.php");
 	}
 
 	else

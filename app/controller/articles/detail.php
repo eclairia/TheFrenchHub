@@ -6,7 +6,7 @@
 							array(
 								"idcolumn" => "article_id",
 								"idvalue" => $_GET["id"],
-								"orderby" => "article_id",
+								"orderby" => "article_ID",
 								"order" => "DESC"						
 							));
 
