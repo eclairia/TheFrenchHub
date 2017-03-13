@@ -1,5 +1,4 @@
 <?php
-
 	protection("admin", "admin", "login", "USER_ADMIN");
 
 	if(empty($_GET['id']))
@@ -7,14 +6,21 @@
 		location("articles", "list", "notif=noid");
 	}
 
-	else if(!isset($_POST["article_title"]))
+	if(!isset($_POST["article_title"]))
 	{
-		//Appel de la vue correspondante
-		define("APP_LANG", "fr");
-		define("PAGE_TITLE", 'Modifier les données d\'un article');
-		include_once("app/view/articles/modif.php");
-	}
+	    $article = select_table(
+	                        array("table1" => "tfh_articles",
+                                  "table2" => "tfh_admin"),
+                            array("where_column" => "article_ID",
+                                  "where_value" => $_GET['id']),
+                            array("and_column1" => "article_ID",
+                                  "and_value1" => "article_author")
 
+        );
+		//Appel de la vue correspondante
+		define("PAGE_TITLE", "Modifier les données d'un article");
+		include_once("app/view/articles/update.php");
+	}
 	else
 	{
 		$_POST["article_id"] = intval($_POST["article_id"]);		
