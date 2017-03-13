@@ -1,15 +1,10 @@
 <?php
-	
-	//protection("admin", "admin", "new", "USER_LAMBDA");
-	
 	if(empty($_POST))
 	{
 		//Appel de la vue correspondante
-		define("APP_LANG", "fr");
 		define("PAGE_TITLE", 'Insérer un utilisateur');
 		include_once('app/view/users/new.php');
 	}
-
 	else
 	{
 		$_POST["user_level"] = intval($_POST["user_level"]);
@@ -22,11 +17,10 @@
 		
 		$retour = insert_user($_POST, $user_picture_url);
 
-		if(!$retour)
+		if($retour)
 		{
 			location("users", "list", "notif=ok");		
 		}
-
 		else
 		{
 			location("projects", "new", "notif=nok");

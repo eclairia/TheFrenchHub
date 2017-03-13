@@ -1,4 +1,6 @@
-  <form method="POST" action="?module=articles&action=new" enctype="multipart/form-data" id="form_post">
+<?php include_once("app/view/layout/header_back.inc.php"); ?>
+
+    <form method="POST" action="?module=articles&action=new" enctype="multipart/form-data" id="form_post">
     <table>
         <h2>Créer un article</h2><br>
 
@@ -30,4 +32,4 @@
     </table>
   </form>
 
-<?php include("app/view/layout/footer.inc.php") ?>
+<?php include_once("app/view/layout/footer_back.inc.php"); ?>

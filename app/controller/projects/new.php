@@ -1,7 +1,6 @@
 <?php	
 	if(!isset($_POST["project_name"]))
 	{
-		define("APP_LANG", "fr");
 		define("PAGE_TITLE", "Création d'un projet");
 		include_once("app/view/projects/new.php");
 	}

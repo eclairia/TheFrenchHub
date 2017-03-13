@@ -1,15 +1,12 @@
 <?php
-	
 	protection("admin", "admin", "login", USER_ADMIN);
 
 
 	if(!isset($_POST['article_title']))
 	{
-		define("APP_LANG", "fr");
 		define("PAGE_TITLE", "Insertion d'un article");
 		include_once("app/view/articles/new.php");
 	}
-
 	else
 	{
 		//Appel du modele pour insérer un article
@@ -23,7 +20,6 @@
 		{
 			location("articles", "new", "notif=nok");
 		}
-
 		else
 		{
 			location("articles", "detail", "id=" . $retour . "&notif=ok");

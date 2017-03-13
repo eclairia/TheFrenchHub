@@ -1,36 +1,25 @@
 <?php
 
-	//protection("user", "users", "login", USER_LAMBDA);
-
-	if(empty($_POST))
+	function update_admin($admin_name, $admin_mail, $admin_login, $admin_password, $admin_id)
 	{
-		//Appel de la vue correspondante
-		define("APP_LANG", "fr");
-		define("PAGE_TITLE", 'Modifier les données d\'un administrateur');
-		include_once('app/view/admin/update.php');
-	}
+		global $pdo;
 
-	else
-	{
-		//Appel du modele pour modifier les données d'un utilisateur
-		include_once("app/model/admin/update_admin.php");
-		$_POST["admin_password"] = md5($_POST["admin_password"] . SALT);
-		$_POST["admin_id"] = intval($_POST["admin_id"]);
-		// var_dump($_POST);
-		// die();
-		$retour = update_admin($_POST["admin_name"], $_POST["admin_mail"], $_POST["admin_login"], $_POST["admin_password"], $_POST["admin_id"]);
-
-		if(!$retour)
+		try
 		{
-			$_SESSION["admin"]["admin_name"] = $_POST["admin_name"];
-			$_SESSION["admin"]["admin_mail"] = $_POST["admin_mail"];
-			$_SESSION["admin"]["admin_login"] = $_POST["admin_login"];
-			$_SESSION["admin"]["admin_password"] = $_POST["admin_password"];
-			location("admin", "list", "notif=ok");					
+			$req = "UPDATE tfh_admin SET admin_name = :admin_name, admin_password = :admin_password, admin_mail = :admin_mail WHERE admin_ID = :admin_id";
+
+			$query = $pdo->prepare($req);
+
+			$query->bindParam(':admin_name', $admin_name, PDO::PARAM_STR);
+			$query->bindParam(':admin_login', $admin_login, PDO::PARAM_STR);
+			$query->bindParam(':admin_mail', $admin_mail, PDO::PARAM_STR);
+			$query->bindParam(':admin_password', $admin_password, PDO::PARAM_STR);	
+			$query->bindParam(':admin_id', $admin_id , PDO::PARAM_INT);		
+			$query->execute();
 		}
 
-		else
+		catch(Exception $e)
 		{
-			location("admin", "list", "notif=nok");			
+			return false;
 		}
 	}

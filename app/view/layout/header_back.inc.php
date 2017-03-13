@@ -24,10 +24,34 @@
 			<nav class="col-lg-2 col-sm-2">
 				<ul class="nav nav-pills nav-stacked">
 					<li role="presentation" <?php if($_GET['module'] == 'projects'){echo 'class="active"';} ?> ><a href="?module=projects&action=list">Liste des projets</a></li>
-					<li role="presentation" <?php if($_GET['module'] == 'admin'){echo 'class="active"';} ?> ><a href="?module=admin&action=list">Liste des administrateurs</a></li>
+					<li role="presentation" <?php if($_GET['module'] == 'admin'){echo 'class="active"';} ?> >
+						<a href="?module=admin&action=list">Liste des administrateurs</a>
+						<?php
+						if($_GET['module'] == 'admin')
+						{
+						?>
+							<ul class="nav nav-tabs-justified nav-stacked">
+								<li role="presentation"><a href="?module=admin&action=new" class="text-danger">AJouter un administrateur</a></li>
+							</ul>
+						<?php
+						}
+						?>
+					</li>
 					<li role="presentation" <?php if($_GET['module'] == 'users'){echo 'class="active"';} ?> ><a href="?module=users&action=list">Liste des utilisateurs</a></li>
 					<li role="presentation" <?php if($_GET['module'] == 'services'){echo 'class="active"';} ?> ><a href="?module=services&action=list">Liste des offres</a></li>
-					<li role="presentation" <?php if($_GET['module'] == 'articles'){echo 'class="active"';} ?> ><a href="?module=articles&action=list">Liste des articles</a></li>
+					<li role="presentation" <?php if($_GET['module'] == 'articles'){echo 'class="active"';} ?> >
+                        <a href="?module=articles&action=list">Liste des articles</a>
+                        <?php
+                        if($_GET['module'] == 'articles')
+                        {
+                            ?>
+                            <ul class="nav nav-tabs-justified nav-stacked">
+                                <li role="presentation"><a href="?module=articles&action=new" class="text-danger">Ajouter un article</a></li>
+                            </ul>
+                            <?php
+                        }
+                        ?>
+                    </li>
 				</ul>
 			</nav>
 
