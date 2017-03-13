@@ -37,7 +37,7 @@ include_once("app/view/layout/header_back.inc.php"); ?>
             </select>
         </div>
 
-        <input type="submit" class="btn btn-lg btn-success" value="Ajouter un administrateur">
+        <input type="submit" class="btn btn-lg btn-success" value="Modifier un administrateur">
     </form>
 </div>
 </div>
