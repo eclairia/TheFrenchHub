@@ -8,7 +8,7 @@
 include_once("app/view/layout/header_back.inc.php"); ?>
 
 <div class="col-lg-10 col-sm-10">
-    <form method="POST" action="?module=admin&action=new">
+    <form method="POST" action="?module=admin&action=update">
         <div class="form-group col-lg-6 col-sm-6">
             <label for="admin_name">Admin Name</label>
             <input type="text" name="admin_name" class="form-control" id="admin_name" value="<?= $admin[0]['admin_name'] ?>">
