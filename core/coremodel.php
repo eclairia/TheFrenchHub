@@ -94,6 +94,8 @@ function select_table($table, $options=array(), $and=array())
         $query = $pdo->query($sql);
         $data = $query->fetchAll();
         $query->closeCursor();
+        // var_dump($query);
+        // die();        
         return $data;
     }
     catch (Exception $e)

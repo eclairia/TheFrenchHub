@@ -13,8 +13,10 @@
 			$query->bindParam(':article_title', $article["article_title"], PDO::PARAM_STR);
 			$query->bindParam(':article_content', $article["article_content"], PDO::PARAM_STR);
 			$query->bindParam(':article_picture_url', $url, PDO::PARAM_STR);
-			$query->bindParam(':article_id', $article["article_id"], PDO::PARAM_INT);			
+			$query->bindParam(':article_id', $article["article_ID"], PDO::PARAM_INT);			
 			$query->execute();
+
+			return true;
 		}
 
 		catch(Exception $e)

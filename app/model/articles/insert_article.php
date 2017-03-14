@@ -1,14 +1,8 @@
 <?php
 
-	function insert_article($article, $file, $admin_id, $article_picture_url)
+	function insert_article($article, $file, $article_picture_url,  $admin_id)
 	{
 		global $pdo;
-
-		// var_dump($article);
-		// var_dump($file);
-		// var_dump($article_picture_url);
-		// var_dump($admin_id);
-		// die();
 
 		try
 		{

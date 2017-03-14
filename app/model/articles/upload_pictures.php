@@ -68,5 +68,6 @@ function upload_pictures($data, $file)
 	$url = $url . "." . $extension_upload;
 
 	//On retourne l'url pour la récupérer dans la vue
+
 	return $url;
 }

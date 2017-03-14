@@ -56,7 +56,7 @@ include_once("app/view/layout/header_back.inc.php"); ?>
 
                     <td>
                         <p class="text-center">
-                            <?= substr($article['article_content'], 0, 50) . '...'; ?>
+                            <?= substr(strip_tags($article['article_content']), 0, 50) . '...'; ?>
                         </p>
                     </td>
 

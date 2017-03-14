@@ -9,6 +9,13 @@
 
 	else
 	{
+
+		if(isset($_POST['user_cookie'])) 
+		{
+			setcookie("user_login", $_POST['user_login'], time()+365*24*3600);
+			setcookie("user_password", $_POST['user_password'], time()+365*24*3600);
+		}
+
 		$_POST["user_password"] = md5($_POST["user_password"] . SALT);
 
 		//Appel du modèle pour chercher un user
