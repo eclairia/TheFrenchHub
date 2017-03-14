@@ -6,8 +6,7 @@
 	<link rel='stylesheet' type="text/css" href='webroot/CSS/bootstrap.min.css' />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<script src="webroot/JS/jquery-3.1.1.min.js"></script>
-    <script src="//cloud.tinymce.com/stable/tinymce.min.js"></script>
-    <script>tinymce.init({ selector:'textarea' });</script>
+	<script src="//cdn.ckeditor.com/4.5.9/standard/ckeditor.js"></script>
 </head>
 <body>
 	<div class="container-fluid">

@@ -30,4 +30,8 @@
     </div>
 </div>
 
+<script>
+    CKEDITOR.replace('article_content');
+</script>
+
 <?php include_once("app/view/layout/footer_back.inc.php"); ?>

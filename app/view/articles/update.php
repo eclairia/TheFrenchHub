@@ -1,7 +1,7 @@
 <?php include("app/view/layout/header_back.inc.php"); ?>
 
 	<div class="col-lg-10 col-sm-10">
-		<form method="POST" action="?module=articles&action=new" enctype="multipart/form-data" id="form_post">
+		<form method="POST" action="?module=articles&action=update" enctype="multipart/form-data" id="form_post">
 			<div class="form-group col-lg-6 col-sm-6">
 				<label for="article_title">Titre: </label>
 				<input name="article_title" type="text" class="form-control" id="article_title" value="<?= $article[0]['article_title']; ?> " maxLenght="200" required />
@@ -30,5 +30,9 @@
 		</form>
 	</div>
 </div>
+
+<script>
+	CKEDITOR.replace('article_content');
+</script>
 
 <?php include("app/view/layout/footer_back.inc.php"); ?>
