@@ -8,12 +8,13 @@
 
 	if(!isset($_POST["article_title"]))
 	{
+	    //$_GET['id'] = intval($_GET['id'], 10);
 	    $article = select_table(
 	                        array("table1" => "tfh_articles",
                                   "table2" => "tfh_admin"),
                             array("where_column" => "article_ID",
                                   "where_value" => $_GET['id']),
-                            array("and_column1" => "article_ID",
+                            array("and_column1" => "admin_ID",
                                   "and_value1" => "article_author")
 
         );
