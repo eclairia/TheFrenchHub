@@ -12,10 +12,9 @@
 
 					<div id="twopara">
 
-					<p class="txtconcept botspace">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-					<p class="txtconcept"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p class="txtconcept botspace">The French Hub redéfinit les enjeux de l’incubation.
+						Elle s’appuie sur des notions de partage, de transmissions et d’interconnectivité.
+						Ainsi, elle permet à de nombreux entrepreneurs de construire des projets novateurs.</p>
 
 					</div>
 
@@ -36,13 +35,15 @@
 
 			<div id="bgconcept1"><div class="fd"></div></div>
 
-			<div id="conceptexplain1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/><br/> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-				 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			<div id="conceptexplain1">Chez the French Hub, il est question de réunir des individus de différentes horizons, de les faire travailler ensemble, et donc de faire émerger des solutions innovantes.
+Échanger dans un monde ou les barrières n’existent plus, voila l’avantage sur lequel s’appuie The French Hub. De la sorte, il alimente la notion d’interconnectivité et de transmission entre de jeunes entrepreneurs à travers le monde.
+</div>
 
 			<div id="bgconcept2"></div>
 
-			<div id="conceptexplain2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/><br/> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-				 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			<div id="conceptexplain2">Grâce à nos partenariats avec des fonds et des entreprises qualifiés, nous mettons les entrepreneurs dans les meilleures dispositions pour réussir leurs projets.
+L’environnement de travail est primordiale, il est impératif de baigner dans un environnement dynamique et rassurant pour réussir dans les meilleures conditions.
+</div>
 
 			<div id="bgconcept3"><div class="fd"></div></div>
 

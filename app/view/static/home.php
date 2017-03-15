@@ -57,24 +57,24 @@
 			<div id="slider">
 				<ul id="contentSlider">
 					<li>
-						<div>
+						<div class="photoslider">
 
 						</div>
 
-						<div>
-							<div>
+						<div class="commentaireslider">
+							<div class="nomcommslider">
 
 							</div>
 
-							<div>
+							<div class="postecommslider">
 
 							</div>
 
-							<div>
+							<div class="hr">
 
 							</div>
 
-							<div>
+							<div class="textecommslider">
 
 							</div>
 						</div>
