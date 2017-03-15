@@ -23,7 +23,7 @@
 			<div id="linksocial">
 
 				<div>
-					<a href="#">
+					<a href="https://www.facebook.com/The-French-Hub-1540664725957543/" target="_blank">
 					<img class="logosocial spaceright" src="webroot/IMG/fb.png" alt=""/>
 					</a>
 				</div>
