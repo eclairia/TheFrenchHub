@@ -12,12 +12,9 @@
 	    var_dump($_POST);
 		$_POST["admin_level"] = intval($_POST["admin_level"]);
 		$_POST["admin_password"] = md5($_POST["admin_password"] . SALT);
-
-		include_once("app/model/articles/upload_pictures.php");
-		$article_picture_url = upload_pictures($_POST, $_FILES);
 		//Appel du modele pour insérer un administrateur
 		include_once("app/model/admin/insert_admin.php");
-		$retour = insert_admin($_POST, $article_picture_url);
+		$retour = insert_admin($_POST);
 
 		if(!$retour)
 		{
@@ -25,6 +22,6 @@
 		}
 		else
 		{
-			location("admin", "index", "notif=ok");
+			location("admin", "list", "notif=ok");
 		}
 	}

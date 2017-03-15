@@ -104,7 +104,7 @@
     </div>
 </div>
 
-<script type="text/javascript" src="webroot/JS/admin_delete.js"></script>
+<script type="text/javascript" src="webroot/JS/delete_admin.js"></script>
 
 <?php include_once("app/view/layout/footer_back.inc.php"); ?>
 

@@ -9,11 +9,17 @@
     <form id="formlogin" method="post" action="?module=users&action=login">
 
       <div>
-        <input class="formwidth borderform2 " name="user_login" type="text" placeholder="Identifiant" value="<?= $_COOKIE['user_login']; ?>" required>
+        <input class="formwidth borderform2 " name="user_login" type="text" placeholder="Identifiant" value="<?php if(isset($_COOKIE['user_login']))
+        {
+          echo $_COOKIE['user_login'];
+        } ?>" required>
       </div>
 
       <div>
-        <input class="formwidth borderform2" name="user_password" type="password" placeholder="Mot de passe" value="<?= $_COOKIE['user_password']; ?>" required>
+        <input class="formwidth borderform2" name="user_password" type="password" placeholder="Mot de passe" value="<?php if(isset($_COOKIE['user_password']))
+        {
+          echo $_COOKIE['user_password'];
+        } ?>" required>
       </div>
 
       <div>
