@@ -29,7 +29,7 @@
 				</div>
 
 				<div>
-					<a href="#">
+					<a href="https://twitter.com/?request_context=signup" target="_blank">
 					<img class="logosocial spaceright" src="webroot/IMG/twitter.png" alt="" />
 					</a>
 				</div>
