@@ -23,6 +23,8 @@
 			$query->bindParam(':admin_password', $admin_password, PDO::PARAM_STR);	
 			$query->bindParam(':admin_id', $admin_id , PDO::PARAM_INT);		
 			$query->execute();
+
+			return true;
 		}
 
 		catch(Exception $e)

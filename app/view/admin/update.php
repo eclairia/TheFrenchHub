@@ -30,6 +30,10 @@ include_once("app/view/layout/header_back.inc.php"); ?>
         </div>
 
         <div class="form-group col-lg-6 col-sm-6">
+            <input type="text" name="admin_id" class="form-control" id="admin_id" value="<?= $admin[0]['admin_ID'] ?>">
+        </div>        
+
+        <div class="form-group col-lg-6 col-sm-6">
             <label for="admin_level"> Niveau d'administrateur</label>
             <select name="admin_level" class="form-control" id="admin_level">
                 <option value="1" <?php if( $admin[0]['admin_level'] == 1){echo 'selected';} ?> >Admin</option>
