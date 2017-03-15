@@ -9,7 +9,6 @@
 	}
 	else
 	{
-	    var_dump($_POST);
 		$_POST["admin_level"] = intval($_POST["admin_level"]);
 		$_POST["admin_password"] = md5($_POST["admin_password"] . SALT);
 		//Appel du modele pour insérer un administrateur
@@ -22,6 +21,19 @@
 		}
 		else
 		{
-			location("admin", "list", "notif=ok");
+		include_once('lib/mail.php');
+		            $message_html = '<html>
+		                                <body>
+		                                    <div>
+		                                        <p>Votre création de compte administrateur a bien fonctionné. Veuillez contacter la personne adéquate pour qu\'il puisse vous donner vos identifiants de connexion.</p>
+		                                    </div>
+		                                </body>
+		                             </html>';
+
+		            if(sendmail(MAIL_EXPEDITEUR, NOM_EXPEDITEUR, MAIL_EXPEDITEUR, $_POST["admin_mail"], '',
+		                'Confirmation de la création du compte administrateur', '', $message_html, ''))
+		            {			
+						location("admin", "list", "notif=ok");
+					}
 		}
 	}
