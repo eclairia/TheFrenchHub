@@ -5,8 +5,12 @@
 	if(empty($_POST))
 	{
 		//Appel de la vue correspondante
-		define("APP_LANG", "fr");
-		define("PAGE_TITLE", 'Modifier les données d\'un administrateur');
+        $admin = select_table(
+            array("table1" => "tfh_admin"),
+            array("where_column" => "admin_ID",
+                "where_value" => $_GET['id'])
+        );
+		define("PAGE_TITLE", "Modifier les données d'un administrateur");
 		include_once('app/view/admin/update.php');
 	}
 

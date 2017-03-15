@@ -1,33 +1,37 @@
-  <form method="POST" action="?module=articles&action=new" enctype="multipart/form-data" id="form_post">
-    <table>
-        <h2>Créer un article</h2><br>
+<?php include_once("app/view/layout/header_back.inc.php"); ?>
+    <div class="col-lg-10 col-sm-10">
+        <form method="POST" action="?module=articles&action=new" enctype="multipart/form-data" id="form_post">
+            <div class="form-group col-lg-6 col-sm-6">
+                <label for="article_title">Titre: </label>
+                <input name="article_title" type="text" class="form-control" id="article_title" maxLenght="200" required />
+            </div>
 
-        <tr>
-          <td><label for="article_title">Titre: </label></td>
-          <td><input name="article_title" type="text" maxLenght="200" required /></td>
-        </tr>
+            <div class="form-group col-lg-12 col-sm-12">
+                <label for="article_content">Contenu: </label>
+                <textarea name="article_content" class="form-control" id="article_content" rows="10" cols="100" required ></textarea>
+            </div>
 
-        <tr>
-          <td><label for="article_content">Contenu: </label></td>
-          <td><textarea name="article_content" rows="10" cols="100" required ></textarea></td>
-        </tr>
+            <div class="form-group col-lg-6 col-sm-6">
+                <label for="article_author">Auteur: </label>
+                <input name="article_author" class="form-control" id="article_author" type="text" value="<?= $_SESSION["admin"]["admin_login"]; ?>" maxLenght="200" required  readonly/>
+            </div>
 
-        <tr>
-          <td><label for="article_author">Auteur: </label></td>
-          <td><input name="article_author" type="text" value="<?= $_SESSION["admin"]["admin_login"]; ?>" maxLenght="200" required /></td>
-        </tr>
+            <div class="form-group col-lg-6 col-sm-6">
+                <label for="article_file">Photo: </label>
+                <input name="article_file" class="form-control" id="article_file" type="file" />
+                <input type="hidden" name="MAX_FILE_SIZE" value="12345">
+            </div>
 
-        <tr>
-          <td><label for="article_file">Photo: </label></td>
-          <td><input name="article_file" type="file" /></td>
-          <td><input type="hidden" name="MAX_FILE_SIZE" value="12345"></td>
-        </tr>            
+            <div class="form-group col-lg-6 col-sm-6 text-center col-lg-offset-3 col-md-offset-3">
+                <input value="Enregistrer" class="btn btn-lg btn-success" type="submit" />
+                <input type="reset" class="btn btn-lg btn-warning" value="effacer" />
+            </div>
+      </form>
+    </div>
+</div>
 
-        <tr>
-          <td></td>
-          <td><input value="Enregistrer" type="submit" /><input type="reset" value="effacer" /></td>
-        </tr>
-    </table>
-  </form>
+<script>
+    CKEDITOR.replace('article_content');
+</script>
 
-<?php include("app/view/layout/footer.inc.php") ?>
+<?php include_once("app/view/layout/footer_back.inc.php"); ?>

@@ -12,6 +12,7 @@
 	define("USER_ADMIN", 1);
 	define("USER_LAMBDA", 0);
 
+	define("IMG_URL", "webroot/IMG/");
 	define("SALT", "gt5zfgty7qg!yegh8");
 
     define("MAIL_EXPEDITEUR", "thefrenchhub@gmail.com");

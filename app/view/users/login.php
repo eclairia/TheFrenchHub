@@ -6,19 +6,28 @@
 
     <div id="titrelogin"><h1 id="titlelogin">Connexion</h1></div>
 
-    <form id="formlogin" method="post">
+    <form id="formlogin" method="post" action="?module=users&action=login">
 
       <div>
-        <input class="formwidth borderform2 " name="user_login" type="text" placeholder="Identifiant" required></input>
-
+        <input class="formwidth borderform2 " name="user_login" type="text" placeholder="Identifiant" value="<?php if(isset($_COOKIE['user_login']))
+        {
+          echo $_COOKIE['user_login'];
+        } ?>" required>
       </div>
 
       <div>
-        <input class="formwidth borderform2" name="user_password" type="password" placeholder="Mot de passe" required></input>
+        <input class="formwidth borderform2" name="user_password" type="password" placeholder="Mot de passe" value="<?php if(isset($_COOKIE['user_password']))
+        {
+          echo $_COOKIE['user_password'];
+        } ?>" required>
       </div>
 
       <div>
-        <input class="formwidth boutonform"  type="submit" placeholder="Se connecter" ></input>
+        <input type="checkbox" name="user_cookie" id="user_cookie"><label for="user_cookie">Se souvenir de moi</label>
+      </div>      
+
+      <div>
+        <input class="formwidth boutonform"  type="submit" placeholder="Se connecter" >
       </div>
 
     </form>
@@ -29,7 +38,7 @@
 
     <div><p id="grdtxtlogin">Pas de compte ?<br/>Inscrivez vous maintenant !</p></div>
     <div><p id="txtlogin">Créez votre compte The French Hub <br/> et lancez vous dans l'aventure.</p></div>
-    <div><a id="inscrire" href="signup.php">S'inscrire</a></div>
+    <div><a id="inscrire" href="?module=users&action=signup">S'inscrire</a></div>
 
   </div>
 

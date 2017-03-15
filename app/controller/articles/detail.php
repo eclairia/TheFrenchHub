@@ -2,11 +2,11 @@
 	if(isset($_GET["id"]) || ($_POST["article_id"]))
 	{
 		$_GET["id"] = intval($_GET["id"]);
-		$articles = selecttable("tfh_articles", 
+		$articles = select_table(array("table1" => "tfh_articles"), 
 							array(
 								"idcolumn" => "article_id",
 								"idvalue" => $_GET["id"],
-								"orderby" => "article_id",
+								"orderby" => "article_ID",
 								"order" => "DESC"						
 							));
 

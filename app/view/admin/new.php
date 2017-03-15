@@ -1,22 +1,37 @@
-<form method="POST" action="?module=admin&action=new">
+<?php include_once("app/view/layout/header_back.inc.php"); ?>
+    <div class="col-lg-10 col-sm-10">
+        <form method="POST" action="?module=admin&action=new">
+            <div class="form-group col-lg-6 col-sm-6">
+                <label for="admin_name">Admin Name</label>
+                <input type="text" name="admin_name" class="form-control" id="admin_name">
+            </div>
 
+            <div class="form-group col-lg-6 col-sm-6">
+                <label for="admin_mail">Admin mail</label>
+                <input type="email" name="admin_mail" class="form-control" id="admin_mail">
+            </div>
 
-	<select id="status_admin" name="status_admin">
-		<option value="1" id="super_admin">Super admin</option>
-		<option value="2" id="admin">Admin</option>
-	</select><br><br>
+            <div class="form-group col-lg-6 col-sm-6">
+                <label for="admin_login">Admin login</label>
+                <input type="text" name="admin_login" class="form-control" id="admin_login">
+            </div>
 
-	<label>Admin Name</label><br><br><input type="text" name="admin_name"><br><br>
+            <div class="form-group col-lg-6 col-sm-6">
+                <label for="admin_password">Admin password</label>
+                <input type="password" name="admin_password" class="form-control" id="admin_password">
+            </div>
 
-	<label>Admin mail</label><br><br><input type="email" name="admin_mail"><br><br>
+            <div class="form-group col-lg-6 col-sm-6">
+                <label for="admin_level"> Niveau d'administrateur</label>
+                <select name="admin_level" class="form-control" id="admin_level">
+                    <option value="1">Admin</option>
+                    <option value="2">Super Admin</option>
+                </select>
+            </div>
 
-	<label>Admin login</label><br><br><input type="text" name="admin_login"><br><br>
+            <input type="submit" class="btn btn-lg btn-success" value="Ajouter un administrateur">
+        </form>
+    </div>
+</div>
 
-	<label>Admin password</label><br><br><input type="password" name="admin_password"><br><br>
-
-	<label>File</label><input type="file" name="admin_file">
-
-	<input type="hidden" name="admin_level" value="1">
-
-	<input type="submit">
-</form>
+<?php include_once("app/view/layout/footer_back.inc.php"); ?>

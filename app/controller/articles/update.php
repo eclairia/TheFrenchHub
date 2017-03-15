@@ -1,27 +1,42 @@
 <?php
+	protection("admin", "admin", "login", "USER_ADMIN");
 
-	// protection("admin", "admin", "login", "USER_ADMIN");
+	if(empty($_GET['id']) && !isset($_POST['article_ID']))
+	{
+		location("articles", "list", "notif=noid");
+	}
 
 	if(!isset($_POST["article_title"]))
 	{
+		$article = select_table(
+                            array("table1" => "tfh_articles",
+                                  "table2" => "tfh_admin"),
+                            array("where_column" => "article_ID",
+                                  "where_value" => $_GET['id']),
+                            array("and_column1" => "admin_ID",
+                                  "and_value1" => "article_author")
+        );
+
 		//Appel de la vue correspondante
-		define("APP_LANG", "fr");
-		define("PAGE_TITLE", 'Modifier les données d\'un article');
+		define("PAGE_TITLE", "Modifier les données d'un article");
 		include_once("app/view/articles/update.php");
 	}
-
 	else
 	{
+		$_POST["article_ID"] = intval($_POST["article_ID"]);		
 		//Appel du modele pour modifier les données d'un article
 		include_once("app/model/articles/upload_pictures.php");
 		$article_picture_url = upload_pictures($_POST, $_FILES);
 		include_once("app/model/articles/update_article.php");
-		$_POST["article_id"] = intval($_POST["article_id"]);
-
 		$retour = update_article($_POST, $article_picture_url);
 
-		if(!$retour)
+		if($retour)
 		{
-			location("articles", "list");
+			location("articles", "list", "notif=ok");		
+		}
+
+		else
+		{
+			location("articles", "list", "notif=nok");
 		}
 	}

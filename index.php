@@ -5,6 +5,7 @@
 	$ip = !empty( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR'];
 	//On fabrique une chaine avec l'IP et le type de navigateur
 	$securite = $ip . '_' . $_SERVER['HTTP_USER_AGENT'];
+
 	//S'il n'y a pas de session en cours 
 	session_start();
 	if(empty($_SESSION))
