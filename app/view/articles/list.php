@@ -110,4 +110,6 @@ include_once("app/view/layout/header_back.inc.php"); ?>
     </div>
 </div>
 
+<script type="text/javascript" src="webroot/JS/delete_article.js"></script>
+
 <?php include_once("app/view/layout/footer_back.inc.php"); ?>

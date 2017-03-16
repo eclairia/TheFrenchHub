@@ -4,6 +4,12 @@
 	{
 		global $pdo;
 
+		// var_dump($article);
+		// var_dump($file);
+		// var_dump($article_picture_url);
+		// var_dump($admin_id);
+		// die();
+
 		try
 		{
 			$req = "INSERT INTO tfh_articles(article_title, article_content, article_picture_url, article_author)
