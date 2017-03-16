@@ -25,21 +25,46 @@
 			<nav class="col-lg-2 col-sm-2">
 				<ul class="nav nav-pills nav-stacked">
 					<li role="presentation" <?php if($_GET['module'] == 'projects'){echo 'class="active"';} ?> ><a href="?module=projects&action=list">Liste des projets</a></li>
-					<li role="presentation" <?php if($_GET['module'] == 'admin'){echo 'class="active"';} ?> >
+                    <li role="presentation" <?php if($_GET['module'] == 'services'){echo 'class="active"';} ?> >
+                        <a href="?module=services&action=list">Liste des offres</a>
+                        <?php
+                        if($_GET['module'] == 'services')
+                        {
+                            ?>
+                            <ul class="nav nav-tabs-justified nav-stacked">
+                                <li role="presentation"><a href="?module=services&action=new" class="text-danger">Ajouter une offres</a></li>
+                            </ul>
+                            <?php
+                        }
+                        ?>
+                    </li>
+                    <li role="presentation" <?php if($_GET['module'] == 'time_slots'){echo 'class="active"';} ?> >
+                        <a href="?module=time_slots&action=list">Liste des disponibilités</a>
+                        <?php
+                        if($_GET['module'] == 'time_slots')
+                        {
+                            ?>
+                            <ul class="nav nav-tabs-justified nav-stacked">
+                                <li role="presentation"><a href="?module=admin&action=new" class="text-danger">Ajouter une plage horaire</a></li>
+                            </ul>
+                            <?php
+                        }
+                        ?>
+                    </li>
+                    <li role="presentation" <?php if($_GET['module'] == 'admin'){echo 'class="active"';} ?> >
 						<a href="?module=admin&action=list">Liste des administrateurs</a>
 						<?php
 						if($_GET['module'] == 'admin')
 						{
 						?>
 							<ul class="nav nav-tabs-justified nav-stacked">
-								<li role="presentation"><a href="?module=admin&action=new" class="text-danger">AJouter un administrateur</a></li>
+								<li role="presentation"><a href="?module=admin&action=new" class="text-danger">Ajouter un administrateur</a></li>
 							</ul>
 						<?php
 						}
 						?>
 					</li>
 					<li role="presentation" <?php if($_GET['module'] == 'users'){echo 'class="active"';} ?> ><a href="?module=users&action=list">Liste des utilisateurs</a></li>
-					<li role="presentation" <?php if($_GET['module'] == 'services'){echo 'class="active"';} ?> ><a href="?module=services&action=list">Liste des offres</a></li>
 					<li role="presentation" <?php if($_GET['module'] == 'articles'){echo 'class="active"';} ?> >
                         <a href="?module=articles&action=list">Liste des articles</a>
                         <?php
