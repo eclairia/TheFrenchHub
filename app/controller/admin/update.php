@@ -36,18 +36,18 @@
 			$_SESSION["admin"]["admin_login"] = $_POST["admin_login"];
 			$_SESSION["admin"]["admin_password"] = $_POST["admin_password"];
 			include_once('lib/mail.php');
-					            $message_html = '<html>
-					                                <body>
-					                                    <div>
-					                                        <p>Vos identifiants de votre compte administrateur ont bien été modifié. Veuillez contacter la personne adéquate pour qu\'il puisse vous donner vos nouveaux identifiants de connexion.</p>
-					                                    </div>
-					                                </body>
-					                             </html>';
+            $message_html = '<html>
+                                <body>
+                                    <div>
+                                        <p>Vos identifiants de votre compte administrateur ont bien été modifié. Veuillez contacter la personne adéquate pour qu\'il puisse vous donner vos nouveaux identifiants de connexion.</p>
+                                    </div>
+                                </body>
+                             </html>';
 
-					            if(sendmail(MAIL_EXPEDITEUR, NOM_EXPEDITEUR, MAIL_EXPEDITEUR, $_POST["admin_mail"], '',
-					                'Modification de vos identifiants administrateur', '', $message_html, ''))
-					            {			
-									location("admin", "list", "notif=ok");
-								}									
+            if(sendmail(MAIL_EXPEDITEUR, NOM_EXPEDITEUR, MAIL_EXPEDITEUR, $_POST["admin_mail"], '',
+                'Modification de vos identifiants administrateur', '', $message_html, ''))
+            {			
+				location("admin", "list", "notif=ok");
+			}
 		}
 	}

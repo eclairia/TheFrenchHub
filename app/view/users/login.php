@@ -24,7 +24,12 @@
 
       <div>
         <input type="checkbox" name="user_cookie" id="user_cookie"><label for="user_cookie">Se souvenir de moi</label>
-      </div>      
+      </div>   
+
+        <input type="hidden" name="user_key" value="<?php if (isset($_GET['key']))
+        {
+            echo $_GET['key'];
+        } ?>">         
 
       <div>
         <input class="formwidth boutonform"  type="submit" placeholder="Se connecter" >

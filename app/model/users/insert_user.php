@@ -24,7 +24,7 @@
 			$query->execute();
 
 			//Récupération de l'ID
-			return $pdo->lastInsertId();
+			return true;
 		}
 
 		catch(Exception $e)

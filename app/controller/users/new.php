@@ -19,7 +19,23 @@
 
 		if($retour)
 		{
-			location("users", "list", "notif=ok");		
+			include_once('lib/mail.php');
+			$key = md5(uniqid(rand()));
+            $message_html = '<html>
+                                <body>
+                                    <div>
+                                        <p>Votre compte a bien été crée.
+                                        Cliquez sur le lien ci-dessous pour valider votre compte.
+                                        <a href="http://localhost/TheFrenchHub/index.php?module=users&action=login&key='. $key .'">Validation de votre compte</a></p>
+                                    </div>
+                                </body>
+                             </html>';
+
+            if(sendmail(MAIL_EXPEDITEUR, NOM_EXPEDITEUR, MAIL_EXPEDITEUR, $_POST["user_mail"], '',
+                'Validation de votre inscription', '', $message_html, ''))
+            {			
+				location("users", "login", "notif=ok");
+			}		
 		}
 		else
 		{
