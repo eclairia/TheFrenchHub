@@ -73,12 +73,46 @@ else
         include_once('app/model/time_slots/reserve_time_slot.php');
         $retour = reserve_time_slot($_POST, $nb_reservations);
 
+        if (!$retour)
+        {
+            var_dump($retour);
+            die();
+        }
+
+        $date = select_table(
+                        array("table1" => "tfh_time_slots"),
+                        array("where_column" => "time_slot_ID",
+                              "where_value" => $_POST['time_slot_ID'])
+        );
+
+        include_once('app/model/projects/begin_project.php');
+        $retour = begin_project($date);
+
+        if (!$retour)
+        {
+            var_dump($retour);
+            var_dump($date);
+            die();
+        }
+
         include_once('app/model/users/affect_reservation.php');
         $retour = affect_reservation($_POST);
+
+        if (!$retour)
+        {
+            var_dump($retour);
+            die();
+        }
 
         $_SESSION['user']['user_time_slot'] = $_POST['time_slot_ID'];
         include_once('app/model/orders/insert_order.php');
         $retour = insert_order($_POST);
+
+        if (!$retour)
+        {
+            var_dump($retour);
+            die();
+        }
         // Redirige le visiteur sur le site de PayPal
         header("Location: https://www.sandbox.paypal.com/webscr&cmd=_express-checkout&token=".$liste_param_paypal['TOKEN']);
         exit();
