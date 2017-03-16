@@ -9,34 +9,35 @@
 
 	else
 	{
-		if(isset($_POST['user_key']))
+		if(isset($_POST['user_cookie'])) 
 		{
-			if(isset($_POST['user_cookie'])) 
-			{
-				setcookie("user_login", $_POST['user_login'], time()+365*24*3600);
-				setcookie("user_password", $_POST['user_password'], time()+365*24*3600);
-			}
+			setcookie("user_login", $_POST['user_login'], time()+365*24*3600);
+			setcookie("user_password", $_POST['user_password'], time()+365*24*3600);
+		}
 
-			$_POST["user_password"] = md5($_POST["user_password"] . SALT);
+		$_POST["user_password"] = md5($_POST["user_password"] . SALT);
 
-			//Appel du modèle pour chercher un user
-			include_once("app/model/users/verif_login.php");
-			$retour = verif_login($_POST);
+		//Appel du modèle pour chercher un user
+		include_once("app/model/users/verif_login.php");
 
-			if(!$retour)
-			{
-				location("users", "login", "notif=nok");
-			}
+		$retour = verif_login($_POST);
 
-			else
-			{
-				$_SESSION["user"] = $retour;
-				location("projects", "new", "notif=ok");
-			}
+		if(!$retour)
+		{
+			location("users", "login", "notif=nok");
 		}
 
 		else
 		{
-			location("users", "new", "notif=nokey");
+			if($retour['user_confirmed'] == 1)
+			{
+				$_SESSION["user"] = $retour;
+				location("projects", "new", "notif=ok");
+			}
+
+			else
+			{
+				location("users", "login", "notif=novalidate");
+			}
 		}
 	}

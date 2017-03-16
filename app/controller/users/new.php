@@ -14,19 +14,18 @@
 		$user_picture_url = upload_pictures($_POST, $_FILES);	
 		//Appel du modele pour insérer un administrateur
 		include_once("app/model/users/insert_user.php");
-		
-		$retour = insert_user($_POST, $user_picture_url);
+		$key = md5(uniqid(rand()));		
+		$retour = insert_user($_POST, $user_picture_url, $key);
 
 		if($retour)
 		{
 			include_once('lib/mail.php');
-			$key = md5(uniqid(rand()));
             $message_html = '<html>
                                 <body>
                                     <div>
                                         <p>Votre compte a bien été crée.
                                         Cliquez sur le lien ci-dessous pour valider votre compte.
-                                        <a href="http://localhost/TheFrenchHub/index.php?module=users&action=login&key='. $key .'">Validation de votre compte</a></p>
+                                        <a href="http://localhost/TheFrenchHub/index.php?module=users&action=validate&key='. $key .'">Validation de votre compte</a></p>
                                     </div>
                                 </body>
                              </html>';

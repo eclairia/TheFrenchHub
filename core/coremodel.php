@@ -96,10 +96,10 @@
             $sql = "SELECT * FROM ";
 
             $i = 1;
-            while ($i <= count($table) )
+            while ($i <= count($table))
             {
                 $sql .= " " . $table["table".$i];
-                if ( (count($table) > 1) && ($i != count($table)) )
+                if ((count($table) > 1) && ($i != count($table)))
                 {
                     $sql .= ",";
                 }
