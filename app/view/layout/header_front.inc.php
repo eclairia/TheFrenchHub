@@ -6,7 +6,7 @@
 	<link rel='stylesheet' type="text/css" href='webroot/CSS/style.css' />
 </head>
 
-<body lang="<?= APP_LANG ?>">
+<body>
 	<!-- Navigation -->
 	<nav>
 	  <div id="navleft">
