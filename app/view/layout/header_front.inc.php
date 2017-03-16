@@ -17,13 +17,27 @@
 		</div>
 
 		<div id="navright">
-			<div class="linknavdiv"><a class="linknav" href="#">Accueil</a></div>
-			<div class="linknavdiv"><a class="linknav" href="#">Le concept</a></div>
-			<div class="linknavdiv"><a class="linknav" href="#">Nos offres</a></div>
-			<div class="linknavdiv"><a class="linknav" href="#">Actualités</a></div>
-			<div class="linknavdiv"><a class="linknav" href="#">L'équipe</a></div>
-			<div class="linknavdiv"><a class="linknav" href="#">Connexion</a></div>
-			<div class="linknavdiv"><a class="linknav" href="#">Inscription</a></div>
+			<div class="linknavdiv"><a class="linknav" href="?module=static&action=home">Accueil</a></div>
+			<div class="linknavdiv"><a class="linknav" href="?module=static&action=concept">Le concept</a></div>
+			<div class="linknavdiv"><a class="linknav" href="?module=time_slots&action=reserve">Nos offres</a></div>
+			<div class="linknavdiv"><a class="linknav" href="?module=articles&action=feed">Actualités</a></div>
+			<div class="linknavdiv"><a class="linknav" href="?module=static&action=team">L'équipe</a></div>
+			<?php
+                if (!isset($_SESSION['user']))
+                {
+            ?>
+                <div class="linknavdiv"><a class="linknav" href="?module=users&action=login">Connexion</a></div>
+                <div class="linknavdiv"><a class="linknav" href="?module=users&action=signup">Inscription</a></div>
+            <?php
+                }
+                else
+                {
+            ?>
+                <div class="linknavdiv"><a class="linknav" href="?module=users&action=logout">Déconnexion</a></div>
+            <?php
+                }
+			?>
+
 		</div>
 	</nav>
 	<!-- Fin Navigation -->
