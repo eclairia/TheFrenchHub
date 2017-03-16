@@ -6,7 +6,6 @@
 		define("PAGE_TITLE", "Connectez vous à votre compte the French Hub");
 		include_once("app/view/users/login.php");
 	}
-
 	else
 	{
 		if(isset($_POST['user_key']))
@@ -27,14 +26,12 @@
 			{
 				location("users", "login", "notif=nok");
 			}
-
 			else
 			{
 				$_SESSION["user"] = $retour;
 				location("projects", "new", "notif=ok");
 			}
 		}
-
 		else
 		{
 			location("users", "new", "notif=nokey");

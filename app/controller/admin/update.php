@@ -1,6 +1,6 @@
 <?php
 
-	//protection("user", "users", "login", USER_LAMBDA);
+	protection("admin", "admin", "login", USER_SUPER_ADMIN);
 
 	if(empty($_POST))
 	{

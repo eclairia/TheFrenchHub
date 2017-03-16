@@ -3,7 +3,6 @@
 	{
 		location("users", "list", "notif=noid");
 	}
-
 	else
 	{
 		$retour = deletetable("tfh_users", array(
@@ -15,7 +14,6 @@
 		{
 			location("users", "list", "notif=nok");
 		}
-
 		else
 		{
 			location("users", "list", "notif=ok");
