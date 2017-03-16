@@ -6,7 +6,7 @@
  * Time: 02:46
  */
 
-session_start();
+//session_start();
 include("lib/paypal_api.php"); // On importe la page créée précédemment
 $requete = construit_url_paypal(); // Construit les options de base
 
@@ -45,14 +45,16 @@ else
     // Si la requête a été traitée avec succès
     if ($liste_param_paypal['ACK'] == 'Success')
     {
-        define("APP_LANG", "fr");
         define("PAGE_TITLE", "Succès de la commande");
         include_once('app/view/users/return.php');
 
         sleep(5);
+        ?><!--TODO:  Modèle pour l'update de l'état de la commande--><?php
         // Mise à jour de la base de données & traitements divers...
-        // include_once('app/model/commandes/update.php');
-        // $retour = check_command();
+        include_once('app/model/orders/valide_order.php');
+        $retour = valide_order();
+
+        location('static', 'home', 'notif=orderok');
         //mysql_query("UPDATE commandes SET etat='OK' WHERE id_commande='".$liste_param_paypal['TRANSACTIONID']."'");
     }
     else // En cas d'échec, affiche la première erreur trouvée.
@@ -62,5 +64,4 @@ else
 curl_close($ch);
 ?>
 
-<!--TODO:  Modèle pour l'update de l'état de la commande-->
 <!--TODO:  Redirection sur traitement.php avec paramètre get token après update-->
