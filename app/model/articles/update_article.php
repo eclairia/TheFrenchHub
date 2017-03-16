@@ -2,6 +2,9 @@
 
 	function update_article($article, $url)
 	{
+		// var_dump($article);
+		// var_dump($url);
+		// die();
 		global $pdo;
 
 		try

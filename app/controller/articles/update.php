@@ -1,7 +1,7 @@
 <?php
 	protection("admin", "admin", "login", "USER_ADMIN");
 
-	if(empty($_GET['id']) && !isset($_POST['article_ID']))
+	if((empty($_GET['id'])) && (!isset($_POST['article_ID'])))
 	{
 		location("articles", "list", "notif=noid");
 	}
@@ -17,6 +17,9 @@
                                   "and_value1" => "article_author")
         );
 
+        // var_dump($article);
+        // die();
+
 		//Appel de la vue correspondante
 		define("PAGE_TITLE", "Modifier les données d'un article");
 		include_once("app/view/articles/update.php");
@@ -27,6 +30,8 @@
 		//Appel du modele pour modifier les données d'un article
 		include_once("app/model/articles/upload_pictures.php");
 		$article_picture_url = upload_pictures($_POST, $_FILES);
+		// var_dump($article_picture_url);
+		// die();
 		include_once("app/model/articles/update_article.php");
 		$retour = update_article($_POST, $article_picture_url);
 

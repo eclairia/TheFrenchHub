@@ -22,8 +22,6 @@
 		$_SESSION["admin"]["admin_ID"] = intval($_SESSION["admin"]["admin_ID"]);
 		$retour = insert_article($_POST, $_FILES, $article_picture_url, $_SESSION["admin"]["admin_ID"]);
 
-		var_dump($retour);
-		die();
 
 		if(!$retour)
 		{

@@ -21,6 +21,7 @@
 				<label for="article_file">Photo: </label>
 				<input name="article_file" class="form-control" id="article_file" type="file" />
 				<input type="hidden" name="MAX_FILE_SIZE" value="12345">
+				<input type="hidden" name="article_ID" value="<?= $_GET['id']; ?>">
 			</div>
 
 			<div class="form-group col-lg-6 col-sm-6 text-center col-lg-offset-3 col-md-offset-3">
