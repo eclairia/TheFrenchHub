@@ -27,12 +27,12 @@
 			if($_SESSION["admin"]["admin_level"] == 2)
 			{
 				$_SESSION["admin_level"] = USER_SUPER_ADMIN;
-				location("admin", "index", "notif=ok");
+				location("projects", "list", "notif=ok");
 			}
 			else if($_SESSION["admin"]["admin_level"] == 1)
             {
                 $_SESSION["admin_level"] = USER_ADMIN;
-                location("admin", "index", "notif=ok");
+                location("projects", "list", "notif=ok");
             }
 		}
 	}
