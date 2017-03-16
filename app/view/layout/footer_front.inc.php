@@ -2,10 +2,10 @@
 <footer>
 
 		<div id="liensfooter">
-			<a class="linkfooter space" href="#">Contact</a>
-			<a class="linkfooter space" href="#">Plan du site</a>
-			<a class="linkfooter space" href="#">Mentions légales</a>
-			<a class="linkfooter" href="#">Conditions générales de vente</a>
+			<a class="linkfooter space" href="?module=static&action=contact">Contact</a>
+			<a class="linkfooter space" href="?module=static&action=plan">Plan du site</a>
+			<a class="linkfooter space" href="?module=static&action=cgv">Mentions légales</a>
+			<a class="linkfooter" href="?module=static&action=cgv">Conditions générales de vente</a>
 		</div>
 
 		<div>

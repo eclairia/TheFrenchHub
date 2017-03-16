@@ -5,11 +5,9 @@
 	if(empty($_POST))
 	{
 		//Appel de la vue correspondante
-		define("APP_LANG", "fr");
 		define("PAGE_TITLE", 'Inscrivez-vous à The French Hub');
 		include_once('app/view/users/signup.php');
 	}
-
 	else
 	{
 		$_POST["user_level"] = intval($_POST["user_level"]);
@@ -26,7 +24,6 @@
 		{
 			location("users", "new", "notif=ok");		
 		}
-
 		else
 		{
 			location("projects", "new", "notif=nok");

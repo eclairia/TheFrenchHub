@@ -3,7 +3,6 @@
 	{
 		location("users", "list", "notif=noid");
 	}
-
 	else
 	{
 		include_once("app/model/delete_article.php");
@@ -21,7 +20,6 @@
 		{
 			location("users", "list", "notif=nok");
 		}
-
 		else
 		{
 			location("users", "list", "notif=ok");

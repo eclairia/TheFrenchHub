@@ -284,9 +284,6 @@ header {
    position: relative;
 }
 
-  #rejoigneznoushome {
-  }
-
   #contentparallax {
   }
 
@@ -908,4 +905,45 @@ input::-webkit-input-placeholder {
   box-shadow: 1px 1px 12px #555;
 }
 
-/* ----> CONCEPT <---- */
+/* ----> MENTIONS + CGV <---- */
+
+#allcontentmentions {
+  background: url(../IMG/pattern.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contentmentions {
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  width: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+}
+
+#contentmentions a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #FA5501;
+}
+
+#contentmentions p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+}
+
+#contentmentions h3 {
+  color: #FA5501;
+}
+
+#mentionslegalestitle {
+  text-transform: uppercase;
+  color: #62D3D0;
+}

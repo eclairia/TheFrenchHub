@@ -14,8 +14,7 @@
 		// die();
 
 		$article = $articles[0];
-		//Appel de la vue correspondante	
-		define("APP_LANG", "fr");
+		//Appel de la vue correspondante
 		define("PAGE_TITLE", "Détail d'un article");
 		include_once('app/view/articles/detail.php');				
 	}

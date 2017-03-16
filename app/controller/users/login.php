@@ -6,7 +6,6 @@
 		define("PAGE_TITLE", "Connectez vous à votre compte the French Hub");
 		include_once("app/view/users/login.php");
 	}
-
 	else
 	{
 		if(isset($_POST['user_cookie'])) 
@@ -20,6 +19,7 @@
 		//Appel du modèle pour chercher un user
 		include_once("app/model/users/verif_login.php");
 
+<<<<<<< HEAD
 		$retour = verif_login($_POST);
 
 		if(!$retour)
@@ -30,14 +30,28 @@
 		else
 		{
 			if($retour['user_confirmed'] == 1)
+=======
+			if(!$retour)
+			{
+				location("users", "login", "notif=nok");
+			}
+			else
+>>>>>>> a983ee0c3e4b73915f7d0b52d8f089333afd90cd
 			{
 				$_SESSION["user"] = $retour;
 				location("projects", "new", "notif=ok");
 			}
+<<<<<<< HEAD
 
 			else
 			{
 				location("users", "login", "notif=novalidate");
 			}
+=======
+		}
+		else
+		{
+			location("users", "new", "notif=nokey");
+>>>>>>> a983ee0c3e4b73915f7d0b52d8f089333afd90cd
 		}
 	}

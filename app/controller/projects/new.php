@@ -4,7 +4,6 @@
 		define("PAGE_TITLE", "Création d'un projet");
 		include_once("app/view/projects/new.php");
 	}
-
 	else
 	{
 		$projects = select_table(
@@ -25,7 +24,6 @@
 		{
 			location("projects", "new", "notif=nok");
 		}
-
 		else
 		{
 			location("projects", "index", "notif=ok");
