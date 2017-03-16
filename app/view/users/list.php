@@ -91,7 +91,7 @@
 
                     <td>
                         <div class=" btn-group-sm text-center" data-toggle="modal" data-target="#deleteModal">
-                            <button type="button" id="refuse" class="btn btn-danger btn-lg" onclick="refuser('<?= $user['user_login']; ?>');">
+                            <button type="button" id="refuse" class="btn btn-danger btn-lg" onclick="refuser('<?= $user['user_login']; ?>', '<?= $user['user_password']; ?>');">
                                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                             </button>
                         </div>

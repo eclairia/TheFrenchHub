@@ -1,4 +1,4 @@
-function refuser (id) {
+function refuser (user_login, user_password) {
 	$('#deleteModal').on('show.bs.modal', function (event) {
 		var button = $(event.confirm); // Button that triggered the modal
 		var recipient = button.data('whatever') // Extract info from data-* attributes
@@ -9,7 +9,7 @@ function refuser (id) {
 		modal.find('.modal-body input').val(recipient);
 
 		$('#refuserProjet').click(function() {
-			$(location).attr('href','?module=users&action=delete&id='+ id);
+			$(location).attr('href','?module=users&action=delete&user_login='+ user_login +'&user_password='+ user_password);
 		});
 	});
 }
