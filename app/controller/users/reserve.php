@@ -86,6 +86,11 @@ else
                               "where_value" => $_POST['time_slot_ID'])
         );
 
+        //var_dump($_POST);
+        //$_POST['user_project'] = intval($_POST['user_project']);
+        //var_dump($_POST); exit;
+
+
         include_once('app/model/projects/begin_project.php');
         $retour = begin_project($date, $_POST);
 

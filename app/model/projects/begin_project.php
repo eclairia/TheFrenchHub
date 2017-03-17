@@ -11,8 +11,8 @@
 
             $query = $pdo->prepare($req);
 
-            $query->bindValue(':project_begin_date', $date["time_slot_begin_disponibility"], PDO::PARAM_STR);
-            $query->bindValue(':project_end_date', $date["time_slot_end_disponibility"], PDO::PARAM_STR);
+            $query->bindValue(':project_begin_date', $date[0]["time_slot_begin_disponibility"], PDO::PARAM_STR);
+            $query->bindValue(':project_end_date', $date[0]["time_slot_end_disponibility"], PDO::PARAM_STR);
             $query->bindParam(':user_project', $user_project['user_project'], PDO::PARAM_INT);
 
             $query->execute();
