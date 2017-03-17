@@ -7,9 +7,9 @@
 	else
 	{
 		$projects = select_table(
-			array("table1" => "tfh_projects")
+			array("table1" => "tfh_projects"),
 			array(
-					"wherecolumn" => "project_ID"
+					"wherecolumn" => "project_ID",
 					"wherevalue" => ""
 				)
 			);
