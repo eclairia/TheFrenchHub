@@ -18,16 +18,6 @@
         </tr>
 
         <tr>
-          <td><label for="project_begin_date">Project begin date: </label></td>
-          <td><input name="project_begin_date" type="date" /></td>
-        </tr>
-
-        <tr>
-          <td><label for="project_end_date">Project end date: </label></td>
-          <td><input name="project_end_date" type="date" /></td>
-        </tr>
-
-        <tr>
           <td></td>
           <td><input value="Enregistrer" type="submit" /><input type="reset" value="effacer" /></td>
         </tr>

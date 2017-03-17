@@ -411,7 +411,7 @@ header {
     height: 78vh;
     width: 100%;
     overflow: hidden;
-    background: url(../IMG/bg-inscription.png);
+    background: url(../IMG/pattern2.png);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -506,7 +506,7 @@ input::-webkit-input-placeholder {
     height: 78vh;
     width: 100%;
     overflow: hidden;
-    background: url(../IMG/bg-login.png);
+    background: url(../IMG/pattern2.png);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -946,4 +946,58 @@ input::-webkit-input-placeholder {
 #mentionslegalestitle {
   text-transform: uppercase;
   color: #62D3D0;
+}
+
+/* ----> ARTICLES <---- */
+
+.articlel {
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 7vh;
+}
+
+.articlepartleft {
+  width: 35vw;
+  height: 50vh;
+  position: relative;
+}
+
+.blocbleuarticle {
+  width: 25vw;
+  height: 40vh;
+  background-color: #FA5501;
+  position: relative;
+}
+
+.blocbleuarticle img {
+  height: 40vh;
+  position: absolute;
+  z-index: 2;
+  left: 15vw;
+  top: 8vh;
+}
+
+.underbloc1 {
+  position: absolute;
+  z-index: 3;
+  height: 6vh;
+  width: 20vw;
+  background-color: #FA5501;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.underbloc1 div {
+  height: 0.2vh;
+  width: 8vw;
+  background-color: #667575;
+  opacity: 0.8;
+}
+
+.underbloc1 p {
+  font-size: 1.5vh;
+  color: black;
 }

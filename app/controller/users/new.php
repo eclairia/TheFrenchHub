@@ -14,11 +14,15 @@
 		$user_picture_url = upload_pictures($_POST, $_FILES);	
 		//Appel du modele pour insérer un administrateur
 		include_once("app/model/users/insert_user.php");
-		$key = md5(uniqid(rand()));		
+		$key = md5(uniqid(rand()));
+		// var_dump($key);
+		// die();
 		$retour = insert_user($_POST, $user_picture_url, $key);
 
 		if($retour)
 		{
+			// var_dump($retour);
+			// die();		
 			include_once('lib/mail.php');
             $message_html = '<html>
                                 <body>
@@ -38,6 +42,6 @@
 		}
 		else
 		{
-			location("projects", "new", "notif=nok");
+			location("users", "new", "notif=nok");
 		}
 	}
