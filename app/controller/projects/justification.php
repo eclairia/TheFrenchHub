@@ -42,7 +42,7 @@
                 }
                 else
                 {
-                    location('projects', 'list', 'notif=notupdate');
+                    location('projects', 'list', 'notif=noPreventUpdate');
                 }
             }
             else

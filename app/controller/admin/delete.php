@@ -3,7 +3,6 @@
 	{
 		location("admin", "list", "notif=noid");
 	}
-
 	else
 	{	
 		$id = intval($_GET["id"]);

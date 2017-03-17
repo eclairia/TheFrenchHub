@@ -2,7 +2,6 @@
 
 	if(!isset($_POST["user_login"]))
 	{
-		define("APP_LANG", "fr");
 		define("PAGE_TITLE", "Connectez vous à votre compte the French Hub");
 		include_once("app/view/users/login.php");
 	}
