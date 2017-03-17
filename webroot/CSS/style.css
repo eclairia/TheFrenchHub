@@ -950,12 +950,14 @@ input::-webkit-input-placeholder {
 
 /* ----> ARTICLES <---- */
 
+/* ----> article orange <---- */
 .articlel {
-  width: 80vw;
+  width: 90vw;
   height: 50vh;
   display: flex;
   justify-content: flex-start;
   margin-top: 7vh;
+  margin-bottom: 7vh;
 }
 
 .articlepartleft {
@@ -994,10 +996,189 @@ input::-webkit-input-placeholder {
   height: 0.2vh;
   width: 8vw;
   background-color: #667575;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .underbloc1 p {
   font-size: 2vh;
   color: black;
 }
+
+.righttop {
+  display: flex;
+  position: relative;
+  margin-top: 10vh;
+  margin-left: 0;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+
+.articlehr {
+  height: 0.2vh;
+  width: 15vw;
+  opacity: 0.5;
+  background-color: black;
+  position: absolute;
+  z-index: 4;
+  }
+
+  .titreright h2 {
+    font-size: 3.2vh;
+    font-weight: bold;
+    color: black;
+    margin-left: 17vw;
+  }
+
+  .txtarticle {
+    margin-left: 15vw;
+  }
+
+  .internaltxt {
+    font-size: 2vh;
+    color: #a7a9ac;
+    font-weight: normal;
+  }
+
+  .buttonarticle {
+   float: right;
+   right: 15vw;
+   margin-top: 7vh;
+  }
+
+  .buttonarticle a {
+    text-decoration: none;
+    font-size: 1.7vh;
+    color: white;
+    background-color: #FA5501;
+    border: 1px solid #FA5501;
+    border-radius: 40px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+
+  .buttonarticle a:hover {
+    color: #FA5501;
+    background-color: white;
+  }
+
+  /* ----> article bleu <---- */
+
+  .article2 {
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    float: right;
+  }
+
+  .articlepartleft2 {
+    width: 35vw;
+    height: 50vh;
+    position: relative;
+  }
+
+  .blocbleuarticle2 {
+    width: 25vw;
+    height: 40vh;
+    background-color: #62D3D0;
+    position: relative;
+  }
+
+  .blocbleuarticle2 img {
+    height: 40vh;
+    position: absolute;
+    z-index: 2;
+    right: 15vw;
+    top: 8vh;
+  }
+
+  .underbloc2 {
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    height: 6vh;
+    width: 20vw;
+    background-color: #62D3D0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .underbloc2 div {
+    height: 0.2vh;
+    width: 8vw;
+    background-color: #667575;
+    opacity: 0.5;
+  }
+
+  .underbloc2 p {
+    font-size: 2vh;
+    color: black;
+  }
+
+  .righttop2 {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    margin-top: 10vh;
+    margin-right: 0;
+    align-items: center;
+    margin-bottom: 5vh;
+  }
+
+
+  .articlehr2 {
+    height: 0.2vh;
+    width: 15vw;
+    opacity: 0.5;
+    background-color: black;
+    position: absolute;
+    z-index: 4;
+    }
+
+    .titreright2 h2 {
+      font-size: 3.2vh;
+      font-weight: bold;
+      color: black;
+      margin-right: 17vw;
+    }
+
+    .txtarticle2 {
+      margin-right: 15vw;
+    }
+
+    .internaltxt2 {
+      font-size: 2vh;
+      color: #a7a9ac;
+      font-weight: normal;
+      text-align: right;
+    }
+
+    .buttonarticle2 {
+     float: left;
+     left: 15vw;
+     margin-top: 7vh;
+    }
+
+    .buttonarticle2 a {
+      text-decoration: none;
+      font-size: 1.7vh;
+      color: white;
+      background-color: #62D3D0;
+      border: 1px solid #62D3D0;
+      border-radius: 40px;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+    }
+
+    .buttonarticle2 a:hover {
+      color:#62D3D0;
+      background-color: white;
+    }
