@@ -1,12 +1,20 @@
 <?php
-	if(!isset($_GET["id"]))
+	if( (!isset($_GET['user_login'])) && (!isset($_GET['user_password'])) )
 	{
 		location("users", "list", "notif=noid");
 	}
 	else
 	{
-		include_once("app/model/delete_article.php");
-		$retour = delete_article($_GET['id'], $_POST['password']);
+	    //var_dump($_GET);
+        //var_dump($_GET['user_login']);
+        //exit;
+        $retour = deletetable(
+                        array("table1" => "tfh_users",),
+                        array("where_column" => "user_login",
+                              "where_value" => $_GET["user_login"]),
+                        array("and_column1" => "user_password",
+                              "and_value1" => $_GET["user_password"])
+        );
 
 		// deletetable("tfh_users", array(
 		// 						"idcolumn" => "user_login",

@@ -156,17 +156,42 @@
         }
     }
 
-	function deletetable($table, $options=array())
+	function deletetable($table, $options=array(), $and=array())
 	{
 		global $pdo;
 
 		try
 		{
-			$sql = " DELETE FROM " . $table;
-			if((isset($options["idcolumn"])) && (isset($options["idvalue"])))
-			{
-				$sql .= ' WHERE ' . $options["idcolumn"] . " = " . $options["idvalue"];
-			}
+			$sql = " DELETE FROM ";
+
+            $i = 1;
+            while ($i <= count($table) )
+            {
+                $sql .= " " . $table["table".$i];
+                if ( (count($table) > 1) && ($i != count($table)) )
+                {
+                    $sql .= ",";
+                }
+                $i++;
+            }
+
+            if ((isset($options["where_column"])) && (isset($options["where_value"])))
+            {
+                $sql .= " WHERE " . $options["where_column"] . " = '" . $options["where_value"] . "'";
+            }
+
+            if (isset($and))
+            {
+                $i = 1;
+                while ($i <= count($and)/2 )
+                {
+                    $sql .= " AND " . $and["and_column".$i] . " = '" . $and["and_value".$i] . "'";
+                    $i++;
+                }
+            }
+
+            //echo $sql;
+            //exit;
 
 			$query = $pdo->exec($sql);
 
@@ -175,6 +200,8 @@
 
 		catch(Exception $e)
 		{
-			return false;
+		    echo $sql;
+            die('Erreur SQL: ' . $e->getMessage());
+            //return false;
 		}	
 	}	
