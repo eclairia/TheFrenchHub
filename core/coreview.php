@@ -37,4 +37,46 @@
         }
 
         echo "</select>";		
-	} 	
+	}
+
+    function notif()
+    {
+        switch ($_GET['notif'])
+        {
+            case 'ok':
+                echo "<p class='bg-success'> L'action s'est déroulée comme prévu. <p>";
+                break;
+
+            case 'nok':
+                echo "<p class='bg-danger'> L'action demandée a echoué ! <p>";
+                break;
+
+            case 'protection':
+                echo "<p class='bg-danger'> Vous devez être connecté pour accéder à cette partie du site ! <p>";
+                break;
+
+            case 'admin':
+                echo "<p class='bg-danger'>  Vous devez être connecté en tant qu'administrateur pour acceder à cette partie du site ! <p>";
+                break;
+
+            case 'noid':
+                echo "<p class='bg-info'>  Il manque un id pour le fonctionnement de la page à laquelle vous tentez d'acceder ! <p>";
+                break;
+
+            case 'nmail':
+                echo "<p class='bg-info'>  Le mail n'a pas pu être envoyé ! <p>";
+                break;
+
+            case 'noPreventUpdate':
+                echo "<p class='bg-info'>  Le client a été prévenu mais la base de données n'a pas été mise à jours ! <p>";
+                break;
+
+            case 'nokey':
+                echo "<p class='bg-danger'>  Le clé ne correspond à aucun compte ! <p>";
+                break;
+
+            case 'orderok':
+                echo "<p class='bg-success'>  Votre réservation à bien été prise en compte ! <p>";
+                break;
+        }
+    }
