@@ -36,7 +36,7 @@
 
             if(sendmail(MAIL_EXPEDITEUR, NOM_EXPEDITEUR, MAIL_EXPEDITEUR, $_POST["user_mail"], '',
                 'Validation de votre inscription', '', $message_html, ''))
-            {			
+            {
 				location("users", "login", "notif=ok");
 			}		
 		}

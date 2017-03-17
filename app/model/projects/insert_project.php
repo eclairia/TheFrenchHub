@@ -4,9 +4,12 @@
 	{
 		global $pdo;
 
+		// var_dump($project);
+		// die();
+
 		try
 		{
-			$req = "INSERT INTO tfh_projects(project_name, project_nb_members, project_begin_date, project_end_date)
+			$req = "INSERT INTO tfh_projects(project_name, project_nb_members)
 					VALUES (:project_name, :project_nb_members)";
 
 			$query = $pdo->prepare($req);
