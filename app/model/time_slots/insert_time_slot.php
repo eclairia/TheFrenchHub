@@ -6,7 +6,7 @@
 
 		try
 		{
-			$req = "INSERT INTO tfh_time_slot(time_slot_begin_disponibility, time_slot_end_disponibility)
+			$req = "INSERT INTO tfh_time_slots(time_slot_begin_disponibility, time_slot_end_disponibility)
 					VALUES (:time_slot_begin_disponibility, :time_slot_end_disponibility)";
 
 			$query = $pdo->prepare($req);

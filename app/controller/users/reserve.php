@@ -52,9 +52,10 @@ else
     ?>
         <!--TODO:  Transformer countable comme le select pour calculer le nombre de membres à mettre dans le prochain modèle-->
 
-        <!--TODO:  Modèle pour update time slot-->
-        <!--TODO:  Modèle pour l'update du user time slot-->
-        <!--TODO:  Modèle pour l'insert de la commande avant l'update-->
+        <!--TODO:  Modèle update pour reserve time slot-->
+        <!--TODO:  Modèle update pour begin project date-->
+        <!--TODO:  Modèle update pour user time slot-->
+        <!--TODO:  Modèle insert pour orders-->
     <?php
         $nb_reservations = count_table(
                             array("table1" => "tfh_additionnal_members",
@@ -86,7 +87,7 @@ else
         );
 
         include_once('app/model/projects/begin_project.php');
-        $retour = begin_project($date);
+        $retour = begin_project($date, $_POST);
 
         if (!$retour)
         {

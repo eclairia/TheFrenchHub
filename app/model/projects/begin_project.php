@@ -1,27 +1,26 @@
 <?php
+    function begin_project($date, $user_project)
+    {
+        global $pdo;
 
-	function insert_time_slot($date)
-	{	
-		global $pdo;
+        try
+        {
+            $req = "UPDATE tfh_projects 
+                    SET project_begin_date = :project_begin_date, project_end_date = :project_end_date 
+                    WHERE project_ID = :user_project";
 
-		try
-		{
-			$req = "INSERT INTO tfh_projects(project_begin_date, project_end_date)
-					VALUES (:project_begin_date, :project_end_date)";
+            $query = $pdo->prepare($req);
 
-			$query = $pdo->prepare($req);
+            $query->bindValue(':project_begin_date', $date["time_slot_begin_disponibility"], PDO::PARAM_STR);
+            $query->bindValue(':project_end_date', $date["time_slot_end_disponibility"], PDO::PARAM_STR);
+            $query->bindParam(':user_project', $user_project['user_project'], PDO::PARAM_INT);
 
-			$query->bindValue(':project_begin_date', $date["time_slot_begin_disponibility"], PDO::PARAM_STR);
-			$query->bindValue(':project_end_date', $date["time_slot_end_disponibility"], PDO::PARAM_STR);
-
-			$query->execute();
-
+            $query->execute();
             return true;
-		}
+        }
 
-		catch(Exception $e)
-		{
-		    return false;
-            //die('Erreur technique :' .$e->getMessage());
-		}
-	}
+        catch(Exception $e)
+        {
+            return false;
+        }
+    }
