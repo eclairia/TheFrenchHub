@@ -45,7 +45,7 @@
                         {
                             ?>
                             <ul class="nav nav-tabs-justified nav-stacked">
-                                <li role="presentation"><a href="?module=admin&action=new" class="text-danger">Ajouter une plage horaire</a></li>
+                                <li role="presentation"><a href="?module=time_slots&action=new" class="text-danger">Ajouter une plage horaire</a></li>
                             </ul>
                             <?php
                         }
