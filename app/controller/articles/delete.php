@@ -7,10 +7,10 @@
 	else
 	{	
 		$id = intval($_GET["id"]);
-		$retour = deletetable("tfh_articles", array(
-								"idcolumn" => "article_id",
-								"idvalue" => $id
-							));
+		$retour = deletetable(
+		            array("table1" => "tfh_articles"),
+                    array("where_column" => "article_id",
+                          "where_value" => $id));
 
 		if(!$retour)
 		{
