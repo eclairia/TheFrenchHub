@@ -34,6 +34,7 @@ nav {
   color: #282D2E;
   font-family: 'Open Sans', sans-serif;
   align-items: center;
+  font-size: 1.7vh;
 }
 
 #navleft a img {
@@ -57,7 +58,7 @@ nav {
 }
 
 #txtlogo {
-  font-size: 1.2em;
+  font-size: 1.7vh;
 }
 
 .linknavdiv {
@@ -67,7 +68,7 @@ nav {
 .linknav {
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.7vh;
   color: #282D2E;
   height: 100%;
 }
@@ -106,7 +107,7 @@ header {
 
 #h1header {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3.7em;
+  font-size: 5vh;
   font-weight: bold;
   text-transform: uppercase;
   color: #FA5501;
@@ -116,7 +117,7 @@ header {
 #textheader {
   font-family: 'Open Sans', sans-serif;
   color: #282D2E;
-  font-size: 1.4em;
+  font-size: 2vh;
   margin-bottom: 7vh;
 }
 
@@ -130,7 +131,7 @@ header {
   border: 1px solid #FA5501;
   text-decoration: none;
   color: #282D2E;
-  font-size: 1.2em;
+  font-size: 2vh;
   background-color: #EBF7F7;
 }
 
@@ -157,7 +158,7 @@ header {
 .rubriquehome {
   font-family: 'Open Sans', sans-serif;
   color: #62D3D0;
-  font-size: 1.7em;
+  font-size: 2.3em;
   margin-bottom: 0.7vh;
 }
 
@@ -185,7 +186,7 @@ header {
 }
 
 .detailservicetitle {
-  font-size: 1.2;
+  font-size: 2.3vh;
   font-weight: bold;
   color: #282D2E;
   text-transform: uppercase;
@@ -196,7 +197,7 @@ header {
 
 .detailservicetexte {
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.9em;
+  font-size: 2vh;
   color: #CCCCCC;
   margin-bottom: 7vh;
 }
@@ -300,7 +301,7 @@ header {
   }
 
   #titlerejoignez {
-    font-size: 2em;
+    font-size: 2.4vh;
     font-family: 'Open Sans', sans-serif;
     color: #FA5501;
     font-weight: bold;
@@ -309,7 +310,7 @@ header {
 
   #textrejoignez {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 2vh;
     color: white;
     margin-bottom: 7vh;
   }
@@ -324,7 +325,7 @@ header {
     border: 1px solid #FA5501;
     text-decoration: none;
     color:white;
-    font-size: 1em;
+    font-size: 1.7vh;
     background-color: #FA5501;
   }
 
@@ -356,7 +357,7 @@ header {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     color: #282D2E;
-    font-size: 0.8em;
+    font-size: 1.4vh;
   }
 
   .linkfooter:hover {
@@ -378,7 +379,7 @@ header {
     text-transform: uppercase;
     color: #FA5501;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1.7vh;
   }
 
   #linksocial {
@@ -957,8 +958,7 @@ input::-webkit-input-placeholder {
   display: flex;
   justify-content: flex-start;
   margin-top: 7vh;
-  margin-bottom: 7vh;
-}
+  }
 
 .articlepartleft {
   width: 35vw;
@@ -1048,7 +1048,7 @@ input::-webkit-input-placeholder {
 
   .buttonarticle a {
     text-decoration: none;
-    font-size: 1.7vh;
+    font-size: 2vh;
     color: white;
     background-color: #FA5501;
     border: 1px solid #FA5501;
@@ -1071,7 +1071,6 @@ input::-webkit-input-placeholder {
     height: 50vh;
     display: flex;
     margin-top: 7vh;
-    margin-bottom: 7vh;
     float: right;
   }
 
@@ -1167,7 +1166,7 @@ input::-webkit-input-placeholder {
 
     .buttonarticle2 a {
       text-decoration: none;
-      font-size: 1.7vh;
+      font-size: 2vh;
       color: white;
       background-color: #62D3D0;
       border: 1px solid #62D3D0;
