@@ -225,6 +225,143 @@ header {
   height: 40vh;
   }
 
+  #slider {
+    height: 30vh;
+    overflow: hidden;
+  }
+
+  #contentSlider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    list-style-type: none;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .photoslider {
+    width: 15vh;
+    height: 15vh;
+    position: relative;
+    top: 6.8vh;
+    left: 4vw;
+    background-color:  #62D3D0;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photoslider img {
+    width: 13vh;
+    height: 13vh;
+  }
+
+  .commentaireslider {
+    height: 30vh;
+    width: 30vw;
+    background : url(../IMG/fleche.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.inslider {
+  position: absolute;
+  top: 6vh;
+  left: 7vw;
+  text-align: left;
+}
+
+.nomcommslider {
+  font-size: 3vh;
+  margin-bottom: 0.5vh;
+}
+
+.postcommslider {
+  font-size: 1.6vh;
+  margin-bottom: 2vh;
+}
+
+.hr {
+  width: 3vw;
+  height: 0.2vh;
+  background-color: #FA5501;
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+}
+
+.textecommslider {
+  font-size: 1.8vh;
+  width: 15vw;
+}
+
+.arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  right: 4vw;
+  bottom: 0.3vh;
+}
+
+.upSlide {
+  width: 3vw;
+  height: 3vw;
+  border: 3px solid  #62D3D0;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.upSlide:hover {
+  opacity: 1;
+}
+
+.upSlide img {
+  width: 1.7vw;
+  height: 1.7vw;
+  transform: rotate(45deg);
+}
+
+.downSlide {
+  width: 3vw;
+  height: 3vw;
+  border: 3px solid  #62D3D0;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.downSlide:hover {
+  width: 3vw;
+  height: 3vw;
+  border: 3px solid  #62D3D0;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.downSlide img {
+  width: 1.7vw;
+  height: 1.7vw;
+  transform: rotate(45deg);
+}
+
   /* NOS PARTENAIRES */
 
   #partenaireshome {
