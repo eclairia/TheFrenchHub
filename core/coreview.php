@@ -41,42 +41,45 @@
 
     function notif()
     {
-        switch ($_GET['notif'])
+        if (isset($_GET['notif']))
         {
-            case 'ok':
-                echo "<p class='bg-success'> L'action s'est déroulée comme prévu. <p>";
-                break;
+            switch ($_GET['notif'])
+            {
+                case 'ok':
+                    echo "<p class='col-lg-10 bg-success'> L'action s'est déroulée comme prévu. <p><br>";
+                    break;
 
-            case 'nok':
-                echo "<p class='bg-danger'> L'action demandée a echoué ! <p>";
-                break;
+                case 'nok':
+                    echo "<p class='col-lg-10 bg-danger'> L'action demandée a echoué ! <p><br>";
+                    break;
 
-            case 'protection':
-                echo "<p class='bg-danger'> Vous devez être connecté pour accéder à cette partie du site ! <p>";
-                break;
+                case 'protection':
+                    echo "<p class='col-lg-10 bg-danger'> Vous devez être connecté pour accéder à cette partie du site ! <p><br>";
+                    break;
 
-            case 'admin':
-                echo "<p class='bg-danger'>  Vous devez être connecté en tant qu'administrateur pour acceder à cette partie du site ! <p>";
-                break;
+                case 'admin':
+                    echo "<p class='col-lg-10 bg-danger'>  Vous devez être connecté en tant qu'administrateur pour acceder à cette partie du site ! <p><br>";
+                    break;
 
-            case 'noid':
-                echo "<p class='bg-info'>  Il manque un id pour le fonctionnement de la page à laquelle vous tentez d'acceder ! <p>";
-                break;
+                case 'noid':
+                    echo "<p class='col-lg-10 bg-info'>  Il manque un id pour le fonctionnement de la page à laquelle vous tentez d'acceder ! <p><br>";
+                    break;
 
-            case 'nmail':
-                echo "<p class='bg-info'>  Le mail n'a pas pu être envoyé ! <p>";
-                break;
+                case 'nmail':
+                    echo "<p class='col-lg-10 bg-info'>  Le mail n'a pas pu être envoyé ! <p><br>";
+                    break;
 
-            case 'noPreventUpdate':
-                echo "<p class='bg-info'>  Le client a été prévenu mais la base de données n'a pas été mise à jours ! <p>";
-                break;
+                case 'noPreventUpdate':
+                    echo "<p class='col-lg-10 bg-info'>  Le client a été prévenu mais la base de données n'a pas été mise à jours ! <p><br>";
+                    break;
 
-            case 'nokey':
-                echo "<p class='bg-danger'>  Le clé ne correspond à aucun compte ! <p>";
-                break;
+                case 'nokey':
+                    echo "<p class='col-lg-10 bg-danger'>  Le clé ne correspond à aucun compte ! <p><br>";
+                    break;
 
-            case 'orderok':
-                echo "<p class='bg-success'>  Votre réservation à bien été prise en compte ! <p>";
-                break;
+                case 'orderok':
+                    echo "<p class='col-lg-10 bg-success'>  Votre réservation à bien été prise en compte ! <p><br>";
+                    break;
+            }
         }
     }
