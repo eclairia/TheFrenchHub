@@ -29,6 +29,6 @@
 		}
 		else
 		{
-			location("articles", "detail", "id=" . $retour . "&notif=ok");
+			location("articles", "list", "notif=ok");
 		}
 	}
