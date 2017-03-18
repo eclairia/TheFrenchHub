@@ -3,11 +3,11 @@
 }
 
 @font-face {
-	font-family: 'Avenir';
-	src: url('../fonts/AvenirLTStd-Roman.otf');
+	font-family: 'Avenirl';
+	src: url('../fonts/AvenirLTStd-Light.otf');
 }
 @font-face {
-	font-family: 'Avenir';
+	font-family: 'Avenir bold';
 	font-style: bold;
 	src: url('../fonts/AvenirLTStd-Heavy.otf');
 }
@@ -25,7 +25,7 @@
 
 
 html {
-  font-family: 'Avenir';
+  font-family: 'Avenirl';
 }
 
 
@@ -46,7 +46,7 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   color: #282D2E;
-  font-family: 'Avenir';
+  font-family: 'Avenirl';
   align-items: center;
   font-size: 1.7vh;
 }
@@ -594,7 +594,7 @@ header {
     color: #282D2E;
     font-size: 2vh;
     margin-bottom: 1vh;
-    font-family: 'Avenir';
+    font-family: 'Avenirl';
   }
 
   .borderform {
@@ -606,7 +606,7 @@ header {
 input::-webkit-input-placeholder {
     color: #282D2E;
     font-size: 2vh;
-    font-family: 'Avenir';
+    font-family: 'Avenirl';
 }
 
 .boutonform {
@@ -619,7 +619,7 @@ input::-webkit-input-placeholder {
   padding-top: 1vh;
   padding-bottom: 1vh;
   cursor: pointer;
-  font-family: 'Avenir';
+  font-family: 'Avenirl';
 }
 
 .boutonform:hover {
@@ -1665,7 +1665,7 @@ input::-webkit-input-placeholder {
   color: #282D2E;
   font-size: 2vh;
   margin-bottom: 1vh;
-  font-family: 'Avenir';
+  font-family: 'Avenirl';
 }
 
 .formwidthdash2 {
@@ -1674,7 +1674,7 @@ input::-webkit-input-placeholder {
   color: #282D2E;
   font-size: 2vh;
   margin-bottom: 1vh;
-  font-family: 'Avenir';
+  font-family: 'Avenirl';
 }
 
 .borderformdash {
@@ -1695,7 +1695,7 @@ input::-webkit-input-placeholder {
   padding-right: 1.3vw;
   padding-left: 1.3vw;
   cursor: pointer;
-  font-family: 'Avenir';
+  font-family: 'Avenirl';
 }
 
 .boutonform2:hover {
@@ -1721,7 +1721,7 @@ input::-webkit-input-placeholder {
   padding-right: 1.3vw;
   padding-left: 1.3vw;
   cursor: pointer;
-  font-family: 'Avenir';
+  font-family: 'Avenirl';
 }
 
 .boutonform3:hover {
@@ -1773,8 +1773,17 @@ input::-webkit-input-placeholder {
 
 #txtinfosdash a {
   text-decoration: none;
-  font-family: 'Avenir';
+  font-family: 'Avenirl';
   color: #FA5501;
   font-size: 1.7vh;
   text-align: center;
+}
+
+@media screen and (max-width: 1080px)
+
+{
+
+
+
+
 }

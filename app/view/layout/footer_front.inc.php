@@ -4,7 +4,7 @@
 		<div id="liensfooter">
 			<a class="linkfooter space" href="?module=static&action=contact">Contact</a>
 			<a class="linkfooter space" href="?module=static&action=plan">Plan du site</a>
-			<a class="linkfooter space" href="?module=static&action=cgv">Mentions légales</a>
+			<a class="linkfooter space" href="?module=static&action=mentions">Mentions légales</a>
 			<a class="linkfooter" href="?module=static&action=cgv">Conditions générales de vente</a>
 		</div>
 
