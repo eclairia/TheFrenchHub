@@ -14,11 +14,6 @@ include_once("app/view/layout/header_back.inc.php"); ?>
                 <input type="date" name="time_slot_begin_disponibility" class="form-control" id="time_slot_begin_disponibility" rows="10" cols="100" required />
             </div>
 
-            <div class="form-group col-lg-12 col-sm-12">
-                <label for="time_slot_end_disponibility">Date de fin: </label>
-                <input type="date" name="time_slot_end_disponibility" class="form-control" id="time_slot_end_disponibility" rows="10" cols="100" required />
-            </div>
-
             <div class="form-group col-lg-6 col-sm-6 text-center col-lg-offset-3 col-md-offset-3">
                 <input value="Enregistrer" class="btn btn-lg btn-success" type="submit" />
                 <input type="reset" class="btn btn-lg btn-warning" value="effacer" />
