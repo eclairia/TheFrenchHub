@@ -43,7 +43,9 @@
     <form method="post" action="">
       <div class="formaddmember">
 
-        <h2 class="titlechoice2">Ajout d'un membre</h2>
+        <h2 class="titlechoice2">Ajout d'un membre<br/>
+          <span>(Vous ne pouvez ajouter des membres qu'une fois le projet validé.)</span>
+        </h2>
         <input class="formwidthdash2 borderform" type="text" placeholder="Nom" name="additionnal_member_last_name"></input>
         <input class="formwidthdash2 borderform" type="text" placeholder="Prénom" name="additionnal_member_first_name"></input>
         <input class="formwidthdash2 borderform" type="email" placeholder="Adresse mail" name="additionnal_member_mail"></input>
@@ -69,6 +71,30 @@
       </div>
 
     </form>
+
+  </div>
+
+  <div id="projectmembers">
+
+    <div id="projectrelative"><h2 class="titlechoice2">Liste des membres du projet</h2></div>
+
+    <div class="memberlisting">
+
+      <p>Jean DUPONT</p>
+
+    </div>
+
+    <div class="memberlisting">
+
+      <p>Jacques JACQUES</p>
+
+    </div>
+
+    <div class="memberlisting">
+
+      <p>Nicolas LUCAS</p>
+
+    </div>
 
   </div>
 
