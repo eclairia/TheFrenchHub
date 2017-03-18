@@ -12,7 +12,7 @@
 	<!-- Navigation -->
 	<nav>
 	  <div id="navleft">
-			<a id="lienlogohome" href="home.php">
+			<a id="lienlogohome" href="?module=static&action=home">
 				<div id="logotype"><img src="webroot/IMG/logo.png" alt=""/></div>
 				<div id="txtlogo">the french hub</div>
       </a>
