@@ -1513,7 +1513,7 @@ input::-webkit-input-placeholder {
       justify-content: space-around;
       align-items: center;
       width: 21vw;
-      height: 10vh;
+      height: 17vh;
       border-radius: 20px;
       margin-top: 5vh;
       margin-bottom: 7vh;
@@ -1545,7 +1545,8 @@ input::-webkit-input-placeholder {
     }
 
     .txtpaydown {
-      font-size: 1.5vh;
+      margin-top: 1vh;
+      font-size: 1.7vh;
       color: white;
     }
 
