@@ -17,9 +17,16 @@ include_once "app/view/layout/header_back.inc.php"; ?>
                         Description de l'offre
                     </p>
                 </th>
+
                 <th class="text-center">
                     <p class="text-center">
                         Prix
+                    </p>
+                </th>
+
+                <th class="text-center">
+                    <p class="text-center">
+                        Durée
                     </p>
                 </th>
 
@@ -50,7 +57,13 @@ include_once "app/view/layout/header_back.inc.php"; ?>
 
                     <td>
                         <p class="text-center">
-                            <?= $service['service_price']; ?>
+                            <?= $service['service_price']; ?> €
+                        </p>
+                    </td>
+
+                    <td>
+                        <p class="text-center">
+                            <?= $service['service_duration']; ?> mois
                         </p>
                     </td>
 

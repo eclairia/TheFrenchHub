@@ -13,9 +13,14 @@ include_once("app/view/layout/header_back.inc.php"); ?>
             <textarea name="service_description" class="form-control" id="service_description" rows="10" cols="100" required ></textarea>
         </div>
 
-        <div class="form-group col-lg-6 col-sm-6 col-lg-offset-3 col-md-offset-3">
+        <div class="form-group col-lg-3 col-sm-3 col-lg-offset-3 col-md-offset-3">
             <label for="service_price">Prix: </label>
             <input name="service_price" class="form-control" id="service_price" type="number" required/>
+        </div>
+
+        <div class="form-group col-lg-3 col-sm-3">
+            <label for="service_duration">Durée: </label>
+            <input name="service_duration" class="form-control" id="service_duration" type="number" required/>
         </div>
 
         <div class="form-group col-lg-6 col-sm-6 text-center col-lg-offset-3 col-md-offset-3">

@@ -6,15 +6,16 @@
 
 		try
 		{
-			$req = "INSERT INTO tfh_services(service_description, service_price)
-					VALUES (:service_description, :service_price)";
+			$req = "INSERT INTO tfh_services(service_description, service_price, service_duration)
+					VALUES (:service_description, :service_price, :service_duration)";
 
 			$query = $pdo->prepare($req);
 
 			$query->bindParam(':service_description', $service["service_description"], PDO::PARAM_STR);
 			$query->bindParam(':service_price', $service["service_price"], PDO::PARAM_STR);
+            $query->bindParam(':service_duration', $service["service_duration"], PDO::PARAM_INT);
 
-			$query->execute();
+            $query->execute();
 
             return true;
 		}

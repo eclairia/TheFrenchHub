@@ -13,14 +13,19 @@ include_once("app/view/layout/header_back.inc.php"); ?>
             <textarea name="service_description" class="form-control" id="service_description" rows="10" cols="100" required ><?= $service[0]['service_description'] ?></textarea>
         </div>
 
-        <div class="form-group col-lg-6 col-sm-6 col-lg-offset-3 col-md-offset-3">
+        <div class="form-group col-lg-3 col-sm-3 col-lg-offset-3 col-md-offset-3">
             <label for="service_price">Prix: </label>
             <input name="service_price" class="form-control" id="service_price" type="number" value="<?= $service[0]['service_price'] ?>" required/>
         </div>
 
+        <div class="form-group col-lg-3 col-sm-3">
+            <label for="service_duration">Durée: </label>
+            <input name="service_duration" class="form-control" id="service_duration" type="number" value="<?= $service[0]['service_duration'] ?>" required/>
+        </div>
+
         <div class="form-group col-lg-6 col-sm-6 text-center col-lg-offset-3 col-md-offset-3">
             <input value="Enregistrer" class="btn btn-lg btn-success" type="submit" />
-            <input type="reset" class="btn btn-lg btn-warning" value="effacer" />
+            <input type="reset" class="btn btn-lg btn-warning" value="Effacer" />
         </div>
     </form>
 </div>

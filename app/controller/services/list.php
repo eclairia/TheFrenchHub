@@ -8,7 +8,9 @@
 
 protection("admin", "admin", "login", USER_ADMIN);
 
-$services = select_table(array("table1" => "tfh_services"));
+$services = select_table(array("table1" => "tfh_services"),
+                         array("orderby" => "service_price",
+                               "order" => "ASC"));
 
 define("PAGE_TITLE", "Liste des Offres");
 include_once "app/view/services/list.php";
