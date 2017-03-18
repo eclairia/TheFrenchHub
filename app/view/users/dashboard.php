@@ -58,7 +58,7 @@
   </div>
 
   <div id="dashright">
-    <form method="post" action="">
+     <form method="post" action="">
 
       <div class="formaddmember2">
 
@@ -71,6 +71,22 @@
       </div>
 
     </form>
+
+    <!--<form method="post" action="">
+
+      <div class="formaddmember2">
+
+        <h2 class="titlechoice2">Votre projet</h2>
+
+        <div id="txtinfosdash">
+        <p>The French Hub</p>
+        <p>Ceci est une description toute pourrie parce que je n'ai pas d'imagination</p>
+        <a href="#">Télécharger le document</a>
+        <button class="boutonform2" type="button">Modifier mes informations</button>
+        </div>
+      </div>
+
+    </form>-->
 
   </div>
 
