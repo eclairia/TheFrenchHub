@@ -8,5 +8,4 @@
         			"where_colum => project_ID",
         			"where_value => user_project"));
 
-	var_dump($users_project);
-	die();
+	include_once("app/view/projects/dashboard.php");
