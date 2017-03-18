@@ -51,13 +51,13 @@
 
 		<div id="conceptdown">
 
+			  <div id="conceptexplain2">Grâce à nos partenariats avec des fonds et des entreprises qualifiées, nous mettons les entrepreneurs dans les meilleures dispositions pour réussir leurs projets.
+				L’environnement de travail est primordial, il est impératif de baigner dans un environnement dynamique et rassurant pour réussir dans les meilleures conditions.
+			  </div>
+
 				<div id="man"></div>
 
 				<div id="mac"></div>
-
-				<div id="conceptexplain2">Grâce à nos partenariats avec des fonds et des entreprises qualifiées, nous mettons les entrepreneurs dans les meilleures dispositions pour réussir leurs projets.
-					L’environnement de travail est primordial, il est impératif de baigner dans un environnement dynamique et rassurant pour réussir dans les meilleures conditions.
-				</div>
 
 				<div id="mer"></div>
 

@@ -826,7 +826,7 @@ input::-webkit-input-placeholder {
   background-position: center;
   position: relative;
   left: 22vw;
-  top: 7vh;
+  bottom: 50vh;
   box-shadow: 1px 1px 12px #555;
 }
 
@@ -839,7 +839,8 @@ input::-webkit-input-placeholder {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  left: 60vw;
+  left: 57vw;
+  bottom: 55vh;
   box-shadow: 1px 1px 12px #555;
 }
 
@@ -951,7 +952,7 @@ input::-webkit-input-placeholder {
   box-shadow: 1px 1px 12px #555;
   position: relative;
   left: 35vw;
-  bottom: 70vh;
+  bottom: 7vh;
 }
 
 /* ----> MENTIONS + CGV <---- */
