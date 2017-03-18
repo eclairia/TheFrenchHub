@@ -8,7 +8,9 @@
 $_POST = array(
             "order_price" => "3000",
             "time_slot_ID" => "1",
-            "user_project" => "2"
+            "user_project" => "2",
+            "time_slot_begin_disponibility" => "2016-05-29",
+            "time_slot_end_disponibility" => "6 m",
 );
 include("lib/paypal_api.php"); // On importe la page créée précédemment
 $requete = construit_url_paypal(); // Construit les options de base
@@ -70,6 +72,10 @@ else
         );
 
         $nb_reservations = $nb_reservations + 1;
+
+        $date = date_create($_POST['time_slot_begin_disponibility']);
+        date_add($date, date_interval_create_from_date_string($_POST['time_slot_end_disponibility'])); // 6 month // 12 month // 18 month
+        $_POST['time_slot_end_disponibility'] = date_format($date, 'Y-m-d');
 
         include_once('app/model/time_slots/reserve_time_slot.php');
         $retour = reserve_time_slot($_POST, $nb_reservations);

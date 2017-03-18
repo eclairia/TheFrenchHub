@@ -27,7 +27,7 @@
 					</div>
 
 					<div class="titreright">
-						<h2> Lorem Title de merde </h2>
+						<h2> Lorem Title</h2>
 					</div>
 
 			</div>
@@ -61,7 +61,7 @@
 					</div>
 
 					<div class="titreright2">
-						<h2> Lorem Title de merde </h2>
+						<h2> Lorem Title</h2>
 					</div>
 
 			</div>
@@ -120,7 +120,7 @@
 					</div>
 
 					<div class="titreright">
-						<h2> Lorem Title de merde </h2>
+						<h2> Lorem Title</h2>
 					</div>
 
 			</div>

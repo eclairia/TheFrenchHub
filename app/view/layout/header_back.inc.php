@@ -83,7 +83,23 @@
                         }
                         ?>
                     </li>
-				</ul>
+
+                    <li role="presentation" <?php if($_GET['module'] == 'testimonials'){echo 'class="active"';} ?> >
+                        <a href="?module=testimonials&action=list">Liste des témoignages</a>
+                        <?php
+                        if($_GET['module'] == 'testimonials')
+                        {
+                            ?>
+                            <ul class="nav nav-tabs-justified nav-stacked">
+                                <li role="presentation"><a href="?module=testimonials&action=new" class="text-danger">Ajouter un Témoignage</a></li>
+                            </ul>
+                            <?php
+                        }
+                        ?>
+                    </li>
+
+                    <li role="presentation" <?php if($_GET['module'] == 'contacts'){echo 'class="active"';} ?> ><a href="?module=contacts&action=list">Liste des demandes de contact</a></li>
+                </ul>
 			</nav>
 
             <div> <?php notif(); ?></div>

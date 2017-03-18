@@ -2,7 +2,14 @@
   margin: 0;
 }
 
-html {
+@font-face {
+	font-family: 'Avenirl';
+	src: url('../fonts/AvenirLTStd-Light.otf');
+}
+@font-face {
+	font-family: 'Avenir bold';
+	font-style: bold;
+	src: url('../fonts/AvenirLTStd-Heavy.otf');
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
@@ -15,6 +22,13 @@ html {
     font-style: normal;
 
 }
+
+
+html {
+  font-family: 'Avenirl';
+}
+
+
 
 /* NAV */
 
@@ -32,7 +46,7 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   color: #282D2E;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Avenirl';
   align-items: center;
   font-size: 1.7vh;
 }
@@ -66,7 +80,6 @@ nav {
 }
 
 .linknav {
-  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   font-size: 1.7vh;
   color: #282D2E;
@@ -106,7 +119,6 @@ header {
 }
 
 #h1header {
-  font-family: 'Open Sans', sans-serif;
   font-size: 5vh;
   font-weight: bold;
   text-transform: uppercase;
@@ -115,14 +127,12 @@ header {
 }
 
 #textheader {
-  font-family: 'Open Sans', sans-serif;
   color: #282D2E;
   font-size: 2vh;
   margin-bottom: 7vh;
 }
 
 #linkheader {
-  font-family: 'Open Sans', sans-serif;
   padding-left: 1.2vw;
   padding-right: 1.2vw;
   padding-top: 1.2vh;
@@ -156,7 +166,6 @@ header {
 }
 
 .rubriquehome {
-  font-family: 'Open Sans', sans-serif;
   color: #62D3D0;
   font-size: 3vh;
   margin-bottom: 0.7vh;
@@ -191,12 +200,11 @@ header {
   color: #282D2E;
   text-transform: uppercase;
   margin-bottom: 1vh;
-  font-family: Neoubold;
+  font-family: 'Neoubold';
   letter-spacing: 0.4em;
 }
 
 .detailservicetexte {
-  font-family: 'Open Sans', sans-serif;
   font-size: 2vh;
   color: #CCCCCC;
   margin-bottom: 7vh;
@@ -216,6 +224,143 @@ header {
   width: 100%;
   height: 40vh;
   }
+
+  #slider {
+    height: 30vh;
+    overflow: hidden;
+  }
+
+  #contentSlider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    list-style-type: none;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .photoslider {
+    width: 15vh;
+    height: 15vh;
+    position: relative;
+    top: 6.8vh;
+    left: 4vw;
+    background-color:  #62D3D0;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photoslider img {
+    width: 13vh;
+    height: 13vh;
+  }
+
+  .commentaireslider {
+    height: 30vh;
+    width: 30vw;
+    background : url(../IMG/fleche.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.inslider {
+  position: absolute;
+  top: 6vh;
+  left: 7vw;
+  text-align: left;
+}
+
+.nomcommslider {
+  font-size: 3vh;
+  margin-bottom: 0.5vh;
+}
+
+.postcommslider {
+  font-size: 1.6vh;
+  margin-bottom: 2vh;
+}
+
+.hr {
+  width: 3vw;
+  height: 0.2vh;
+  background-color: #FA5501;
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+}
+
+.textecommslider {
+  font-size: 1.8vh;
+  width: 15vw;
+}
+
+.arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  right: 4vw;
+  bottom: 0.3vh;
+}
+
+.upSlide {
+  width: 3vw;
+  height: 3vw;
+  border: 3px solid  #62D3D0;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.upSlide:hover {
+  opacity: 1;
+}
+
+.upSlide img {
+  width: 1.7vw;
+  height: 1.7vw;
+  transform: rotate(45deg);
+}
+
+.downSlide {
+  width: 3vw;
+  height: 3vw;
+  border: 3px solid  #62D3D0;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.downSlide:hover {
+  width: 3vw;
+  height: 3vw;
+  border: 3px solid  #62D3D0;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.downSlide img {
+  width: 1.7vw;
+  height: 1.7vw;
+  transform: rotate(45deg);
+}
 
   /* NOS PARTENAIRES */
 
@@ -302,21 +447,18 @@ header {
 
   #titlerejoignez {
     font-size: 2.4vh;
-    font-family: 'Open Sans', sans-serif;
     color: #FA5501;
     font-weight: bold;
     margin-bottom: 3vh;
   }
 
   #textrejoignez {
-    font-family: 'Open Sans', sans-serif;
     font-size: 2vh;
     color: white;
     margin-bottom: 7vh;
   }
 
   #boutonrejoignez {
-    font-family: 'Open Sans', sans-serif;
     padding-left: 1.2vw;
     padding-right: 1.2vw;
     padding-top: 1.2vh;
@@ -355,7 +497,6 @@ header {
 
   .linkfooter {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     color: #282D2E;
     font-size: 1.4vh;
   }
@@ -378,7 +519,6 @@ header {
   #reseauxtxt {
     text-transform: uppercase;
     color: #FA5501;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.7vh;
   }
 
@@ -442,7 +582,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
   }
 
   #pcivil {
@@ -454,8 +593,8 @@ header {
     height: 4vh;
     color: #282D2E;
     font-size: 2vh;
-    font-family: 'Open Sans', sans-serif;
     margin-bottom: 1vh;
+    font-family: 'Avenirl';
   }
 
   .borderform {
@@ -466,8 +605,8 @@ header {
 
 input::-webkit-input-placeholder {
     color: #282D2E;
-    font-family: 'Open Sans', sans-serif;
     font-size: 2vh;
+    font-family: 'Avenirl';
 }
 
 .boutonform {
@@ -476,11 +615,11 @@ input::-webkit-input-placeholder {
   margin-top: 2vh;
   border-radius: 25px;
   color: #62D3D0;
-  font-family: 'Open Sans', sans-serif;
   font-size: 2vh;
   padding-top: 1vh;
   padding-bottom: 1vh;
   cursor: pointer;
+  font-family: 'Avenirl';
 }
 
 .boutonform:hover {
@@ -497,7 +636,6 @@ input::-webkit-input-placeholder {
 }
 
 #titleinscription {
-  font-family: 'Open Sans', sans-serif;
   color: #62D3D0;
   font-size: 3vh;
   font-weight: normal;
@@ -538,7 +676,6 @@ input::-webkit-input-placeholder {
   }
 
   #titlelogin {
-    font-family: 'Open Sans', sans-serif;
     color: #FA5501;
     font-size: 3vh;
     font-weight: normal;
@@ -554,7 +691,6 @@ input::-webkit-input-placeholder {
   }
 
   #inscrire {
-    font-family: 'Open Sans', sans-serif;
     padding-left: 2.2vw;
     padding-right: 2.2vw;
     padding-top: 0.8vh;
@@ -572,7 +708,6 @@ input::-webkit-input-placeholder {
   }
 
   #grdtxtlogin {
-    font-family: 'Open Sans', sans-serif;
     color:#FA5501;
     font-size: 2.3vh;
     text-align: center;
@@ -580,7 +715,6 @@ input::-webkit-input-placeholder {
   }
 
   #txtlogin {
-    font-family: 'Open Sans', sans-serif;
     color:white;
     font-size: 1.7vh;
     margin-bottom: 3vh;
@@ -625,7 +759,6 @@ input::-webkit-input-placeholder {
 #titreequipe {
   transform: rotate(-45deg);
   color: white;
-  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 3em;
@@ -716,7 +849,6 @@ input::-webkit-input-placeholder {
 
 .textnone {
   color: #FA5501;
-  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 2vh;
@@ -891,7 +1023,6 @@ input::-webkit-input-placeholder {
 
 #titleconcept {
   color: #FA5501;
-  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3vh;
@@ -902,7 +1033,6 @@ input::-webkit-input-placeholder {
 .txtconcept {
   width: 30vw;
   color: #282D2E;
-  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-size: 2vh;
   text-align: left;
@@ -926,7 +1056,6 @@ input::-webkit-input-placeholder {
   background-color: white;
   z-index: 4;
   color: #282D2E;
-  font-family: 'Open Sans', sans-serif;
   padding-left: 1vw;
   padding-right: 1vw;
   font-size: 2vh;
@@ -944,7 +1073,6 @@ input::-webkit-input-placeholder {
   z-index: 4;
   color: #282D2E;
   font-size: 2vh;
-  font-family: 'Open Sans', sans-serif;
   padding-left: 1vw;
   padding-right: 1vw;
   display: flex;
@@ -975,20 +1103,17 @@ input::-webkit-input-placeholder {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Open Sans', sans-serif;
   text-align: left;
 }
 
 #contentmentions a {
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #FA5501;
   font-size: 2vh;
 }
 
 #contentmentions p {
-  font-family: 'Open Sans', sans-serif;
   text-align: left;
   font-size: 2vh;
 }
@@ -1319,6 +1444,9 @@ input::-webkit-input-placeholder {
 
     .cachoiceoffer {
       font-size: 1.7vh;
+      text-align: center;
+      padding-left: 0.2vw;
+      padding-right: 0.2vw;
     }
 
     .choice a:hover {
@@ -1385,7 +1513,7 @@ input::-webkit-input-placeholder {
       justify-content: space-around;
       align-items: center;
       width: 21vw;
-      height: 10vh;
+      height: 17vh;
       border-radius: 20px;
       margin-top: 5vh;
       margin-bottom: 7vh;
@@ -1417,7 +1545,8 @@ input::-webkit-input-placeholder {
     }
 
     .txtpaydown {
-      font-size: 1.5vh;
+      margin-top: 1vh;
+      font-size: 1.7vh;
       color: white;
     }
 
@@ -1491,13 +1620,18 @@ input::-webkit-input-placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .formaddmember {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 25vw;
+  position: relative;
+  bottom: 1vh;
 }
 
 #allcontentdashboardbot {
@@ -1505,7 +1639,6 @@ input::-webkit-input-placeholder {
   align-items: center;
   justify-content: space-around;
 }
-
 
 #dashright {
   width: 30vw;
@@ -1515,6 +1648,8 @@ input::-webkit-input-placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 7vh;
+  position: relative;
 }
 
 .formaddmember2 {
@@ -1530,8 +1665,8 @@ input::-webkit-input-placeholder {
   height: 8vh;
   color: #282D2E;
   font-size: 2vh;
-  font-family: 'Open Sans', sans-serif;
   margin-bottom: 1vh;
+  font-family: 'Avenirl';
 }
 
 .formwidthdash2 {
@@ -1539,8 +1674,8 @@ input::-webkit-input-placeholder {
   height: 4vh;
   color: #282D2E;
   font-size: 2vh;
-  font-family: 'Open Sans', sans-serif;
   margin-bottom: 1vh;
+  font-family: 'Avenirl';
 }
 
 .borderformdash {
@@ -1555,13 +1690,13 @@ input::-webkit-input-placeholder {
   margin-top: 2vh;
   border-radius: 25px;
   color: #FA5501;
-  font-family: 'Open Sans', sans-serif;
   font-size: 2vh;
   padding-top: 1vh;
   padding-bottom: 1vh;
   padding-right: 1.3vw;
   padding-left: 1.3vw;
   cursor: pointer;
+  font-family: 'Avenirl';
 }
 
 .boutonform2:hover {
@@ -1581,16 +1716,75 @@ input::-webkit-input-placeholder {
   margin-top: 2vh;
   border-radius: 25px;
   color: white;
-  font-family: 'Open Sans', sans-serif;
   font-size: 2vh;
   padding-top: 1vh;
   padding-bottom: 1vh;
   padding-right: 1.3vw;
   padding-left: 1.3vw;
   cursor: pointer;
+  font-family: 'Avenirl';
 }
 
 .boutonform3:hover {
   background-color: white;
   color: #62D3D0;
+}
+
+.titlechoice2 span {
+  font-size: 1.7vh;
+}
+
+#projectmembers {
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#projectrelative {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.memberlisting p {
+  font-size: 2vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  background-color: #62D3D0;
+  color: white;
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+#txtinfosdash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+  justify-content: space-around;
+}
+
+#txtinfosdash p {
+  color: white;
+  font-size: 1.7vh;
+  text-align: center;
+}
+
+#txtinfosdash a {
+  text-decoration: none;
+  font-family: 'Avenirl';
+  color: #FA5501;
+  font-size: 1.7vh;
+  text-align: center;
+}
+
+@media screen and (max-width: 1080px)
+
+{
+
+
+
+
 }
