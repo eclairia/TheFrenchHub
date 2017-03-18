@@ -1,6 +1,5 @@
 <?php
 	//Faire select_table users pour récupérer les membres d'un project
-
 	$_GET['id'] = intval($_GET['id']);
 	$users_project =  select_table(
         		array("table1" => "tfh_users",
@@ -8,6 +7,7 @@
         		array(
         			"where_colum" => "project_ID",
         			"where_value" => $_GET['id']));
+
 
 	// var_dump($users_project);
 	// die();
