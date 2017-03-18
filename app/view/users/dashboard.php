@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include_once 'app/view/layout/header_front.inc.php'; ?>
 
 <div id="allcontentdashboardtop">
@@ -74,3 +75,9 @@
 </div>
 
 <?php include_once 'app/view/layout/footer_front.inc.php'; ?>
+=======
+<form method="POST" action="?module=users&action=dashboard" id="form_add__project_users">
+	<label>Adresse mail du membre à ajouter: </label><input type="email" name="add_member_project" required>
+	<input type="submit">
+</form>
+>>>>>>> f533660843ab8326dcc0dfd3ace88db196531b3d

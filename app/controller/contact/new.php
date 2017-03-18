@@ -1,7 +1,5 @@
 <?php
-	protection("user", "users", "login", "USER_LAMBDA");
-
-	if(!isset($_POST['contact_login']))
+	if(!isset($_POST['contact_first_name']))
 	{
 		//Appel de la vue correspondante
 		define("PAGE_TITLE", 'Contacter The French Hub');
@@ -24,7 +22,8 @@
             $message_html = '<html>
                                 <body>
                                     <div>
-                                        <p>Login: ' . $_POST['contact_login'] . '</p>
+                                        <p>Prénom: ' . $_POST['contact_first_name'] . '</p>
+                                        <p>Nom: ' . $_POST['contact_last_name'] . '</p>
                                         <p>Mail de l\'utilisateur: '. $_POST['contact_mail'] .'</p>
                                         <p>Objet du message: '. $_POST['contact_object'] .'</p>
                                         <p>Message: '. $_POST['contact_message'] .'</p>
