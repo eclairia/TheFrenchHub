@@ -1234,3 +1234,187 @@ input::-webkit-input-placeholder {
       color:#62D3D0;
       background-color: white;
     }
+
+    /* ----> NOS OFFRES <---- */
+
+    #pageoffre {
+      width: 100%;
+    }
+
+    #contentoffretop {
+      height: 80vh;
+      width: 100%;
+      background: url(../IMG/pattern2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #allchoices {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    .titlechoice {
+      font-size: 3.5vh;
+      color: #FA5501;
+      margin-bottom: 2vh;
+      margin-top: 5vh;
+    }
+
+    .undertitlechoice {
+      width: 7vw;
+      height: 0.2vh;
+      background-color: #FA5501;
+      margin-bottom: 5vh;
+    }
+
+    .titletxt  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #explainchoice {
+      color: black;
+      font-size: 2vh;
+      width: 60vw;
+      text-align: center;
+    }
+
+    #explainchoice span {
+      color: #FA5501;
+      font-size: 2vh;
+    }
+
+    .choice {
+      width: 17vw;
+      height: 17vw;
+      background-color: white;
+      border-radius: 20px;
+      margin-top:7vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .choice a {
+      text-decoration: none;
+      color: #FA5501;
+      font-size: 2vh;
+      border: 1px solid #FA5501;
+      border-radius: 40px;
+      background-color: white;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+    }
+
+    .cachoiceoffer {
+      font-size: 1.7vh;
+    }
+
+    .choice a:hover {
+      color: white;
+      background-color: #FA5501;
+    }
+
+    .titrechoiceoffer {
+      text-transform: uppercase;
+      font-size: 2.7vh;
+    }
+
+    .pricechoiceoffer {
+      font-size: 3.5vh;
+      font-weight: bold;
+      color: #62D3D0;
+    }
+
+    #contentoffrebot {
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      width: 100%;
+      align-items: center;
+    }
+
+    #specoffres {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+    }
+
+    .flexspec {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 45vw;
+      margin-bottom: 2vh;
+    }
+
+    .flexspec img {
+      width: 2.5vw;
+      height: 2.5vw;
+      margin-right: 2vw;
+    }
+
+    .flexspec p {
+      font-size: 2vh;
+      text-align: left;
+    }
+
+    #payflex {
+      display: flex;
+      width: 45vw;
+      justify-content: space-between;
+    }
+
+    .pay {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 21vw;
+      height: 10vh;
+      border-radius: 20px;
+      margin-top: 5vh;
+      margin-bottom: 7vh;
+      background-color: #62D3D0;
+    }
+
+    .pay img {
+      height: 5vh;
+    }
+
+    .txtspecpay2 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .txtspecpay2 a {
+      font-size: 2vh;
+      color:  #FA5501;
+    }
+
+    .txtspecpay {
+      display: flex;
+      flex-direction: column;
+      width: 16vw;
+    }
+
+    .txtpayup {
+      font-size: 2vh;
+    }
+
+    .txtpaydown {
+      font-size: 1.5vh;
+      color: white;
+    }
