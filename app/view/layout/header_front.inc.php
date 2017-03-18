@@ -35,6 +35,7 @@
                 else
                 {
             ?>
+                <div class="linknavdiv"><a class="linknav" href="?module=users&action=dashboard">Dashboard</a></div>
                 <div class="linknavdiv"><a class="linknav" href="?module=users&action=logout">Déconnexion</a></div>
             <?php
                 }
