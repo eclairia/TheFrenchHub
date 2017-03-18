@@ -158,7 +158,7 @@ header {
 .rubriquehome {
   font-family: 'Open Sans', sans-serif;
   color: #62D3D0;
-  font-size: 2.3em;
+  font-size: 3vh;
   margin-bottom: 0.7vh;
 }
 
@@ -446,14 +446,14 @@ header {
   }
 
   #pcivil {
-    font-size: 1em;
+    font-size: 2vh;
   }
 
   .formwidth {
     width: 15vw;
     height: 4vh;
     color: #282D2E;
-    font-size: 1em;
+    font-size: 2vh;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 0.3vh;
   }
@@ -467,6 +467,7 @@ header {
 input::-webkit-input-placeholder {
     color: #282D2E;
     font-family: 'Open Sans', sans-serif;
+    font-size: 2vh;
 }
 
 .boutonform {
@@ -476,7 +477,7 @@ input::-webkit-input-placeholder {
   border-radius: 25px;
   color: #62D3D0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
+  font-size: 2vh;
   cursor: pointer;
 }
 
@@ -496,7 +497,7 @@ input::-webkit-input-placeholder {
 #titleinscription {
   font-family: 'Open Sans', sans-serif;
   color: #62D3D0;
-  font-size: 1.7em;
+  font-size: 3vh;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -537,7 +538,7 @@ input::-webkit-input-placeholder {
   #titlelogin {
     font-family: 'Open Sans', sans-serif;
     color: #FA5501;
-    font-size: 1.7em;
+    font-size: 3vh;
     font-weight: normal;
     text-transform: uppercase;
     margin-top: 5vh;
@@ -560,7 +561,7 @@ input::-webkit-input-placeholder {
     border: 1px solid #FA5501;
     text-decoration: none;
     color:white;
-    font-size: 1em;
+    font-size: 2vh;
     background-color: #FA5501;
     }
 
@@ -571,7 +572,7 @@ input::-webkit-input-placeholder {
   #grdtxtlogin {
     font-family: 'Open Sans', sans-serif;
     color:#FA5501;
-    font-size: 1.2em;
+    font-size: 2.3vh;
     text-align: center;
     margin-bottom: 3vh;
   }
@@ -579,7 +580,7 @@ input::-webkit-input-placeholder {
   #txtlogin {
     font-family: 'Open Sans', sans-serif;
     color:white;
-    font-size: 0.8em;
+    font-size: 1.7vh;
     margin-bottom: 3vh;
     text-align: center;
   }
@@ -625,7 +626,7 @@ input::-webkit-input-placeholder {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 1.2em;
+  font-size: 3em;
   text-align: center;
 }
 
@@ -716,7 +717,7 @@ input::-webkit-input-placeholder {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 2vh;
   text-align: center;
 }
 
@@ -745,26 +746,121 @@ input::-webkit-input-placeholder {
   width: 100%;
 }
 
-#headerconcept {
-  width: 100%;
-}
-
-#conceptrelative {
-  height: 50vh;
-  width: 100%;
+#conceptflex {
+  display: flex;
+  height: 80vh;
   background: url(../IMG/pattern.png);
   background-size: cover;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+  background-repeat: no-repeat;
+  padding-top: 7vh;
+  justify-content: space-around;
 }
 
-#logoanim{
-    height: 30vh;
-    margin-right: 15vw;
+#backgrdconcept {
+  height: 45vh;
+  width: 100%;
+  background: url(../IMG/bgconcept.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#ccpt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+#bgccpt1 {
+  height: 20vh;
+  width: 20vw;
+  z-index: 4;
+  background: url(../IMG/chair.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  box-shadow: 1px 1px 12px #555;
+}
+
+#bgccpt2 {
+  height: 32vh;
+  width: 10vw;
+  z-index: 2;
+  background: url(../IMG/car.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  bottom: 16vh;
+  left: 18.5vw;
+  box-shadow: 1px 1px 12px #555;
+}
+
+#bgccpt3 {
+  height: 13vw;
+  width: 13vw;
+  z-index: 3;
+  background: url(../IMG/pc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  bottom: 20vh;
+  left: 7vw;
+  box-shadow: 1px 1px 12px #555;
+}
+
+#conceptdown {
+  height: 70vh;
+  margin-bottom: 7vh;
+}
+
+#man {
+  height: 13vw;
+  width: 13vw;
+  background: url(../IMG/man.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 22vw;
+  top: 7vh;
+  box-shadow: 1px 1px 12px #555;
+}
+
+#mac {
+  height: 40vh;
+  width: 13vw;
+  background: url(../IMG/mac.jpg);
+  background-size: cover;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 60vw;
+  box-shadow: 1px 1px 12px #555;
+}
+
+
+#mer {
+  height: 13vw;
+  width: 13vw;
+  background: url(../IMG/mer.jpg);
+  background-size: cover;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  bottom: 77vh;
+  left: 24vw;
+  box-shadow: 1px 1px 12px #555;
+}
+
+#logoanim {
+    height: 35vh;
     position: relative;
-    top: 25vh;
     z-index: 3;
     -webkit-animation-name: Floatingx;
     -webkit-animation-duration: 3s;
@@ -789,17 +885,13 @@ input::-webkit-input-placeholder {
     to {-moz-transform: translate(0, -0px);}
 }
 
-#textconceptleft {
-  margin-left: 15vh;
-  width: 50%;
-}
 
 #titleconcept {
   color: #FA5501;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 3vh;
   text-align: left;
   margin-bottom: 4vh;
 }
@@ -809,76 +901,32 @@ input::-webkit-input-placeholder {
   color: #282D2E;
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 2vh;
   text-align: left;
-}
-
-#twopara {
-  display: flex;
-  flex-direction: column;
 }
 
 .botspace {
   margin-bottom: 2vh;
 }
 
-#othercontentconcept {
-  display: flex;
-  flex-direction: column;
+#ccptimg {
   position: relative;
+  bottom: 35vh;
 }
-
-#bgconcept1 {
-  width: 100%;
-  height: 50vh;
-  background: url(../IMG/cowork.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-#bgconcept2 {
-  width: 100%;
-  height: 50vh;
-  background: url(../IMG/pattern.png);
-  background-size: cover;
-  background-position: center;
-}
-
-#bgconcept3 {
-  width: 100%;
-  height: 50vh;
-  background: url(../IMG/nl.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.fd {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 
 #conceptexplain1 {
-  width: 20vw;
-  height: 50vh;
-  position: absolute;
-  top:25vh;
+  position: relative;
+  bottom: 43vh;
+  left: 5vw;
+  width: 23vw;
+  height: 55vh;
   background-color: white;
   z-index: 4;
-  margin-left: 15vw;
   color: #282D2E;
   font-family: 'Open Sans', sans-serif;
   padding-left: 1vw;
   padding-right: 1vw;
+  font-size: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -887,15 +935,12 @@ input::-webkit-input-placeholder {
 }
 
 #conceptexplain2 {
-  width: 20vw;
-  height: 50vh;
-  position: absolute;
-  top:75vh;
-  right: 0;
+  width: 23vw;
+  height: 55vh;
   background-color: white;
   z-index: 4;
-  margin-right: 15vw;
   color: #282D2E;
+  font-size: 2vh;
   font-family: 'Open Sans', sans-serif;
   padding-left: 1vw;
   padding-right: 1vw;
@@ -904,6 +949,9 @@ input::-webkit-input-placeholder {
   align-items: center;
   text-align: center;
   box-shadow: 1px 1px 12px #555;
+  position: relative;
+  left: 35vw;
+  bottom: 70vh;
 }
 
 /* ----> MENTIONS + CGV <---- */
@@ -925,7 +973,7 @@ input::-webkit-input-placeholder {
   align-items: center;
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
-  text-align: justify;
+  text-align: left;
 }
 
 #contentmentions a {
@@ -933,20 +981,24 @@ input::-webkit-input-placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #FA5501;
+  font-size: 2vh;
 }
 
 #contentmentions p {
   font-family: 'Open Sans', sans-serif;
-  text-align: justify;
+  text-align: left;
+  font-size: 2vh;
 }
 
 #contentmentions h3 {
   color: #FA5501;
+  font-size: 2vh;
 }
 
 #mentionslegalestitle {
   text-transform: uppercase;
   color: #62D3D0;
+  font-size: 2.5vh;
 }
 
 /* ----> ARTICLES <---- */
