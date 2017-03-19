@@ -2299,7 +2299,6 @@ input::-webkit-input-placeholder {
     font-size: 2.7vh;
     }
 
-
   #grdtxtlogin {
     font-size: 4vh;
   }
@@ -2307,6 +2306,113 @@ input::-webkit-input-placeholder {
   #txtlogin {
     font-size: 3vh;
     margin-bottom: 7vh;
+  }
+
+  /* ----> CONCEPT MOBILE <---- */
+
+  #conceptflex {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background: url(../IMG/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 7vh;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #backgrdconcept {
+    height: 70vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #ccpt {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #bgccpt1 {
+    display: none;
+  }
+
+  #bgccpt2 {
+  display: none;
+  }
+
+  #bgccpt3 {
+    display: none;
+  }
+
+  #conceptdown {
+    height: auto;
+    margin-bottom: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #man {
+  display: none;
+  }
+
+  #mac {
+  display: none;
+  }
+
+
+  #mer {
+  display: none;
+  }
+
+  #logoanim {
+      height: 22vh;
+      position: relative;
+      margin-top: 8vh;
+  }
+
+  #titleconcept {
+    font-size: 4vh;
+    text-align: left;
+    margin-bottom: 4vh;
+    margin-top: 6vh;
+    text-align: center;
+  }
+
+  .txtconcept {
+    width: 80vw;
+    height: 100%;
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .botspace {
+    margin-bottom: 2vh;
+  }
+
+  #conceptexplain1 {
+    position: relative;
+    bottom: 20vh;
+    left: 0;
+    width: 80vw;
+    height: 55vh;
+    font-size: 3vh;
+  }
+
+  #conceptexplain2 {
+    width: 80vw;
+    height: 55vh;
+    font-size: 3vh;
+    position: relative;
+    left: 0;
+    bottom: 15vh;
   }
 
 
