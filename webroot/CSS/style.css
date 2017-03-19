@@ -1780,9 +1780,14 @@ input::-webkit-input-placeholder {
   text-align: center;
 }
 
+/* ----> VERSION MOBILE <---- */
+
 @media screen and (max-width: 1080px)
 
 {
+
+  /* ----> HOMEPAGE RESPONSIVE <---- */
+
 
 
 

@@ -1,7 +1,4 @@
 <?php
-	
-	//protection("admin", "admin", "new", "USER_LAMBDA");
-	
 	if(empty($_POST))
 	{
 		//Appel de la vue correspondante
