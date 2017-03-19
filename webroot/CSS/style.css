@@ -1445,8 +1445,8 @@ input::-webkit-input-placeholder {
     .cachoiceoffer {
       font-size: 1.7vh;
       text-align: center;
-      padding-left: 0.2vw;
-      padding-right: 0.2vw;
+      padding-left: 1vw;
+      padding-right: 1vw;
     }
 
     .choice a:hover {
@@ -1468,7 +1468,8 @@ input::-webkit-input-placeholder {
     #contentoffrebot {
       display: flex;
       flex-direction: column;
-      height: 80vh;
+      justify-content: space-around;
+      height: 85vh;
       width: 100%;
       align-items: center;
     }
@@ -2414,6 +2415,142 @@ input::-webkit-input-placeholder {
     left: 0;
     bottom: 15vh;
   }
+
+  /* ----> NOS OFFRES MOBILE <---- */
+
+  #pageoffre {
+    width: 100%;
+  }
+
+  #contentoffretop {
+    height: auto;
+  }
+
+  #allchoices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4vh;
+  }
+
+  .titlechoice {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+  }
+
+  .undertitlechoice {
+    width: 15vw;
+    height: 0.5vh;
+    margin-bottom: 5vh;
+  }
+
+  #explainchoice {
+    font-size: 3vh;
+    width: 80vw;
+    text-align: center;
+  }
+
+  #explainchoice span {
+    font-size: 3vh;
+  }
+
+  .choice {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .choice a {
+    color: white;
+    font-size: 2.7vh;
+    background-color: #FA5501;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  .cachoiceoffer {
+    font-size: 2.7vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .titrechoiceoffer {
+    font-size: 4vh;
+  }
+
+  .pricechoiceoffer {
+    font-size: 5vh;
+  }
+
+  #contentoffrebot {
+    height: auto;
+  }
+
+  .flexspec {
+    align-items: center;
+    width: 80vw;
+    margin-bottom: 4vh;
+  }
+
+  .flexspec img {
+    width: 10vw;
+    height: 10vw;
+    margin-right: 2vw;
+  }
+
+  .flexspec p {
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  #payflex {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+  }
+
+  .pay {
+    width: 90vw;
+    height: 30vh;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pay img {
+    height: 10vh;
+  }
+
+  .txtspecpay2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .txtspecpay2 a {
+    font-size: 3vh;
+  }
+
+  .txtspecpay {
+    width: 80vw;
+    text-align: center;
+  }
+
+  .txtpayup {
+    font-size: 3vh;
+  }
+
+  .txtpaydown {
+    margin-top: 1vh;
+    font-size: 2.7vh;
+  }
+
 
 
 }
