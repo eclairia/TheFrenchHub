@@ -41,10 +41,6 @@
             </div>
 
             <div>
-                <input type="file" class="formwidth borderform" name="user_avatar" placeholder="Avatar">
-            </div>
-
-            <div>
                 <input type="hidden" name="user_level" value="0">
                 <input class="formwidth boutonform" type="submit" placeholder="Inscription">
             </div>
