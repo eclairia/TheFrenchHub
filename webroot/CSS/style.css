@@ -2216,6 +2216,98 @@ input::-webkit-input-placeholder {
       margin-right: 2vw;
     }
 
+    /* ----> SIGNUP MOBILE <---- */
+
+    #contentinscription {
+      height: 95vh;
+    }
+
+    #forminscription {
+      height: 90vh;
+      width: 90vw;
+    }
+
+    #civility {
+      margin-bottom: 1vh;
+      margin-top: 1vh;
+    }
+
+    #formsignup {
+      height: 100%;
+      width: 100%;
+    }
+
+    #pcivil {
+      font-size: 3vh;
+    }
+
+    .formwidth {
+      width: 70vw;
+      height: 5vh;
+      font-size: 3vh;
+      margin-bottom: 2vh;
+    }
+
+  input::-webkit-input-placeholder {
+      font-size: 3vh;
+  }
+
+  .boutonform {
+    background-color: #62D3D0;
+    margin-top: 2vh;
+    color: white;
+    font-size: 2.7vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+
+  #titresignup {
+    margin-top: 3vh;
+  }
+
+  #titleinscription {
+    font-size: 4vh;
+  }
+
+  /* ----> LOGIN MOBILE <---- */
+
+  #contentlogin {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #formlogin {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  #loginright {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  #titlelogin {
+    font-size: 4vh;
+  }
+
+  #inscrire {
+    padding-left: 12vw;
+    padding-right: 12vw;
+    padding-top: 1.3vh;
+    padding-bottom: 1.3vh;
+    font-size: 2.7vh;
+    }
+
+
+  #grdtxtlogin {
+    font-size: 4vh;
+  }
+
+  #txtlogin {
+    font-size: 3vh;
+    margin-bottom: 7vh;
+  }
 
 
 }
