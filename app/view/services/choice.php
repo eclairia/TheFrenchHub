@@ -106,7 +106,7 @@
 
               <div><p class="txtpayup">Règlement par compte paypal</p></div>
               <div><p class="txtpaydown">Les offres sont reglées par compte Paypal, vous recevrez un mail avec votre facture ainsi que tout les détails
-                 concernant votre paiment et votre offre.</p></div>
+                 concernant votre paiement et votre offre.</p></div>
 
           </div>
 
