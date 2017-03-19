@@ -33,14 +33,14 @@ function upload_pictures($data, $file)
 	$exp = explode(".", $file['article_file']['name']);
 	echo "Nouveau nom:  {$url} <br />";
 
-	if(move_uploaded_file($file['article_file']['tmp_name'], "webroot/IMG/".$url.".".$exp[count($exp)-1]))
+	if(move_uploaded_file($file['article_file']['tmp_name'], "webroot/IMG/articles/".$url.".".$exp[count($exp)-1]))
 	{
 		echo "Le fichier a bien été enregistré <br />";
 	}
 
 	//Redimmensionner l'image
 	//$image = imagecreatefromjpeg("pictures/".$url."."."$exp[count($exp)-1]");
-	$image = imagecreatefromjpeg("webroot/IMG/".$url."."."jpg");
+	$image = imagecreatefromjpeg("webroot/IMG/articles/".$url."."."jpg");
 	$width = imagesx($image);
 	$height = imagesy($image);
 
@@ -60,7 +60,7 @@ function upload_pictures($data, $file)
 
 	$thumb = imagecreatetruecolor($new_width, $new_height);
 	imagecopyresized($thumb, $image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
-	imagejpeg($thumb,"webroot/IMG/".$url.".".$exp[count($exp)-1] ,90);
+	imagejpeg($thumb,"webroot/IMG/articles/".$url.".".$exp[count($exp)-1] ,90);
 
 	imagedestroy($image);
 
