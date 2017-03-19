@@ -9,20 +9,28 @@
 	{
 		$_POST["user_level"] = intval($_POST["user_level"]);
 		$_POST["user_password"] = md5($_POST["user_password"] . SALT);
-		//Appel du fichier d'upload pour upload une image
-		include_once("app/model/users/upload_pictures.php");
-		$user_picture_url = upload_pictures($_POST, $_FILES);	
+
+        $key = md5(uniqid(rand()));
 		//Appel du modele pour insérer un administrateur
 		include_once("app/model/users/insert_user.php");
-		
-		$retour = insert_user($_POST, $user_picture_url);
+		$retour = insert_user($_POST, $key);
 
-		if(!$retour)
+		if($retour)
 		{
-			location("users", "new", "notif=ok");		
+            include_once("app/model/users/verif_validate.php");
+            $retour = verif_validate($key, USER_CONFIRMED);
+
+            if ($retour)
+            {
+                location("users", "login", "notif=oksignup");
+            }
+            else
+            {
+                location("users", "login", "notif=notactive");
+            }
 		}
 		else
 		{
-			location("projects", "new", "notif=nok");
+			location("users", "signup", "notif=noksignup");
 		}
 	}

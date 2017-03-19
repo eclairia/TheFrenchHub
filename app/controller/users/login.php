@@ -34,7 +34,7 @@
             else if ($retour['user_confirmed'] == 1)
             {
                 $_SESSION["user"] = $retour;
-                location("projects", "new", "notif=ok");
+                location("users", "dashboard", "notif=ok");
             }
             else
             {
