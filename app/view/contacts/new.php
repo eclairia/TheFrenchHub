@@ -6,7 +6,7 @@
 
 		<div><h1 id="titlecontact">Contact</h1></div>
 
-		<form id="formcontact2" method="post" action="">
+		<form id="formcontact2" method="post" action="?module=contacts&action=new">
 
 			<div>
 				<input class="formwidthdash2 borderformdash " name="contact_last_name" type="text" placeholder="Nom" value="" required>
@@ -20,14 +20,14 @@
 				<input class="formwidthdash2 borderformdash" type="email" name="contact_mail" placeholder="Adresse mail">
 			</div>
 
-			<select class="formwidthdash2 borderformdash" name="select" name="contact_object">
+			<select class="formwidthdash2 borderformdash" name="contact_object">
 
 				<option value="valeur1">Sujet de votre demande</option>
 				<option value="valeur2">---------------------------------</option>
-				<option value="valeur3">Démarches administratives</option>
-				<option value="valeur4">Conseils</option>
-				<option value="valeur5">Question sur The French Hub</option>
-				<option value="valeur6">Autre</option>
+				<option value="Démarches administratives">Démarches administratives</option>
+				<option value="Conseils">Conseils</option>
+				<option value="Question sur The French Hub">Question sur The French Hub</option>
+				<option value="Autre">Autre</option>
 
 			</select>
 
