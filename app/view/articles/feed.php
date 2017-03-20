@@ -1,195 +1,250 @@
 <?php include_once 'app/view/layout/header_front.inc.php'; ?>
 
-<div id="allcontentarticles">
+    <div id="allcontentarticles">
+        <?php
+        $i = 1;
+
+        foreach ($articles as $article)
+            {
+                if ($i%2 != 0)
+                {
+        ?>
+                    <div class="articlel">
+                        <div class="articlepartleft">
+                            <div class="blocbleuarticle">
+                                <div><img src="<?= IMG_ARTICLE_URL.$article['article_picture_url'] ?>" alt=""/></div>
+                            </div>
+
+                            <div class="underbloc1">
+                                <p><?= $article['article_date'] ?></p>
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <div class="articlepartright">
+                            <div class="righttop">
+                                <div class="articlehr"></div>
+
+                                <div class="titreright">
+                                    <h2> <?= $article['article_title'] ?> </h2>
+                                </div>
+                            </div>
+
+                            <div class="txtarticle">
+                                <?= "<p class=\"internaltxt\">" . substr($article['article_content'], 0, 420) . '...</p>'; ?>
+                            </div>
+
+                            <div class="buttonarticle">
+                                <a href="#" target="_blank">Voir</a>
+                            </div>
+                        </div>
+                    </div>
+        <?php
+                    $i++;
+                }
+                else
+                {
+        ?>
+                    <div class="article2">
+                        <div class="articlepartright">
+                            <div class="righttop2">
+                                <div class="articlehr2"></div>
+
+                                <div class="titreright2">
+                                    <h2> <?= $article['article_title'] ?> </h2>
+                                </div>
+                            </div>
+
+                            <div class="txtarticle2">
+                                <?= "<p class=\"internaltxt2\">" . substr($article['article_content'], 0, 420) . '...</p>'; ?>
+                            </div>
+
+                            <div class="buttonarticle2">
+                                <a href="#" target="_blank">Voir</a>
+                            </div>
+                        </div>
+
+                        <div class="articlepartleft2">
+                            <div class="blocbleuarticle2">
+                                <div><img src="<?= IMG_ARTICLE_URL.$article['article_picture_url'] ?>" alt=""/></div>
+                            </div>
+
+                            <div class="underbloc2">
+                                <p><?= $article['article_date'] ?></p>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+        <?php
+                    $i++;
+                }
+            }
+        ?>
+    </div>
+        <!--
+        <div class="articlel">
+            <div class="articlepartleft">
+                <div class="blocbleuarticle">
+                      <div><img src="webroot/IMG/idea.png" alt=""/></div>
+                </div>
+
+                <div class="underbloc1">
+                      <p>01/01/2017</p>
+                      <div></div>
+                </div>
+            </div>
+
+            <div class="articlepartright">
+                <div class="righttop">
+                    <div class="articlehr"></div>
+
+                    <div class="titreright">
+                        <h2> Lorem Title</h2>
+                    </div>
+                </div>
 
-<!-- ARTICLE 1 -->
- <div class="articlel">
+                <div class="txtarticle">
+                    <p class="internaltxt">Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium,
+                        cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea.
+                         Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis.
+                    </p>
+                </div>
 
-	<div class="articlepartleft">
+                <div class="buttonarticle">
+                    <a href="#" target="_blank">Voir</a>
+                </div>
+            </div>
+        </div>
 
-		<div class="blocbleuarticle">
-			  <div><img src="webroot/IMG/idea.png" alt=""/></div>
-		</div>
+        <!-- FIN ARTICLE 1
 
-		<div class="underbloc1">
-			  <p>01/01/2017</p>
-				<div></div>
-		</div>
+        <!-- ARTICLE 2
+         <div class="article2">
+            <div class="articlepartright">
+                <div class="righttop2">
+                        <div class="articlehr2"></div>
 
-	</div>
+                        <div class="titreright2">
+                            <h2> Lorem Title</h2>
+                        </div>
+                </div>
 
-	<div class="articlepartright">
+                <div class="txtarticle2">
+                    <p class="internaltxt2">Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium,
+                        cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea.
+                         Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis.
+                    </p>
+                </div>
 
-			<div class="righttop">
+                <div class="buttonarticle2">
+                    <a href="#" target="_blank">Voir</a>
+                </div>
+            </div>
 
-					<div class="articlehr">
+            <div class="articlepartleft2">
+                <div class="blocbleuarticle2">
+                      <div><img src="webroot/IMG/idea.png" alt=""/></div>
+                </div>
 
-					</div>
+                <div class="underbloc2">
+                      <p>01/01/2017</p>
+                        <div></div>
+                </div>
+            </div>
+        </div>
 
-					<div class="titreright">
-						<h2> Lorem Title</h2>
-					</div>
+        <!-- FIN ARTICLE 2
 
-			</div>
+        <!-- ARTICLE 3
+         <div class="articlel">
 
-			<div class="txtarticle">
-				<p class="internaltxt">Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium,
-					cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea.
-					 Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis.</p>
-			</div>
+            <div class="articlepartleft">
 
-			<div class="buttonarticle">
-				<a href="#" target="_blank">Voir</a>
-			</div>
+                <div class="blocbleuarticle">
+                      <div><img src="webroot/IMG/idea.png" alt=""/></div>
+                </div>
 
-	</div>
+                <div class="underbloc1">
+                      <p>01/01/2017</p>
+                        <div></div>
+                </div>
 
-</div>
+            </div>
 
-<!-- FIN ARTICLE 1 -->
+            <div class="articlepartright">
 
-<!-- ARTICLE 2 -->
- <div class="article2">
+                    <div class="righttop">
 
+                            <div class="articlehr">
 
-	<div class="articlepartright">
+                            </div>
 
-			<div class="righttop2">
+                            <div class="titreright">
+                                <h2> Lorem Title</h2>
+                            </div>
 
-					<div class="articlehr2">
+                    </div>
 
-					</div>
+                    <div class="txtarticle">
+                        <p class="internaltxt">Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium,
+                            cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea.
+                             Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis.</p>
+                    </div>
 
-					<div class="titreright2">
-						<h2> Lorem Title</h2>
-					</div>
+                    <div class="buttonarticle">
+                        <a href="#" target="_blank">Voir</a>
+                    </div>
 
-			</div>
+            </div>
 
-			<div class="txtarticle2">
-				<p class="internaltxt2">Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium,
-					cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea.
-					 Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis.</p>
-			</div>
+        </div>
 
-			<div class="buttonarticle2">
-				<a href="#" target="_blank">Voir</a>
-			</div>
+        <!-- FIN ARTICLE 3
 
-	</div>
+        <!-- ARTICLE 4
+         <div class="article2">
 
-	<div class="articlepartleft2">
 
-		<div class="blocbleuarticle2">
-			  <div><img src="webroot/IMG/idea.png" alt=""/></div>
-		</div>
+            <div class="articlepartright">
 
-		<div class="underbloc2">
-			  <p>01/01/2017</p>
-				<div></div>
-		</div>
+                    <div class="righttop2">
 
-	</div>
+                            <div class="articlehr2">
 
-</div>
+                            </div>
 
-<!-- FIN ARTICLE 2 -->
+                            <div class="titreright2">
+                                <h2> Lorem Title </h2>
+                            </div>
 
-<!-- ARTICLE 3 -->
- <div class="articlel">
+                    </div>
 
-	<div class="articlepartleft">
+                    <div class="txtarticle2">
+                        <p class="internaltxt2">Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium,
+                            cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea.
+                             Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis.</p>
+                    </div>
 
-		<div class="blocbleuarticle">
-			  <div><img src="webroot/IMG/idea.png" alt=""/></div>
-		</div>
+                    <div class="buttonarticle2">
+                        <a href="#" target="_blank">Voir</a>
+                    </div>
 
-		<div class="underbloc1">
-			  <p>01/01/2017</p>
-				<div></div>
-		</div>
+            </div>
 
-	</div>
+            <div class="articlepartleft2">
 
-	<div class="articlepartright">
+                <div class="blocbleuarticle2">
+                      <div><img src="webroot/IMG/idea.png" alt=""/></div>
+                </div>
 
-			<div class="righttop">
+                <div class="underbloc2">
+                      <p>01/01/2017</p>
+                        <div></div>
+                </div>
 
-					<div class="articlehr">
+            </div>
 
-					</div>
+        </div>-->
 
-					<div class="titreright">
-						<h2> Lorem Title</h2>
-					</div>
-
-			</div>
-
-			<div class="txtarticle">
-				<p class="internaltxt">Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium,
-					cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea.
-					 Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis.</p>
-			</div>
-
-			<div class="buttonarticle">
-				<a href="#" target="_blank">Voir</a>
-			</div>
-
-	</div>
-
-</div>
-
-<!-- FIN ARTICLE 3 -->
-
-<!-- ARTICLE 4 -->
- <div class="article2">
-
-
-	<div class="articlepartright">
-
-			<div class="righttop2">
-
-					<div class="articlehr2">
-
-					</div>
-
-					<div class="titreright2">
-						<h2> Lorem Title </h2>
-					</div>
-
-			</div>
-
-			<div class="txtarticle2">
-				<p class="internaltxt2">Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium,
-					cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea.
-					 Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis.</p>
-			</div>
-
-			<div class="buttonarticle2">
-				<a href="#" target="_blank">Voir</a>
-			</div>
-
-	</div>
-
-	<div class="articlepartleft2">
-
-		<div class="blocbleuarticle2">
-			  <div><img src="webroot/IMG/idea.png" alt=""/></div>
-		</div>
-
-		<div class="underbloc2">
-			  <p>01/01/2017</p>
-				<div></div>
-		</div>
-
-	</div>
-
-</div>
-
-<!-- FIN ARTICLE 4 -->
-
-
-
- </div>
 
 <?php include_once 'app/view/layout/footer_front.inc.php'; ?>

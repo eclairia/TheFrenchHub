@@ -13,22 +13,25 @@
 		// die();
 		//Appel du modele pour insérer un article
 		include_once("app/model/articles/upload_pictures.php");
-		$article_picture_url = upload_pictures($_POST, $_FILES);
-		include_once("app/model/articles/insert_article.php");
+		$article_picture_url = upload_pictures($_FILES);
 
-		// var_dump($article_picture_url);
-		// die();
-
-		$_SESSION["admin"]["admin_ID"] = intval($_SESSION["admin"]["admin_ID"]);
-		$retour = insert_article($_POST, $_FILES, $article_picture_url, $_SESSION["admin"]["admin_ID"]);
-
-
-		if(!$retour)
-		{
-			location("articles", "new", "notif=nok");
-		}
-		else
-		{
-			location("articles", "list", "notif=ok");
-		}
+        if($article_picture_url == false)
+        {
+            location('articles', 'new', 'notif=badimg');
+        }
+        else
+        {
+            include_once("app/model/articles/insert_article.php");
+            $_SESSION["admin"]["admin_ID"] = intval($_SESSION["admin"]["admin_ID"]);
+            $retour = insert_article($_POST, $_FILES, $article_picture_url, $_SESSION["admin"]["admin_ID"]);
+            
+            if(!$retour)
+            {
+                location("articles", "new", "notif=nok");
+            }
+            else
+            {
+                location("articles", "list", "notif=ok");
+            }
+        }
 	}
