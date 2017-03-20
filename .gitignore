@@ -4,3 +4,5 @@ app/model/pdo\.inc\.php
 *.xml
 
 *.iml
+
+webroot/files/projects/
