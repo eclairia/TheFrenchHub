@@ -44,6 +44,7 @@
                 <input class="formwidthdash2 borderform" type="text" placeholder="Nom" name="additionnal_member_last_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
                 <input class="formwidthdash2 borderform" type="text" placeholder="Prénom" name="additionnal_member_first_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
                 <input class="formwidthdash2 borderform" type="email" placeholder="Adresse mail" name="additionnal_member_mail" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
+                <input type="hidden" name="user_project" value="<?= $user_project[0]['user_project'] ?>">
                 <input class="boutonform3" type="submit" value="Ajouter un membre" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
             </div>
         </form>
@@ -89,17 +90,27 @@
     <div id="projectmembers">
         <div id="projectrelative"><h2 class="titlechoice2">Liste des membres du projet</h2></div>
 
-        <div class="memberlisting">
-            <p>Jean DUPONT</p>
-        </div>
-
-        <div class="memberlisting">
-            <p>Jacques JACQUES</p>
-        </div>
-
-        <div class="memberlisting">
-            <p>Nicolas LUCAS</p>
-        </div>
+        <?php
+            if(isset($additionnal_members))
+            {
+                foreach ($additionnal_members as $additionnal_member)
+                {
+        ?>
+                    <div class="memberlisting">
+                        <p><?= $additionnal_member['additionnal_member_first_name'] ."". $additionnal_member['additionnal_member_last_name'] ?></p>
+                    </div>
+        <?php
+                }
+            }
+            else
+            {
+        ?>
+                <div class="memberlisting">
+                    <p>Pas encore de membres</p>
+                </div>
+        <?php
+            }
+        ?>
     </div>
 </div>
 
