@@ -5,7 +5,6 @@
 		define("PAGE_TITLE", 'Contacter The French Hub');
 		include_once('app/view/contacts/new.php');
 	}
-
 	else
 	{
 		//Appel du modele pour insérer un administrateur

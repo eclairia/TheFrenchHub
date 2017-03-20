@@ -27,6 +27,7 @@
 
 		catch(Exception $e)
 		{
-			return false;
+            die('Erreur SQL: ' . $e->getMessage());
+            return false;
 		}
 	}

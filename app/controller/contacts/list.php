@@ -5,4 +5,5 @@
 							"order" => "DESC")
 				);
 
+    define("PAGE_TITLE", "Liste des demandes de contact");
 	include_once("app/view/contacts/list.php");
