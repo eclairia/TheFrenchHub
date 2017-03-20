@@ -26,22 +26,30 @@
 	}
 	else
 	{
-		$_POST["article_ID"] = intval($_POST["article_ID"]);		
-		//Appel du modele pour modifier les données d'un article
+		$_POST["article_ID"] = intval($_POST["article_ID"]);
+
 		include_once("app/model/articles/upload_pictures.php");
-		$article_picture_url = upload_pictures($_POST, $_FILES);
-		// var_dump($article_picture_url);
-		// die();
-		include_once("app/model/articles/update_article.php");
-		$retour = update_article($_POST, $article_picture_url);
+		$article_picture_url = upload_pictures($_FILES);
 
-		if($retour)
-		{
-			location("articles", "list", "notif=ok");		
-		}
+        if($article_picture_url == false)
+        {
+            location('articles', 'update', 'id='. $_GET['id'] .'&notif=badimg');
+        }
+        else
+        {
+            //Appel du modele pour modifier les données d'un article
+            include_once("app/model/articles/update_article.php");
+            $retour = update_article($_POST, $article_picture_url);
 
-		else
-		{
-			location("articles", "list", "notif=nok");
-		}
+            if($retour)
+            {
+                location("articles", "list", "notif=ok");
+            }
+
+            else
+            {
+                location("articles", "list", "notif=nok");
+            }
+        }
+
 	}
