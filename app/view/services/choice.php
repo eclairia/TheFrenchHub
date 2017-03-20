@@ -17,30 +17,111 @@
 
     <div id="allchoices">
 
+      <div class="selectchoice">
       <div class="choice">
 
         <div><p class="titrechoiceoffer">Offre 6 mois</p></div>
         <div><p class="pricechoiceoffer">3000 €</p></div>
         <div><p class="cachoiceoffer">+ 3% de votre Chiffre d'affaires pendant 1 an</p></div>
-        <div><a href="#">Choisir cette offre</a></div>
+        <div><a id="animclick1">Choisir cette offre</a></div>
+
+      </div>
+      <div class="underselectchoice" id="animtranslate1">
+
+        <form class="formvalid" method="post" action="">
+
+          <input type="hidden" name="price_order" value="3000">
+          <input type="hidden" name="time_slot_ID" value="">
+          <input type="hidden" name="user_project" value="">
+          <input type="hidden" name="time_slot_begin_disponibility" value="">
+          <input type="hidden" name="time_slot_end_disponibility" value="6 month">
+          <select class="borderformvalid" name="time_slot_begin_disponibility">
+
+              <option value="">Choisissez une date</option>
+              <option value=""></option>
+              <<option value=""></option>
+
+          </select>
+
+          <input type="submit" value="Valider" class="validatechoice">
+
+        </form>
+
 
       </div>
 
+      </div>
+
+
+      <div class="selectchoice">
       <div class="choice">
 
         <div><p class="titrechoiceoffer">Offre 12 mois</p></div>
         <div><p class="pricechoiceoffer">7000 €</p></div>
         <div><p class="cachoiceoffer">+ 2% de votre Chiffre d'affaires pendant 2 ans</p></div>
-        <div><a href="#">Choisir cette offre</a></div>
+        <div><a id="animclick2">Choisir cette offre</a></div>
+
+      </div>
+      <div class="underselectchoice" id="animtranslate2">
+
+        <form class="formvalid" method="post" action="">
+
+          <input type="hidden" name="price_order" value="3000">
+          <input type="hidden" name="time_slot_ID" value="">
+          <input type="hidden" name="user_project" value="">
+          <input type="hidden" name="time_slot_begin_disponibility" value="">
+          <input type="hidden" name="time_slot_end_disponibility" value="6 month">
+          <select class="borderformvalid" name="time_slot_begin_disponibility">
+
+              <option value="">Choisissez une date</option>
+              <option value=""></option>
+              <<option value=""></option>
+
+          </select>
+
+          <input type="submit" value="Valider" class="validatechoice">
+
+        </form>
 
       </div>
 
+      </div>
+
+      <div class="selectchoice">
       <div class="choice">
 
         <div><p class="titrechoiceoffer">Offre 18 mois</p></div>
         <div><p class="pricechoiceoffer">10 000 €</p></div>
         <div><p class="cachoiceoffer">+ 2% de votre Chiffre d'affaires pendant 3 ans</p></div>
-        <div><a href="#">Choisir cette offre</a></div>
+        <div><a id="animclick3">Choisir cette offre</a></div>
+
+      </div>
+
+      <div class="underselectchoice" id="animtranslate3">
+
+        <form class="formvalid" method="post" action="">
+
+          <input type="hidden" name="price_order" value="3000">
+          <input type="hidden" name="time_slot_ID" value="">
+          <input type="hidden" name="user_project" value="">
+          <input type="hidden" name="time_slot_begin_disponibility" value="">
+          <input type="hidden" name="time_slot_end_disponibility" value="6 month">
+          <select class="borderformvalid" name="time_slot_begin_disponibility">
+
+              <option value="">Choisissez une date</option>
+              <option value=""></option>
+              <<option value=""></option>
+
+          </select>
+
+          <input type="submit" value="Valider" class="validatechoice">
+
+        </form>
+
+
+        </form>
+
+      </div>
 
       </div>
 
@@ -135,4 +216,5 @@
 </div>
 
 <!-- Footer -->
+<script type="text/javascript" src="webroot/JS/choice_services.js"></script>
 <?php include_once 'app/view/layout/footer_front.inc.php'; ?>

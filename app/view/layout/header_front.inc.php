@@ -5,6 +5,7 @@
 	<title><?= PAGE_TITLE ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel='stylesheet' type="text/css" href='webroot/CSS/style.css' />
+	<link rel="icon" type="image/png" href="webroot/IMG/logo2.png" />
     <script src="webroot/JS/jquery-3.1.1.min.js"></script>
 </head>
 
