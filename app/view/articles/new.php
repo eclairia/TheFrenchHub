@@ -31,7 +31,7 @@
 </div>
 
 <script>
-    CKEDITOR.replace('article_content');
+    CKEDITOR.replace('testimonial_content');
 </script>
 
 <?php include_once("app/view/layout/footer_back.inc.php"); ?>
