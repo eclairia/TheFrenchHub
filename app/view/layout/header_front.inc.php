@@ -57,7 +57,7 @@
 
 		<div id="linkmobile2">
 
-			<a class="linknav3" href="?module=static&action=contact">Contact</a>
+			<a class="linknav3" href="?module=contacts&action=new">Contact</a>
 			<a class="linknav3" href="?module=static&action=cgv">CGV</a>
 			<a class="linknav3" href="?module=static&action=mentions">Mentions légales</a>
 			<a class="linknav3" href="?module=static&action=plan">Plan du site</a>

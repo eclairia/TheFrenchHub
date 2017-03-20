@@ -3215,5 +3215,262 @@ input::-webkit-input-placeholder {
     height: 7vh;
   }
 
+  /* ----> ARTICLES MOBILE<---- */
+
+  /* ----> article orange mobile <---- */
+
+  .articlel {
+    width: 90vw;
+    height: auto;
+    display: flex;
+    position:;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+    }
+
+  .articlepartleft {
+    width: 35vw;
+    height: auto;
+    position:;
+  }
+
+  .blocbleuarticle {
+    width: 0vw;
+    height: 40vh;
+    background-color: #FA5501;
+    position:;
+  }
+
+  .blocbleuarticle img {
+    height: 40vh;
+    position:;
+    margin: auto;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 8vh;
+  }
+
+  .underbloc1 {
+    position: relative;
+    z-index: 3;
+    height: 7vh;
+    width: 65vw;
+    background-color: #FA5501;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .underbloc1 div {
+    display: none;
+  }
+
+  .underbloc1 p {
+    font-size: 3vh;
+    color: black;
+    margin-left: 15vw;
+  }
+
+  .righttop {
+    display: flex;
+    position:;
+    margin-top: 10vh;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+
+  .articlehr {
+    display: none;
+    }
+
+    .titreright h2 {
+      font-size: 3.2vh;
+      font-weight: bold;
+      color: black;
+      margin-left: 17vw;
+      text-align: center;
+    }
+
+    .txtarticle {
+      margin-left: 15vw;
+    }
+
+    .internaltxt {
+      font-size: 3vh;
+      color: #a7a9ac;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .buttonarticle {
+      float:;
+      right: 0vw;
+      margin-top: 7vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .buttonarticle a {
+      text-decoration: none;
+      font-size: 3vh;
+      color: white;
+      background-color: #FA5501;
+      border: 1px solid #FA5501;
+      border-radius: 40px;
+      padding-left: 15vw;
+      padding-right: 15vw;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+      text-align: center;
+    }
+
+    .buttonarticle a:hover {
+      color: #FA5501;
+      background-color: white;
+    }
+
+    .articlepartright {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #allcontentarticles {
+      width: 100%;
+      height: auto;
+    }
+
+    /* ----> article bleu mobile <---- */
+
+    .article2 {
+      width: 90vw;
+      height: auto;
+      display: flex;
+      position:;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 0vh;
+      float:;
+    }
+
+    .articlepartleft2 {
+      width: 35vw;
+      height: auto;
+      position: none;
+    }
+
+    .blocbleuarticle2 {
+      width: 0vw;
+      height: 40vh;
+      background-color: #62D3D0;
+      position:;
+    }
+
+    .blocbleuarticle2 img {
+      height: 40vh;
+      position:;
+      margin: auto;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      top: 8vh;
+    }
+
+    .underbloc2 {
+      position:;
+      z-index: 3;
+      height: 7vh;
+      width: 65vw;
+      background-color: #62D3D0;
+      position:;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .underbloc2 div {
+      display: none;
+    }
+
+    .underbloc2 p {
+      font-size: 3vh;
+      color: black;
+      text-align: center;
+    }
+
+    .righttop2 {
+      display: flex;
+      flex-direction: row-reverse;
+      position:;
+      margin-top: 10vh;
+      margin-right: 0;
+      align-items: center;
+      margin-bottom: 5vh;
+    }
+
+
+    .articlehr2 {
+      display: none;
+      }
+
+      .titreright2 h2 {
+        position: ;
+        font-size: 3.2vh;
+        font-weight: bold;
+        color: black;
+        margin-right: 0vw;
+        text-align: center;
+      }
+
+      .txtarticle2 {
+        margin-left: 15vw;
+      }
+
+      .internaltxt2 {
+        font-size: 3vh;
+        color: #a7a9ac;
+        font-weight: normal;
+        text-align: center;
+      }
+
+      .buttonarticle2 {
+       float: left;
+       left: 15vw;
+       margin-top: 7vh;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+      }
+
+      .buttonarticle2 a {
+        text-decoration: none;
+        font-size: 3vh;
+        color: white;
+        background-color: #62D3D0;
+        border: 1px solid #62D3D0;
+        border-radius: 40px;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+      }
+
+      .buttonarticle2 a:hover {
+        color:#62D3D0;
+        background-color: white;
+      }
+
 
 }

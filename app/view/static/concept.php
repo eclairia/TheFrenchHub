@@ -10,9 +10,7 @@
 
 				<div>
 
-				<p class="txtconcept botspace">The French Hub redéfinit les enjeux de l’incubation.
-					Elle s’appuie sur des notions de partage, de transmissions et d’interconnectivité.
-					Ainsi, elle permet à de nombreux entrepreneurs de construire des projets novateurs.</p>
+				<p class="txtconcept botspace">The French Hub redéfinit les enjeux de l’incubation. Il s’appuie sur des notions de partage, de transmissions et d’interconnectivité. Ainsi, il permet à de nombreux entrepreneurs de construire des projets novateurs.</p>
 
 				</div>
 
@@ -38,8 +36,9 @@
 
 				<div>
 
-					<div id="conceptexplain1">Chez the French Hub, il est question de réunir des individus de différents horizons, de les faire travailler ensemble, et donc de faire émerger des solutions innovantes.
-						Échanger dans un monde où les barrières n’existent plus, voilà l’avantage sur lequel s’appuie The French Hub. De la sorte, il alimente la notion d’interconnectivité et de transmission entre de jeunes entrepreneurs à travers le monde.
+					<div id="conceptexplain1">Chez The French Hub, il est question de réunir des individus de différentes horizons, de les faire travailler ensemble,  pour voir émerger des solutions innovantes.
+           Nous échangeons dans un monde où les barrières n’existent plus. Voilà l’avantage sur lequel s’appuie The French Hub !
+					 De la sorte, ce hub alimente la notion d’interconnectivité et de transmission entre des entrepreneurs venus du monde entier. Qui travaille ensemble, auprès de spécialistes, pour repenser notre monde et … pourquoi pas … le révolutionner.
 					</div>
 
 				</div>
@@ -51,9 +50,11 @@
 
 		<div id="conceptdown">
 
-			  <div id="conceptexplain2">Grâce à nos partenariats avec des fonds et des entreprises qualifiées, nous mettons les entrepreneurs dans les meilleures dispositions pour réussir leurs projets.
-				L’environnement de travail est primordial, il est impératif de baigner dans un environnement dynamique et rassurant pour réussir dans les meilleures conditions.
-			  </div>
+			  <div id="conceptexplain2">Grâce à nos partenariats avec des fonds et des entreprises qualifiés, nous mettons les entrepreneurs dans les meilleures dispositions pour qu’ils réussissent leurs projets.
+					Bénéficier d’un bon environnement de travail est primordiale. Voilà pourquoi nous cherchons à construire un environnement dynamique et rassurant.
+
+					Le leitmotiv chez The French Hub c’est : ” Il faut favoriser la réussite dans les meilleures conditions, et cela passe par une implication de tout instant de la part des fondateurs”
+				</div>
 
 				<div id="man"></div>
 
