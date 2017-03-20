@@ -1,6 +1,6 @@
 <?php
 
-	protection("admin", "admin", "login", USER_SUPER_ADMIN);
+	protection("admin", "admin", "login", USER_ADMIN);
 
 	if(empty($_POST))
 	{

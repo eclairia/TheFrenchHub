@@ -1,13 +1,117 @@
 <?php include_once 'app/view/layout/header_back.inc.php'; ?>
 
-	<?php foreach($testimonials as $testimonial)
-	{ ?>
-		<p><?= $testimonial['testimonial_first_name']; ?></p>
-		<p><?= $testimonial['testimonial_last_name']; ?></p>
-		<p><?= $testimonial['testimonial_job']; ?></p>
-		<p><?= $testimonial['testimonial_content']; ?></p>
-		<a href="?module=testimonials&action=update&id=<?= $testimonial['testimonial_ID']; ?>">Modifier le témoignage</a><br><br>		
-		<a href="?module=testimonials&action=delete&id=<?= $testimonial['testimonial_ID']; ?>">Supprimer le témoignage</a><br><br>
-	<?php } ?>
- 
+    <div class="table-responsive" xmlns="http://www.w3.org/1999/html">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>
+                    <p class="text-center">
+                        Prénom
+                    </p>
+                </th>
+
+                <th class="text-center">
+                    <p class="text-center">
+                        Nom
+                    </p>
+                </th>
+
+                <th class="text-center">
+                    <p class="text-center">
+                        Job
+                    </p>
+                </th>
+
+                <th class="text-center">
+                    <p class="text-center">
+                        Témoignage
+                    </p>
+                </th>
+
+                <th class="text-center">
+                    <p class="text-center">
+                        Modifier
+                    </p>
+                </th>
+
+                <th class="text-center">
+                    <p class="text-center">
+                        Supprimer
+                    </p>
+                </th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <?php
+            foreach ($testimonials as $testimonial)
+            {
+                ?>
+                <tr>
+                    <td>
+                        <p class="text-center">
+                            <?= $testimonial['testimonial_first_name']; ?>
+                        </p>
+                    </td>
+
+                    <td>
+                        <p class="text-center">
+                            <?= $testimonial['testimonial_last_name']; ?>
+                        </p>
+                    </td>
+
+                    <td>
+                        <p class="text-center">
+                            <?= $testimonial['testimonial_job']; ?>
+                        </p>
+                    </td>
+
+                    <td>
+                        <p class="text-center">
+                            <?= substr($testimonial['testimonial_content'], 0, 50) . "..."; ?>
+                        </p>
+                    </td>
+
+                    <td >
+                        <a href="?module=testimonials&action=update&id=<?= $testimonial['testimonial_ID']; ?>"><div class=" btn-group-sm text-center">
+                                <button type="button" id="confirm" class="btn btn-primary btn-lg">
+                                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                </button>
+                            </div></a>
+                    </td>
+
+                    <td>
+                        <div class=" btn-group-sm text-center" data-toggle="modal" data-target="#deleteModal">
+                            <button type="button" id="refuse" class="btn btn-danger btn-lg" onclick="suppr('<?= $testimonial['testimonial_ID']; ?>');">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <?php
+            }
+            ?>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Voulez-vous vraiment supprimer ce témoignage ?</h4>
+            </div>
+            <div class="modal-body text-center">
+                <button type="button" id="supprimerTestimonial" class="btn btn-lg btn-success"> Oui </button>
+                <button type="button" class="btn btn-lg btn-danger" data-dismiss="modal">Annuler</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="webroot/JS/delete_testimonial.js"></script>
 <?php include_once 'app/view/layout/footer_back.inc.php'; ?>
