@@ -7,7 +7,7 @@
 		var_dump($contact);
 		try
 		{
-			$req = "INSERT INTO tfh_contact(contact_first_name, contact_last_name, contact_mail, contact_object, contact_message)
+			$req = "INSERT INTO tfh_contacts(contact_first_name, contact_last_name, contact_mail, contact_object, contact_message)
 					VALUES (:contact_first_name, :contact_last_name, :contact_mail, :contact_object, :contact_message)";
 
 			$query = $pdo->prepare($req);

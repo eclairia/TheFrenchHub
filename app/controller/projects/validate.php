@@ -15,8 +15,6 @@
 
 		if($retour)
 		{
-			var_dump($_GET['id']);
-			die();
 			include_once("app/model/projects/verif_validate.php");
 			$user_confirmed = USER_CONFIRMED;
 			$_GET['id'] = intval($_GET['id']);

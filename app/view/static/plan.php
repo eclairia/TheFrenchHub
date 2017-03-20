@@ -11,7 +11,7 @@
 
 				</div>
 
-				<div>
+				<div id="linkplan">
 
 						<a href="">Accueil</a>
 						<a href="">Nos offres</a>
@@ -28,4 +28,5 @@
 				</div>
 
 	</div>
+</div>
 	<?php include_once 'app/view/layout/footer_front.inc.php'; ?>
