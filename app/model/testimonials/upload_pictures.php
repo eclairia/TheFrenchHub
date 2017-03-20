@@ -43,7 +43,7 @@ function upload_pictures($file)
 	$width = imagesx($image);
 	$height = imagesy($image);
 
-	if($width > $height)
+	if($width != $height)
 	{
         imagedestroy($image);
         return false;
@@ -51,7 +51,7 @@ function upload_pictures($file)
 	else
 	{
 		//Format vertical
-		$new_height = 340;
+		$new_height = 88;
 		$new_width = ($new_height * $width) / $height;
 	}
 
