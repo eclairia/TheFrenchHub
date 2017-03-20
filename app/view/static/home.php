@@ -22,26 +22,26 @@
 					<div class="detailpresentation">
 				  	<div><img src="webroot/IMG/icons/1.png" alt=""/></div>
 						<div class="detailservicetitle">Un logement</div>
-						<div class="detailservicetexte">The French Hub met à votre disposition un logement afin de vous simplifier la vie.</div>
+						<div class="detailservicetexte">The French Hub & Century 21 collaborent pour vous fournir des logements de qualité à des prix défiants toute concurrence</div>
 					</div>
 
 					<div class="detailpresentation">
 				  	<div><img src="webroot/IMG/icons/3.png" alt=""/></div>
 						<div class="detailservicetitle">Des espaces de travail</div>
-						<div class="detailservicetexte">Afin d’optimiser votre temps et votre implantation, des espaces de travail sont disponibles.</div>
+						<div class="detailservicetexte">Les locaux du hub sont ouverts 24/7, qu’il neige ou bien qu’il pleuve, vous serez accueilli et entourer. Bienvenue chez vous !</div>
 					</div>
 
 					<div class="detailpresentation">
 				  	<div><img src="webroot/IMG/icons/2.png" alt=""/></div>
 						<div class="detailservicetitle">Un advisory board</div>
-						<div class="detailservicetexte">Vous disposerez d’un advisory board, composé d’expatriés Français.</div>
+						<div class="detailservicetexte">The French Hub met à votre disposition un advisory board, composé de spécialistes parlant aussi bien Français qu'Anglais.</div>
 					</div>
 			</div>
 
 			<center><div class="detailpresentation down">
 				  <div><img src="webroot/IMG/icons/4.png" alt=""/></div>
 					<div class="detailservicetitle">Une incubation</div>
-					<div class="detailservicetexte">The French Hub réinvente l’incubation sous forme d’incubation collaborative.</div>
+					<div class="detailservicetexte">Chez The French Hub, nous voulons faire rimer incubation et collaboration. Les réponses de demain naîtront de l’échange entre les nouveaux acteurs de l’économie.</div>
 			</div></center>
 	</div>
 
@@ -216,7 +216,7 @@
 
 					<div class="twologos">
 
-						<div><img class="logopartenaires" src="webroot/IMG/sosv.png" alt=""/></div>
+						<div><img class="logopartenaires" src="webroot/IMG/c21.png" alt=""/></div>
 						<div><img class="logopartenaires" src="webroot/IMG/10000-startups.png" alt=""/></div>
 
 					</div>
