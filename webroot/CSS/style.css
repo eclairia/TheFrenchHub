@@ -262,19 +262,25 @@ header {
   }
 
   .commentaireslider {
-    height: 30vh;
+    height: 28vh;
     width: 30vw;
-    background : url(../IMG/fleche.svg);
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.commentaireslider img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .inslider {
   position: absolute;
   top: 6vh;
   left: 7vw;
+  z-index: 2;
   text-align: left;
 }
 
@@ -307,6 +313,7 @@ header {
   align-items: center;
   justify-content: space-around;
   position: relative;
+  z-index: 3;
   right: 4vw;
   bottom: 0.3vh;
 }
@@ -2046,11 +2053,11 @@ input::-webkit-input-placeholder {
     padding-top: 3vh;
     margin-top: 3vh;
     width: 100%;
-    height: 40vh;
+    height: 90vh;
     }
 
     #slider {
-      height: 30vh;
+      height: 80vh;
       overflow: hidden;
     }
 
@@ -2062,17 +2069,18 @@ input::-webkit-input-placeholder {
 
     li {
       list-style-type: none;
-      margin-top: 2vh;
+      margin-top: 15vh;
       display: flex;
       flex-direction: row;
+      transform: rotate(90deg);
     }
 
     .photoslider {
       width: 15vh;
       height: 15vh;
       position: relative;
-      top: 6.8vh;
-      left: 4vw;
+      top: 36.5vw;
+      left: 5vh;
       background-color:  #62D3D0;
       transform: rotate(45deg);
       display: flex;
@@ -2083,46 +2091,52 @@ input::-webkit-input-placeholder {
     .photoslider img {
       width: 13vh;
       height: 13vh;
+      transform: rotate(-90deg);
     }
 
     .commentaireslider {
-      height: 30vh;
-      width: 30vw;
-      background : url(../IMG/fleche.svg);
-      background-repeat: no-repeat;
+      height: 60vh;
+      width: 80vw;
       display: flex;
       flex-direction: column;
       position: relative;
+  }
+
+  .commentaireslider img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
   }
 
   .inslider {
     position: absolute;
     top: 6vh;
     left: 7vw;
+    z-index: 2;
     text-align: left;
+    transform: rotate(-90deg);
   }
 
   .nomcommslider {
     font-size: 3vh;
     margin-bottom: 0.5vh;
+    width: 35vw;
   }
 
   .postcommslider {
-    font-size: 1.6vh;
+    font-size: 1.7vh;
     margin-bottom: 2vh;
-  }
-
-  .hr {
-    width: 3vw;
-    height: 0.2vh;
-    background-color: #FA5501;
-    margin-left: 2vw;
-    margin-bottom: 2vh;
+    width: 35vw;
   }
 
   .textecommslider {
-    font-size: 1.8vh;
-    width: 15vw;
+    font-size: 2vh;
+    position: relative;
+    right: 18vw;
+    top: 4vh;
+    width: 25vw;
+    text-align: center;
   }
 
   .arrows {
@@ -2131,60 +2145,63 @@ input::-webkit-input-placeholder {
     align-items: center;
     justify-content: space-around;
     position: relative;
-    right: 4vw;
+    z-index: 3;
+    right: 7vw;
     bottom: 0.3vh;
   }
 
+  .nomcommslider, .postcommslider {
+    position: relative;
+    bottom: 16vh;
+    right: 55vw;
+    text-align: right;
+  }
+
+  .hr {
+    display: none;
+  }
+
   .upSlide {
-    width: 3vw;
-    height: 3vw;
+    width: 10vw;
+    height: 10vw;
     border: 3px solid  #62D3D0;
     transform: rotate(45deg);
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.5;
+    opacity: 1;
     cursor: pointer;
   }
 
-  .upSlide:hover {
-    opacity: 1;
-  }
-
   .upSlide img {
-    width: 1.7vw;
-    height: 1.7vw;
+    width: 6vw;
+    height: 6vw;
     transform: rotate(45deg);
   }
 
   .downSlide {
-    width: 3vw;
-    height: 3vw;
-    border: 3px solid  #62D3D0;
-    transform: rotate(45deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.5;
-    cursor: pointer;
-  }
-
-  .downSlide:hover {
-    width: 3vw;
-    height: 3vw;
+    width: 10vw;
+    height: 10vw;
     border: 3px solid  #62D3D0;
     transform: rotate(45deg);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 1;
+    cursor: pointer;
+  }
+
+  .downSlide:hover {
+    width: 10vw;
+    height: 10vw;
   }
 
   .downSlide img {
-    width: 1.7vw;
-    height: 1.7vw;
+    width: 6vw;
+    height: 6vw;
     transform: rotate(45deg);
   }
+
 
     /* NOS PARTENAIRES home mobile */
 
@@ -2950,8 +2967,6 @@ input::-webkit-input-placeholder {
     width: 85vw;
     height: 7vh;
   }
-
-
 
 
 }

@@ -5,7 +5,7 @@
 			<div id="contentheaderhome">
 				<div><h1 id="h1header">the french hub</h1></div>
 				<div><p id="textheader">Le nouvel incubateur collaboratif</p></div>
-				<div><a id="linkheader" href="#">En savoir plus</a></div>
+				<div><a id="linkheader" href="?module=static&action=concept">En savoir plus</a></div>
 			</div>
 	</header>
 	<!-- Fin Header -->
@@ -63,27 +63,30 @@
 							<img src="webroot/IMG/guillaume2.png" alt=""/>
 						</div>
 
-						<div class="commentaireslider">
+					<div class="commentaireslider">
+						<img src="webroot/IMG/fleche.svg" alt="" />
 
-						<div class="inslider">
-							<div class="nomcommslider">
-								<p>Guillaume Hulin</p>
+
+							<div class="inslider">
+								<div class="nomcommslider">
+									<p>Guillaume Hulin</p>
+								</div>
+
+								<div class="postcommslider">
+									<p>CEO de The French Hub</p>
+								</div>
+
+								<div class="hr">
+
+								</div>
+
+								<div class="textecommslider">
+									<p>Un service très professionnel, je recommande vivement l'aventure</p>
+								</div>
+
 							</div>
 
-							<div class="postcommslider">
-								<p>CEO de The French Hub</p>
-							</div>
-
-							<div class="hr">
-
-							</div>
-
-							<div class="textecommslider">
-								<p>Un service très professionnel, je recommande vivement l'aventure</p>
-							</div>
-
-							</div>
-						</div>
+					</div>
 
 
 						<div class="arrows">
@@ -277,7 +280,7 @@
 					</div>
 
 					<div>
-						<a id="boutonrejoignez" href="#">Inscrivez-vous maintenant</a>
+						<a id="boutonrejoignez" href="?module=users&action=signup">Inscrivez-vous maintenant</a>
 					</div>
 		 		</div>
           <div style="height:40vh;">&nbsp;</div>

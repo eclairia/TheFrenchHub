@@ -13,17 +13,16 @@
 
 				<div id="linkplan">
 
-						<a href="">Accueil</a>
-						<a href="">Nos offres</a>
-						<a href="">L'équipe</a>
-						<a href="">Le Concept</a>
-						<a href="">Inscription</a>
-						<a href="">Connexion</a>
-						<a href="">Actualités</a>
-						<a href="">Nos offres</a>
-						<a href="">Contact</a>
-						<a href="">Mentions légales</a>
-						<a href="">Conditions générales de vente</a>
+						<a href="?module=static&action=home">Accueil</a>
+						<a href="?module=services&action=choice">Nos offres</a>
+						<a href="?module=static&action=team">L'équipe</a>
+						<a href="?module=static&action=concept">Le Concept</a>
+						<a href="?module=users&action=signup">Inscription</a>
+						<a href="?module=users&action=login">Connexion</a>
+						<a href="?module=articles&action=feed">Actualités</a>
+						<a href="?module=static&action=contact">Contact</a>
+						<a href="?module=static&action=mentions">Mentions légales</a>
+						<a href="?module=static&action=cgv">Conditions générales de vente</a>
 
 				</div>
 
