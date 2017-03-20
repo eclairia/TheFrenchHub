@@ -35,7 +35,11 @@
         <input class="formwidth boutonform"  type="submit" placeholder="Se connecter" >
       </div>
 
+      <div><a id="forgottenpass"href="#">Mot de passe oublié ?</a></div>
+
     </form>
+
+
 
   </div>
 

@@ -682,6 +682,13 @@ input::-webkit-input-placeholder {
     align-items: center;
   }
 
+  #forgottenpass {
+    text-decoration: none;
+    text-decoration: underline;
+    color : #FA5501;
+    text-align: center;
+  }
+
   #titlelogin {
     color: #FA5501;
     font-size: 3vh;
@@ -2051,8 +2058,6 @@ input::-webkit-input-placeholder {
   #slidercommenthome {
   display: none;
     }
-
-
 
     /* NOS PARTENAIRES home mobile */
 
