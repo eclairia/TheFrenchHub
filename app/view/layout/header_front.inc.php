@@ -10,6 +10,61 @@
 
 <body>
 	<!-- Navigation -->
+
+	<div id="navmobile">
+
+		<div id="pastille">
+
+			<div id="hamburger">
+
+					<span class="barburger"></span>
+
+					<span class="barburger"></span>
+
+					<span class="barburger"></span>
+
+			</div>
+
+
+		</div>
+
+		<div id="linkmobile">
+
+			<a class="linknav2" href="?module=static&action=home">Accueil</a>
+			<a class="linknav2" href="?module=static&action=concept">Le concept</a>
+			<a class="linknav2" href="?module=services&action=choice">Nos offres</a>
+			<a class="linknav2" href="?module=articles&action=feed">Actualités</a>
+			<a class="linknav2" href="?module=static&action=team">L'équipe</a>
+			<?php
+                if (!isset($_SESSION['user']))
+                {
+            ?>
+              <a class="linknav2" href="?module=users&action=login">Connexion</a>
+              <a class="linknav2" href="?module=users&action=signup">Inscription</a>
+            <?php
+                }
+                else
+                {
+            ?>
+              <a class="linknav" href="?module=users&action=dashboard">Dashboard</a>
+          		<a class="linknav" href="?module=users&action=logout">Déconnexion</a>
+            <?php
+                }
+			?>
+
+		</div>
+
+		<div id="linkmobile2">
+
+			<a class="linknav3" href="?module=static&action=contact">Contact</a>
+			<a class="linknav3" href="?module=static&action=cgv">CGV</a>
+			<a class="linknav3" href="?module=static&action=mentions">Mentions légales</a>
+			<a class="linknav3" href="?module=static&action=plan">Plan du site</a>
+
+		</div>
+
+	</div>
+
 	<nav>
 	  <div id="navleft">
 			<a id="lienlogohome" href="?module=static&action=home">
@@ -42,5 +97,7 @@
 			?>
 
 		</div>
+
 	</nav>
+
 	<!-- Fin Navigation -->
