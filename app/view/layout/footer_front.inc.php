@@ -48,6 +48,7 @@
 <!-- Fin Footer -->
 <!-- Script -->
 <script src="webroot/JS/parallax.js" type="text/javascript"></script>
+<script src="webroot/JS/navmobile.js" type="text/javascript"></script>
 <!-- Fin script -->
 
 </body>
