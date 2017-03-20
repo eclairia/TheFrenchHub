@@ -26,3 +26,4 @@
 
     define("FILE_PROJECT_URL", "webroot/files/projects/");
     define("IMG_ARTICLE_URL", "webroot/IMG/articles/");
+    define("IMG_TESTIMONIAL_URL", "webroot/IMG/testimonials/");
