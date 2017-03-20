@@ -3,18 +3,18 @@
 	{
 		//Appel de la vue correspondante
 		define("PAGE_TITLE", 'Contacter The French Hub');
-		include_once('app/view/contact/new.php');
+		include_once('app/view/contacts/new.php');
 	}
 
 	else
 	{
 		//Appel du modele pour insérer un administrateur
-		include_once("app/model/contact/insert_contact.php");
+		include_once("app/model/contacts/insert_contact.php");
 		$contact = insert_contact($_POST);
 
 		if(!$contact)
 		{
-			location("contact", "new", "notif=nok");		
+			location("contacts", "new", "notif=nok");		
 		}
 		else
 		{

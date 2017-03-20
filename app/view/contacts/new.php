@@ -1,4 +1,3 @@
-<form action="?module=contact&action=new" method="POST" id="form_contact">
 	<label>Contact first name: </label><input type="text" name="contact_first_name" required><br><br>
 	<label>Contact last name: </label><input type="text" name="contact_last_name" required><br><br>
 	<label>Contact mail: </label><input type="email" name="contact_mail" required><br><br>
