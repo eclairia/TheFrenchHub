@@ -25,3 +25,4 @@
     define("LOGO_FOR_PAYPAL_URL", "http://ghulin.eemi.tech/2a/tfh/logo.png");
 
     define("FILE_PROJECT_URL", "webroot/files/projects/");
+    define("IMG_ARTICLE_URL", "webroot/IMG/articles/");
