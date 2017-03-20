@@ -1,30 +1,26 @@
 <?php
 
-	function insert_project($project)
+	function insert_project($project, $file_project)
 	{
 		global $pdo;
 
-		// var_dump($project);
-		// die();
-
 		try
 		{
-			$req = "INSERT INTO tfh_projects(project_name, project_nb_members)
-					VALUES (:project_name, :project_nb_members)";
+			$req = "INSERT INTO tfh_projects(project_name, project_nb_members, project_file)
+					VALUES (:project_name, 1, :project_file)";
 
 			$query = $pdo->prepare($req);
 
 			$query->bindValue(':project_name', $project["project_name"], PDO::PARAM_STR);
-			$query->bindValue(':project_nb_members', $project["project_nb_members"], PDO::PARAM_INT);			
+            $query->bindValue(':project_file', $file_project, PDO::PARAM_STR);
 
-			$query->execute();
+            $query->execute();
 
-			//Récupération de l'ID
-			return $pdo->lastInsertId();
-		}
-
+            return $pdo->lastInsertId();
+        }
 		catch(Exception $e)
 		{
-			return false;
+            die('Erreur technique :' .$e->getMessage());
+            return false;
 		}
 	}

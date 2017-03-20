@@ -8,7 +8,7 @@
         <div class="undertitlechoice"></div>
 
         <div>
-            <p id="explainchoice">Bonjour Michel,
+            <?= '<p id="explainchoice"> Bonjour ' . $_SESSION['user']['user_first_name'] . '</p>' ?>
         </div>
 
         <div id="ariane">
@@ -23,7 +23,7 @@
             <div id="checkedariane">
                 <div class="checked"></div>
                 <div class="<?php echo ($_SESSION['user']['user_project'] != null ? 'checked' : 'unchecked')?>"></div>
-                <div class="<?php echo (!empty($user_project) ? ($user_project[0]['project_confirmed'] == 1 ? 'checked' : 'unchecked') : "unchecked" )?>"></div>
+                <div class="<?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] == 1 ? 'checked' : 'unchecked') : "unchecked" )?>"></div>
                 <div class="<?php echo ($nb_additionnal_members > 0 ? 'checked' : 'unchecked')?>"></div>
                 <div class="<?php echo (!empty($order) ? 'checked' : 'unchecked')?>"></div>
             </div>
@@ -35,48 +35,56 @@
 
 <div id="allcontentdashboardbot">
     <div id="dashleft">
-        <form method="post" action="">
+        <form method="post" action="<?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] == 1 ? '?module=additionnal_members&action=new' : '') : "" ) ?>">
             <div class="formaddmember">
                 <h2 class="titlechoice2">Ajout d'un membre<br/>
-                    <span>(Vous ne pouvez ajouter des membres qu'une fois le projet validé.)</span>
+                    <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? '<span>(Vous ne pouvez ajouter des membres qu\'une fois le projet validé.)</span>' : '') : "" ) ?>
                 </h2>
 
-                <input class="formwidthdash2 borderform" type="text" placeholder="Nom" name="additionnal_member_last_name">
-                <input class="formwidthdash2 borderform" type="text" placeholder="Prénom" name="additionnal_member_first_name">
-                <input class="formwidthdash2 borderform" type="email" placeholder="Adresse mail" name="additionnal_member_mail">
-                <input class="boutonform3" type="submit" value="Ajouter un membre">
+                <input class="formwidthdash2 borderform" type="text" placeholder="Nom" name="additionnal_member_last_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
+                <input class="formwidthdash2 borderform" type="text" placeholder="Prénom" name="additionnal_member_first_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
+                <input class="formwidthdash2 borderform" type="email" placeholder="Adresse mail" name="additionnal_member_mail" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
+                <input class="boutonform3" type="submit" value="Ajouter un membre" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
             </div>
         </form>
     </div>
 
-    <div id="dashright">
-        <form method="post" action="">
-            <div class="formaddmember2">
-            <h2 class="titlechoice2">Votre projet</h2>
-            <input class="formwidthdash2 borderform" type="text" placeholder="Nom de votre projet" name="project_name">
-            <textarea class="formwidthdash borderformdash" placeholder="Décrivez votre projet en quelques mots" name="project_description"></textarea>
-            <input class="formwidthdash2 borderform" type="file" name="project_file">
-            <input class="boutonform2" type="submit" value="Soumettre votre projet">
+    <?php
+        if($_SESSION['user']['user_project'] == null)
+        {
+    ?>
+            <div id="dashright">
+                <form method="post" action="?module=projects&action=new" enctype="multipart/form-data">
+                    <div class="formaddmember2">
+                        <h2 class="titlechoice2">Votre projet</h2>
+                        <input class="formwidthdash2 borderform" type="text" placeholder="Nom de votre projet" name="project_name">
+                        <input class="formwidthdash2 borderform" type="file" name="project_file">
+                        <input class="boutonform2" type="submit" value="Soumettre votre projet">
+                    </div>
+                </form>
             </div>
-        </form>
+    <?php
+        }
+        else
+        {
+    ?>
+            <div id="dashright">
+                <form method="post" action="">
+                    <div class="formaddmember2">
+                        <h2 class="titlechoice2">Votre projet</h2>
 
-        <!--<form method="post" action="">
+                        <div id="txtinfosdash">
+                            <p> <?= $user_project[0]['project_name'] ?> </p>
+                            <a href="<?= FILE_PROJECT_URL.$user_project[0]['project_file'] ?>">Voir le document</a>
+                            <button class="boutonform2" type="button">Modifier mes informations</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    <?php
+        }
+    ?>
 
-        <div class="formaddmember2">
-
-        <h2 class="titlechoice2">Votre projet</h2>
-
-        <div id="txtinfosdash">
-        <p>The French Hub</p>
-        <p>Ceci est une description toute pourrie parce que je n'ai pas d'imagination</p>
-        <a href="#">Télécharger le document</a>
-        <button class="boutonform2" type="button">Modifier mes informations</button>
-        </div>
-        </div>
-
-        </form>-->
-
-    </div>
 
     <div id="projectmembers">
         <div id="projectrelative"><h2 class="titlechoice2">Liste des membres du projet</h2></div>

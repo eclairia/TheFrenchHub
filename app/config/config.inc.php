@@ -23,3 +23,5 @@
     define("ENV", "DEV");
 
     define("LOGO_FOR_PAYPAL_URL", "http://ghulin.eemi.tech/2a/tfh/logo.png");
+
+    define("FILE_PROJECT_URL", "webroot/files/projects/");

@@ -13,9 +13,18 @@
                       "and_column2" => "user_password",
                       "and_value2" => $_SESSION['user']['user_password']));
 
+    //var_dump($user_project);
+
     $nb_additionnal_members = count_table(array("table1" => "tfh_additionnal_members"),
                                           array("where_column" => "additionnal_member_project",
                                                 "where_value" => $_SESSION['user']['user_project']));
+
+    if ($nb_additionnal_members > 0)
+    {
+        $additionnal_members = select_table_value(array("table1" => "tfh_additionnal_members"),
+                                                  array("where_column" => "additionnal_member_project",
+                                                        "where_value" => $_SESSION['user']['user_project']));
+    }
 
     $order = select_table_value(
         array("table1" => "tfh_orders"),
