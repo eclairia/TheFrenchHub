@@ -1853,6 +1853,41 @@ input::-webkit-input-placeholder {
 
 /* ----> PLAN DU SITE <---- */
 
+#contentplan {
+  width: 100%;
+  height: 95vh;
+  background: url(../IMG/pattern2.png);
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#linkplan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#linkplan a {
+  text-decoration: none;
+  font-size: 2vh;
+  background-color: #62D3D0;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 5vh;
+  margin-bottom: 2vh;
+}
+
+#linkplan a:hover {
+ opacity: 0.6;
+}
 
 
 /* ----> VERSION MOBILE <---- */
@@ -2203,7 +2238,7 @@ input::-webkit-input-placeholder {
       opacity: 1;
     }
 
-    /* NOUS REJOINDRE */
+    /* NOUS REJOINDRE home mobile */
 
     #titlerejoignez {
       width: 80%;
@@ -2788,18 +2823,10 @@ input::-webkit-input-placeholder {
     padding-bottom: 1vh;
     padding-right: 3vw;
     padding-left: 3vw;
-    cursor: pointer;
-    font-family: 'Avenirl';
-  }
-
-  .boutonform2:hover {
-    background-color: #FA5501;
-    color: white;
   }
 
   .titlechoice2 {
     font-size:  4.5vh;
-    color: #FA5501;
     margin-bottom: 2vh;
     width: 85vw;
     text-align: center;
@@ -2807,17 +2834,12 @@ input::-webkit-input-placeholder {
 
   .boutonform3 {
     background-color: #62D3D0;
-    border: 1px solid #62D3D0;
     margin-top: 2vh;
-    border-radius: 25px;
-    color: white;
     font-size: 3vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
     padding-right: 3vw;
     padding-left: 3vw;
-    cursor: pointer;
-    font-family: 'Avenirl';
   }
 
   .titlechoice2 span {
@@ -2827,7 +2849,6 @@ input::-webkit-input-placeholder {
   #projectmembers {
     width: 85vw;
     height: auto;
-    display: flex;
     flex-direction: column;
   }
 
@@ -2842,10 +2863,6 @@ input::-webkit-input-placeholder {
     padding-right: 5vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    background-color: #62D3D0;
-    color: white;
-    margin-bottom: 1vh;
-    text-align: center;
   }
 
   #txtinfosdash {
@@ -2921,6 +2938,20 @@ input::-webkit-input-placeholder {
   .borderformdash {
     width: 75vw;
   }
+
+  /* ----> PLAN DU SITE MOBILE <---- */
+
+  #contentplan {
+    height: auto;
+  }
+
+  #linkplan a {
+    font-size: 3vh;
+    width: 85vw;
+    height: 7vh;
+  }
+
+
 
 
 }
