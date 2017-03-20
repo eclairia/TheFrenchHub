@@ -1851,6 +1851,10 @@ input::-webkit-input-placeholder {
   width: 100%;
 }
 
+/* ----> PLAN DU SITE <---- */
+
+
+
 /* ----> VERSION MOBILE <---- */
 
 @media screen and (max-width: 1080px)
@@ -1898,7 +1902,7 @@ input::-webkit-input-placeholder {
 
 
 
-  /* ----> HOMEPAGE RESPONSIVE <---- */
+  /* ----> HOMEPAGE MOBILE <---- */
 
   header {
     width: 100%;
@@ -1943,7 +1947,7 @@ input::-webkit-input-placeholder {
   }
 
 
-  /* NOS SERVICES */
+  /* NOS SERVICES home mobile */
 
   #presentationhome {
     width: 100%;
@@ -2000,7 +2004,7 @@ input::-webkit-input-placeholder {
     margin-bottom: 2vh;
   }
 
-  /* ILS ONT VECU L'EXPERIENCE */
+  /* ILS ONT VECU L'EXPERIENCE home mobile */
 
   #slidercommenthome {
     background-color: #EBF7F7;
@@ -2147,7 +2151,7 @@ input::-webkit-input-placeholder {
     transform: rotate(45deg);
   }
 
-    /* NOS PARTENAIRES */
+    /* NOS PARTENAIRES home mobile */
 
     #partenaireshome {
       margin-top: 7vh;
@@ -2667,66 +2671,60 @@ input::-webkit-input-placeholder {
 
   #allcontentdashboardtop {
     width: 100%;
-    height: 50vh;
-    background: url(../IMG/pattern2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100vh;
     margin-bottom: 7vh;
   }
 
   #ariane {
     display: flex;
     flex-direction: column;
-    height: 16vh;
+    align-items: center;
+    justify-content: center;
+    height: auto;
     width: 100%;
     position: relative;
-    margin-top: 7vh;
+    margin-top: 30vh;
+    transform: rotate(90deg);
   }
 
   #txtariane {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 2vh;
+    font-size: 3vh;
     color:  #FA5501;
   }
 
-  #hrariane {
-    height: 0.5vh;
-    width: 100%;
-    background-color: #FA5501;
-  }
+#txtariane p {
+  transform: rotate(-90deg);
+  margin-bottom: 15vw;
+  text-align: center;
+}
 
-  #checkedariane {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
+  #hrariane {
+  display: none;
   }
 
   .unchecked {
-    width: 2vw;
-    height: 2vw;
+    width: 4vw;
+    height: 4vw;
     border: 0.5vh solid #FA5501;
     background-color: white;
     transform: rotate(45deg);
     position: relative;
-    top:2.6vh;
+    top:0;
   }
 
   .checked {
-    width: 1.3vw;
-    height: 1.3vw;
+    width: 2.3vw;
+    height: 2.3vw;
     border: 0.5vh solid #FA5501;
     background-color: #62D3D0;
     transform: rotate(45deg);
     position: relative;
-    top:3.2vh;
+    top:0;
   }
 
   #dashleft {
-    width: 30vw;
-    height: 30vh;
+    width: 85vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2747,19 +2745,25 @@ input::-webkit-input-placeholder {
 
   #allcontentdashboardbot {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 4vh;
+    height: auto;
   }
 
   #dashright {
-    width: 30vw;
-    height: 50vh;
+    width:85vw;
+    height: auto;
     background-color:#62D3D0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 7vh;
+    margin-top: 7vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
     position: relative;
   }
 
@@ -2768,44 +2772,22 @@ input::-webkit-input-placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25vw;
+    width: 85vw;
+    height: auto;
   }
 
-  .formwidthdash {
-    width: 25vw;
-    height: 8vh;
-    color: #282D2E;
-    font-size: 2vh;
-    margin-bottom: 1vh;
-    font-family: 'Avenirl';
-  }
-
-  .formwidthdash2 {
-    width: 25vw;
-    height: 4vh;
-    color: #282D2E;
-    font-size: 2vh;
-    margin-bottom: 1vh;
-    font-family: 'Avenirl';
-  }
-
-  .borderformdash {
-    border: none;
-    border-bottom: 1px solid #282D2E;
-    padding-left: 0.3vw;
-  }
 
   .boutonform2 {
-    background-color: #62D3D0;
+    background-color: #FA5501;
     border: 1px solid #FA5501;
     margin-top: 2vh;
     border-radius: 25px;
-    color: #FA5501;
-    font-size: 2vh;
+    color: white;
+    font-size: 3vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    padding-right: 1.3vw;
-    padding-left: 1.3vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
     cursor: pointer;
     font-family: 'Avenirl';
   }
@@ -2816,9 +2798,11 @@ input::-webkit-input-placeholder {
   }
 
   .titlechoice2 {
-    font-size: 3.5vh;
+    font-size:  4.5vh;
     color: #FA5501;
     margin-bottom: 2vh;
+    width: 85vw;
+    text-align: center;
   }
 
   .boutonform3 {
@@ -2827,18 +2811,13 @@ input::-webkit-input-placeholder {
     margin-top: 2vh;
     border-radius: 25px;
     color: white;
-    font-size: 2vh;
+    font-size: 3vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    padding-right: 1.3vw;
-    padding-left: 1.3vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
     cursor: pointer;
     font-family: 'Avenirl';
-  }
-
-  .boutonform3:hover {
-    background-color: white;
-    color: #62D3D0;
   }
 
   .titlechoice2 span {
@@ -2846,8 +2825,8 @@ input::-webkit-input-placeholder {
   }
 
   #projectmembers {
-    width: 30vw;
-    height: 50vh;
+    width: 85vw;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
@@ -2858,7 +2837,7 @@ input::-webkit-input-placeholder {
   }
 
   .memberlisting p {
-    font-size: 2vh;
+    font-size: 3vh;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 1vh;
@@ -2878,17 +2857,11 @@ input::-webkit-input-placeholder {
   }
 
   #txtinfosdash p {
-    color: white;
-    font-size: 1.7vh;
-    text-align: center;
+    font-size: 2.7vh;
   }
 
   #txtinfosdash a {
-    text-decoration: none;
-    font-family: 'Avenirl';
-    color: #FA5501;
-    font-size: 1.7vh;
-    text-align: center;
+    font-size: 2.7vh;
   }
 
   /* ----> CONTACT MOBILE <---- */

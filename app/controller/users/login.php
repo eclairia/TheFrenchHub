@@ -28,9 +28,8 @@
             if(!empty($retour['user_project']))
             {
                 $_SESSION["user"] = $retour;
-                location("projects", "dashboard", "id=". $retour['user_project'] ."&notif=ok");                
+                location("users", "dashboard", "notif=ok");
             }
-
             else if ($retour['user_confirmed'] == 1)
             {
                 $_SESSION["user"] = $retour;
@@ -38,7 +37,7 @@
             }
             else
             {
-                location("users", "new", "notif=nokey");
+                location("users", "login", "notif=nokey");
             }
         }
     }
