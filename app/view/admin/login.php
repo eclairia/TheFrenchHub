@@ -13,7 +13,9 @@
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-4">
                     <form method="POST" action="?module=admin&action=login" id="form_login">
+                        <p id="erreur_admin_login"></p>
                         <label for="admin_login">Login: </label> <input type="text" id="admin_login" class="form-control" name="admin_login"><br /><br />
+                        <p id="erreur_admin_password"></p>
                         <label for="admin_password">Mot de passe: </label> <input type="password" id="admin_password" class="form-control" name="admin_password"><br /><br />
                         <input type="submit" class="btn btn-lg btn-success" value="Se connecter">
                     </form>
@@ -21,5 +23,6 @@
             </div>
         </div>
         <script src="webroot/JS/bootstrap.min.js"></script>
+        <script src="webroot/JS/form_admin_login.js"></script>
     </body>
 </html>

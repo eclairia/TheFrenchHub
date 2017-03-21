@@ -35,15 +35,18 @@
 
 <div id="allcontentdashboardbot">
     <div id="dashleft">
-        <form method="post" action="<?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] == 1 ? '?module=additionnal_members&action=new' : '') : "" ) ?>">
+        <form method="post" action="<?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] == 1 ? '?module=additionnal_members&action=new' : '') : "" ) ?>" id="form_add_member">
             <div class="formaddmember">
                 <h2 class="titlechoice2">Ajout d'un membre<br/>
                     <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? '<span>(Vous ne pouvez ajouter des membres qu\'une fois le projet validé.)</span>' : '') : "<span>(Vous ne pouvez ajouter des membres qu'une fois le projet validé.)</span>" ) ?>
                 </h2>
 
-                <input class="formwidthdash2 borderform" type="text" placeholder="Nom" name="additionnal_member_last_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
-                <input class="formwidthdash2 borderform" type="text" placeholder="Prénom" name="additionnal_member_first_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
-                <input class="formwidthdash2 borderform" type="email" placeholder="Adresse mail" name="additionnal_member_mail" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
+                <p id="erreur_additionnal_member_last_name"></p>
+                <input class="formwidthdash2 borderform" type="text" placeholder="Nom" id="additionnal_member_last_name" name="additionnal_member_last_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
+                <p id="erreur_additionnal_member_first_name"></p>
+                <input class="formwidthdash2 borderform" type="text" placeholder="Prénom" id="additionnal_member_first_name" name="additionnal_member_first_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
+                <p id="erreur_additionnal_member_mail"></p>
+                <input class="formwidthdash2 borderform" type="email" placeholder="Adresse mail" id="additionnal_member_mail" name="additionnal_member_mail" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
                 <input type="hidden" name="user_project" value="<?php echo (!empty($user_project) ? $user_project[0]['user_project'] : ""); ?>">
                 <input class="boutonform3" type="submit" value="Ajouter un membre" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
             </div>
@@ -55,11 +58,13 @@
         {
     ?>
             <div id="dashright">
-                <form method="post" action="?module=projects&action=new" enctype="multipart/form-data">
+                <form method="post" action="?module=projects&action=new" id="form_submit_project" enctype="multipart/form-data">
                     <div class="formaddmember2">
                         <h2 class="titlechoice2">Votre projet</h2>
-                        <input class="formwidthdash2 borderform" type="text" placeholder="Nom de votre projet" name="project_name">
-                        <input class="formwidthdash2 borderform" type="file" name="project_file">
+                        <p id="erreur_project_name"></p>
+                        <input class="formwidthdash2 borderform" type="text" placeholder="Nom de votre projet" id="project_name" name="project_name">
+                        <p id="erreur_project_file"></p>
+                        <input class="formwidthdash2 borderform" type="file" id="project_file" name="project_file">
                         <input class="boutonform2" type="submit" value="Soumettre votre projet">
                     </div>
                 </form>
@@ -114,4 +119,5 @@
     </div>
 </div>
 
+<script type="text/javascript" src="webroot/JS/form_dashboard.js"></script>
 <?php include_once 'app/view/layout/footer_front.inc.php'; ?>

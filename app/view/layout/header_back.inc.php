@@ -33,7 +33,7 @@
                         {
                             ?>
                             <ul class="nav nav-tabs-justified nav-stacked">
-                                <li role="presentation"><a href="?module=services&action=new" class="text-danger">Ajouter une offres</a></li>
+                                <li role="presentation"><a href="?module=services&action=new" class="text-danger">Ajouter une offre</a></li>
                             </ul>
                             <?php
                         }
