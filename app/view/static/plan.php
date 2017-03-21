@@ -20,7 +20,7 @@
 						<a href="?module=users&action=signup">Inscription</a>
 						<a href="?module=users&action=login">Connexion</a>
 						<a href="?module=articles&action=feed">Actualités</a>
-						<a href="?module=static&action=contact">Contact</a>
+						<a href="?module=contacts&action=new">Contact</a>
 						<a href="?module=static&action=mentions">Mentions légales</a>
 						<a href="?module=static&action=cgv">Conditions générales de vente</a>
 

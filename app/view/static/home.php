@@ -28,7 +28,7 @@
 					<div class="detailpresentation">
 				  	<div><img src="webroot/IMG/icons/3.png" alt=""/></div>
 						<div class="detailservicetitle">Des espaces de travail</div>
-						<div class="detailservicetexte">Les locaux du hub sont ouverts 24/7, qu’il neige ou bien qu’il pleuve, vous serez accueilli et entourer. Bienvenue chez vous !</div>
+						<div class="detailservicetexte">Les locaux du hub sont ouverts 24/7, qu’il neige ou bien qu’il pleuve, vous serez accueilli et entouré. Bienvenue chez vous !</div>
 					</div>
 
 					<div class="detailpresentation">
