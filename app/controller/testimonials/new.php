@@ -7,7 +7,6 @@
 		define("PAGE_TITLE", 'Ajouter un témoignage');
 		include_once('app/view/testimonials/new.php');
 	}
-
 	else
 	{
 		// var_dump($_POST);

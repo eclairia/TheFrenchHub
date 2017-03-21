@@ -21,19 +21,24 @@
 		$testimonial_picture_url = upload_pictures($_FILES);
 		// var_dump($article_picture_url);
 		// die();
-		include_once("app/model/testimonials/update_testimonial.php");
-		// var_dump($_POST);
-		// var_dump($testimonial_picture_url);
-		// die();
-		$retour = update_testimonial($_POST, $testimonial_picture_url);
-		
-		if($retour)
-		{
-			location("testimonials", "list", "notif=ok");		
-		}
 
-		else
-		{
-			location("testimonials", "list", "notif=nok");
-		}		
+        if($testimonial_picture_url == false)
+        {
+            location('testimonials', 'new', 'notif=badimg');
+        }
+        else
+        {
+            include_once("app/model/testimonials/update_testimonial.php");
+            $retour = update_testimonial($_POST, $testimonial_picture_url);
+
+            if($retour)
+            {
+                location("testimonials", "list", "notif=ok");
+            }
+
+            else
+            {
+                location("testimonials", "list", "notif=nok");
+            }
+        }
 	}

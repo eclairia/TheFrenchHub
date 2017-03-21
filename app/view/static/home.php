@@ -56,51 +56,53 @@
 
 			<div id="slider">
 				<ul id="contentSlider">
+					<?php
+                        foreach ($testimonials as $testimonial)
+                        {
+                    ?>
+                            <li>
+                                <div class="photoslider">
+                                    <img src="<?= IMG_TESTIMONIAL_URL . $testimonial['testimonial_photo_url']; ?>" alt=""/>
+                                </div>
 
-<!-- commentaire 1 -->
-					<li>
-						<div class="photoslider">
-							<img src="webroot/IMG/guillaume2.png" alt=""/>
-						</div>
+                                <div class="commentaireslider">
+                                    <img src="webroot/IMG/fleche.svg" alt="" />
 
-					<div class="commentaireslider">
-						<img src="webroot/IMG/fleche.svg" alt="" />
+                                    <div class="inslider">
+                                        <div class="nomcommslider">
+                                            <p><?= $testimonial['testimonial_first_name'] . " " . $testimonial['testimonial_last_name']; ?></p>
+                                        </div>
 
+                                        <div class="postcommslider">
+                                            <p><?= $testimonial['testimonial_job']; ?></p>
+                                        </div>
 
-							<div class="inslider">
-								<div class="nomcommslider">
-									<p>Guillaume Hulin</p>
-								</div>
+                                        <div class="hr">
 
-								<div class="postcommslider">
-									<p>CEO de The French Hub</p>
-								</div>
+                                        </div>
 
-								<div class="hr">
+                                        <div class="textecommslider">
+                                            <p><?= substr(strip_tags($testimonial['testimonial_content']), 0, 100) . "..."; ?></p>
+                                        </div>
+                                    </div>
+                                </div>
 
-								</div>
+                                <div class="arrows">
+                                    <div class="upSlide">
+                                        <img src="webroot/IMG/icons/up.png" alt=""/>
+                                    </div>
 
-								<div class="textecommslider">
-									<p>Un service très professionnel, je recommande vivement l'aventure</p>
-								</div>
+                                    <div class="downSlide">
+                                        <img src="webroot/IMG/icons/down.png" alt=""/>
+                                    </div>
+                                </div>
+                            </li>
+                    <?php
+                        }
+                    ?>
 
-							</div>
-
-					</div>
-
-
-						<div class="arrows">
-							<div class="upSlide">
-								<img src="webroot/IMG/icons/up.png" alt=""/>
-							</div>
-
-							<div class="downSlide">
-								<img src="webroot/IMG/icons/down.png" alt=""/>
-							</div>
-						</div>
-					</li>
 <!-- commentaire 2 -->
-<li>
+<!--<li>
 	<div class="photoslider">
 		<img src="webroot/IMG/guillaume2.png" alt=""/>
 	</div>
@@ -178,7 +180,7 @@
 			<img src="webroot/IMG/icons/down.png" alt=""/>
 		</div>
 	</div>
-</li>
+</li>-->
 
 
 <!-- fin commentaires slider -->

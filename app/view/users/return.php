@@ -10,7 +10,6 @@
 ?>
     <h1>Votre paiement a bien été effectué</h1>
 
-    <p> Attentez quelques seconde pour que nous mettions à jours vos données</p> <br>
-    <p> Vous allez être redirigé dans quelques secondes</p>
+
 
 <?php include_once 'app/view/layout/footer_front.inc.php'; ?>
