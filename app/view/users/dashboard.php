@@ -41,11 +41,11 @@
                     <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? '<span>(Vous ne pouvez ajouter des membres qu\'une fois le projet validé.)</span>' : '') : "" ) ?>
                 </h2>
 
-                <input class="formwidthdash2 borderform" type="text" placeholder="Nom" name="additionnal_member_last_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
-                <input class="formwidthdash2 borderform" type="text" placeholder="Prénom" name="additionnal_member_first_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
-                <input class="formwidthdash2 borderform" type="email" placeholder="Adresse mail" name="additionnal_member_mail" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
+                <input class="formwidthdash2 borderform" type="text" placeholder="Nom" name="additionnal_member_last_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
+                <input class="formwidthdash2 borderform" type="text" placeholder="Prénom" name="additionnal_member_first_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
+                <input class="formwidthdash2 borderform" type="email" placeholder="Adresse mail" name="additionnal_member_mail" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
                 <input type="hidden" name="user_project" value="<?php echo (!empty($user_project) ? $user_project[0]['user_project'] : ""); ?>">
-                <input class="boutonform3" type="submit" value="Ajouter un membre" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "" ) ?>>
+                <input class="boutonform3" type="submit" value="Ajouter un membre" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
             </div>
         </form>
     </div>
