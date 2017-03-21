@@ -2159,8 +2159,8 @@ input::-webkit-input-placeholder {
     height:15%;
     margin-top:15%;
     background: white;
-    transition:0.25s;
-    -webkit-transition:0.25s;
+    transition:1s;
+    -webkit-transition:1s;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
