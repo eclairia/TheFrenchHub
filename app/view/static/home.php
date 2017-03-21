@@ -4,7 +4,7 @@
 	<header>
 			<div id="contentheaderhome">
 				<div><h1 id="h1header">the french hub</h1></div>
-				<div><p id="textheader">Le nouvel incubateur collaboratif</p></div>
+				<div><p id="textheader">Success is about sharing</p></div>
 				<div><a id="linkheader" href="?module=static&action=concept">En savoir plus</a></div>
 			</div>
 	</header>

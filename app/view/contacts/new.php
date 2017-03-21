@@ -48,7 +48,7 @@
 		<div><p id="grdtxtcontact">The French Hub</p></div>
 		<div><p class="txtcontact">28 place de la bourse 75002 Paris</p></div>
 		<div><p class="txtcontact">01 34 69 34 34</p></div>
-		<div><p class="txtcontact">thefrenchhub@gmail.com</p></div>
+		<div><p class="txtcontact">frenchhubofficiel@gmail.com</p></div>
 
 	</div>
 </div>

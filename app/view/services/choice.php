@@ -200,7 +200,7 @@
           <div class="txtspecpay2">
 
               <div><p class="txtpayup">Contactez nous au 01 04 88 99 34</p></div>
-              <div><a href="mailto:thefrenchhub@gmail.com">thefrenchhub@gmail.com</a></div>
+              <div><a href="mailto:frenchhubofficiel@gmail.com">thefrenchhub@gmail.com</a></div>
 
           </div>
 

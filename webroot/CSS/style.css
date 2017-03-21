@@ -1191,6 +1191,29 @@ input::-webkit-input-placeholder {
   box-shadow: 1px 1px 12px #555;
 }
 
+#conceptexplain1:hover {
+  -webkit-animation-name: Floating2;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating3;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floating2{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 17px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating3{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 17px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+
 #conceptexplain2 {
   width: 23vw;
   height: 55vh;
@@ -1208,6 +1231,29 @@ input::-webkit-input-placeholder {
   position: relative;
   left: 35vw;
   bottom: 7vh;
+}
+
+#conceptexplain2:hover {
+  -webkit-animation-name: Floating4;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating5;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floating4{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 17px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating5{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 17px);}
+    to {-moz-transform: translate(0, -0px);}
 }
 
 /* ----> MENTIONS + CGV <---- */
@@ -2126,8 +2172,8 @@ input::-webkit-input-placeholder {
   }
 
   #pastille {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: #62D3D0;
     position: fixed;
@@ -2693,15 +2739,17 @@ input::-webkit-input-placeholder {
     bottom: 20vh;
     left: 0;
     width: 80vw;
-    height: 55vh;
+    padding: 2vh;
+    height: auto;
     font-size: 3vh;
   }
 
   #conceptexplain2 {
     width: 80vw;
-    height: 55vh;
+    height: auto;
     font-size: 3vh;
     position: relative;
+    padding: 2vh;
     left: 0;
     bottom: 15vh;
   }
