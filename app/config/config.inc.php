@@ -17,7 +17,7 @@
 	define("IMG_URL", "webroot/IMG/");
 	define("SALT", "gt5zfgty7qg!yegh8");
 
-    define("MAIL_EXPEDITEUR", "thefrenchhub@gmail.com");
+    define("MAIL_EXPEDITEUR", "frenchhubofficiel@gmail.com");
     define("NOM_EXPEDITEUR", "The French Hub");
 
     define("ENV", "DEV");
