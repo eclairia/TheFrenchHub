@@ -38,7 +38,7 @@
         <form method="post" action="<?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] == 1 ? '?module=additionnal_members&action=new' : '') : "" ) ?>">
             <div class="formaddmember">
                 <h2 class="titlechoice2">Ajout d'un membre<br/>
-                    <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? '<span>(Vous ne pouvez ajouter des membres qu\'une fois le projet validé.)</span>' : '') : "" ) ?>
+                    <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? '<span>(Vous ne pouvez ajouter des membres qu\'une fois le projet validé.)</span>' : '') : "<span>(Vous ne pouvez ajouter des membres qu'une fois le projet validé.)</span>" ) ?>
                 </h2>
 
                 <input class="formwidthdash2 borderform" type="text" placeholder="Nom" name="additionnal_member_last_name" <?php echo (!empty($user_project) ? ($user_project[0]['project_confirmation'] != 1 ? 'disabled' : '') : "disabled" ) ?>>
