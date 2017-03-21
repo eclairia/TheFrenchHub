@@ -234,7 +234,7 @@
 
 					<div class="twologos">
 
-						<div><img class="logopartenaires" src="webroot/IMG/twosigma.png" alt=""/></div>
+						<div><img class="logopartenaires" src="webroot/IMG/eemi.png" alt=""/></div>
 						<div><img class="logopartenaires" src="webroot/IMG/atlanta.jpg" alt=""/></div>
 
 					</div>
@@ -283,7 +283,7 @@
 						<a id="boutonrejoignez" href="?module=users&action=signup">Inscrivez-vous maintenant</a>
 					</div>
 		 		</div>
-          <div style="height:40vh;">&nbsp;</div>
+          <div style="height:55vh;">&nbsp;</div>
       </div>
   	</div>
 
