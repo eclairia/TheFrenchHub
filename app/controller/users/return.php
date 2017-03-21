@@ -45,16 +45,19 @@ else
     // Si la requête a été traitée avec succès
     if ($liste_param_paypal['ACK'] == 'Success')
     {
-        define("PAGE_TITLE", "Succès de la commande");
-        include_once('app/view/users/return.php');
-
-        sleep(5);
-        ?><!--TODO:  Modèle pour l'update de l'état de la commande--><?php
         // Mise à jour de la base de données & traitements divers...
         include_once('app/model/orders/valide_order.php');
         $retour = valide_order();
+        if($retour)
+        {
+            define("PAGE_TITLE", "Succès de la commande");
+            include_once('app/view/users/return.php');
+        }
 
-        location('static', 'home', 'notif=orderok');
+        ?><!--TODO:  Modèle pour l'update de l'état de la commande--><?php
+
+
+        //location('static', 'home', 'notif=orderok');
         //mysql_query("UPDATE commandes SET etat='OK' WHERE id_commande='".$liste_param_paypal['TRANSACTIONID']."'");
     }
     else // En cas d'échec, affiche la première erreur trouvée.

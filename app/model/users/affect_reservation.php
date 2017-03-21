@@ -11,7 +11,7 @@ function affect_reservation($reservation)
 
         $query = $pdo->prepare($req);
 
-        $query->bindValue(':time_slot_ID', $reservation['time_slot_ID'], PDO::PARAM_INT);
+        $query->bindValue(':time_slot_ID', $reservation['time_slot_begin_disponibility'], PDO::PARAM_INT);
         $query->bindValue(':user_login', $_SESSION['user']['user_login'], PDO::PARAM_STR);
         $query->bindValue(':user_password', $_SESSION['user']['user_password'], PDO::PARAM_STR);
 

@@ -16,40 +16,70 @@
     </div>
 
     <div id="allchoices">
+        <?php
+            $i = 1;
+            foreach($services as $service)
+            {
+        ?>
+                <div class="selectchoice">
+                    <div class="choice">
+                        <div><p class="titrechoiceoffer">Offre <?= $service['service_duration']; ?> mois</p></div>
+                        <div><p class="pricechoiceoffer"><?= $service['service_price']; ?> €</p></div>
+                        <div><p class="cachoiceoffer"><?= strip_tags($service['service_description']); ?></p></div>
+                        <div><a id="animclick<?= $i ?>">Choisir cette offre</a></div>
+                    </div>
 
+                    <div class="underselectchoice" id="animtranslate<?= $i ?>">
+                        <form class="formvalid" method="post" action="?module=users&action=reserve">
+                            <input type="hidden" name="order_price" value="<?= $service['service_price']; ?>">
+                            <input type="hidden" name="user_project" value="<?= $_SESSION['user']['user_project']; ?>">
+
+                            <select class="borderformvalid" name="time_slot_begin_disponibility">
+                                <option value="">Choisissez une date</option>
+                            <?php
+                                foreach ($time_slots as $time_slot)
+                                {
+                            ?>
+                                    <option value="<?= $time_slot['time_slot_ID']; ?>"><?= $time_slot['time_slot_begin_disponibility']; ?></option>
+                            <?php
+                                }
+                            ?>
+                            </select>
+
+                            <input type="hidden" name="time_slot_end_disponibility" value="<?= $service['service_duration'] ?> month">
+                            <input type="submit" value="Valider" class="validatechoice">
+                        </form>
+                    </div>
+                </div>
+        <?php
+                $i++;
+            }
+        ?>
+        <!--
       <div class="selectchoice">
-      <div class="choice">
+        <div class="choice">
+          <div><p class="titrechoiceoffer">Offre 6 mois</p></div>
+          <div><p class="pricechoiceoffer">3000 €</p></div>
+          <div><p class="cachoiceoffer">+ 3% de votre Chiffre d'affaires pendant 1 an</p></div>
+          <div><a id="animclick1">Choisir cette offre</a></div>
+        </div>
 
-        <div><p class="titrechoiceoffer">Offre 6 mois</p></div>
-        <div><p class="pricechoiceoffer">3000 €</p></div>
-        <div><p class="cachoiceoffer">+ 3% de votre Chiffre d'affaires pendant 1 an</p></div>
-        <div><a id="animclick1">Choisir cette offre</a></div>
+        <div class="underselectchoice" id="animtranslate1">
+          <form class="formvalid" method="post" action="">
+            <input type="hidden" name="price_order" value="3000">
+            <input type="hidden" name="time_slot_ID" value="">
+            <input type="hidden" name="user_project" value="">
+            <input type="hidden" name="time_slot_begin_disponibility" value="">
+            <input type="hidden" name="time_slot_end_disponibility" value="6 month">
+            <select class="borderformvalid" name="time_slot_begin_disponibility">
+                <option value="">Choisissez une date</option>
+                <option value=""></option>
+                <<option value=""></option>
+            </select>
 
-      </div>
-      <div class="underselectchoice" id="animtranslate1">
-
-        <form class="formvalid" method="post" action="">
-
-          <input type="hidden" name="price_order" value="3000">
-          <input type="hidden" name="time_slot_ID" value="">
-          <input type="hidden" name="user_project" value="">
-          <input type="hidden" name="time_slot_begin_disponibility" value="">
-          <input type="hidden" name="time_slot_end_disponibility" value="6 month">
-          <select class="borderformvalid" name="time_slot_begin_disponibility">
-
-              <option value="">Choisissez une date</option>
-              <option value=""></option>
-              <<option value=""></option>
-
-          </select>
-
-          <input type="submit" value="Valider" class="validatechoice">
-
-        </form>
-
-
-      </div>
-
+            <input type="submit" value="Valider" class="validatechoice">
+          </form>
+        </div>
       </div>
 
 
@@ -123,7 +153,7 @@
 
       </div>
 
-      </div>
+      </div>-->
 
     </div>
 

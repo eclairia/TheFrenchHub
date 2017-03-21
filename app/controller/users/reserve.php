@@ -7,11 +7,11 @@
  */
 $_POST = array(
             "order_price" => "3000",
-            "time_slot_ID" => "1",
             "user_project" => "2",
-            "time_slot_begin_disponibility" => "2016-05-29",
-            "time_slot_end_disponibility" => "6 m",
+            "time_slot_begin_disponibility" => "1", // id à la place
+            "time_slot_end_disponibility" => "6 month"
 );
+
 include("lib/paypal_api.php"); // On importe la page créée précédemment
 $requete = construit_url_paypal(); // Construit les options de base
 
@@ -63,7 +63,7 @@ else
                             array("table1" => "tfh_additionnal_members",
                                   "table2" => "tfh_projects",
                                   "table3" => "tfh_users"),
-                            array("where_column" => "additionnal_members_project",
+                            array("where_column" => "additionnal_member_project",
                                   "where_value" => "project_ID"),
                             array("and_column1" => "project_ID",
                                   "and_value1" => "user_project",
@@ -73,7 +73,13 @@ else
 
         $nb_reservations = $nb_reservations + 1;
 
-        $date = date_create($_POST['time_slot_begin_disponibility']);
+        $time_slot_begin = select_table_value(array('table1' => 'tfh_time_slots'),
+                                              array('where_column' => 'time_slot_ID',
+                                                    'where_value' => $_POST['time_slot_ID']));
+
+        $time_slot_begin_disponibility = $time_slot_begin[0]['time_slot_begin_disponibility'];
+
+        $date = date_create($time_slot_begin_disponibility);
         date_add($date, date_interval_create_from_date_string($_POST['time_slot_end_disponibility'])); // 6 month // 12 month // 18 month
         $_POST['time_slot_end_disponibility'] = date_format($date, 'Y-m-d');
 
@@ -89,7 +95,7 @@ else
         $date = select_table(
                         array("table1" => "tfh_time_slots"),
                         array("where_column" => "time_slot_ID",
-                              "where_value" => $_POST['time_slot_ID'])
+                              "where_value" => $_POST['time_slot_begin_disponibility'])
         );
 
         //var_dump($_POST);
@@ -116,7 +122,7 @@ else
             die();
         }
 
-        $_SESSION['user']['user_time_slot'] = $_POST['time_slot_ID'];
+        $_SESSION['user']['user_time_slot'] = $_POST['time_slot_begin_disponibility'];
         include_once('app/model/orders/insert_order.php');
         $retour = insert_order($_POST);
 
