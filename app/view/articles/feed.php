@@ -1,6 +1,12 @@
 <?php include_once 'app/view/layout/header_front.inc.php'; ?>
 
     <div id="allcontentarticles">
+
+      <div class="titletxt">
+
+        <div><h1 class="titlechoice">L'actualité The French Hub</h1></div>
+        <div class="undertitlechoice"></div>
+        <div>
         <?php
         $i = 1;
 

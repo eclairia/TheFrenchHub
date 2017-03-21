@@ -316,7 +316,7 @@ header {
 }
 
 .detailservicetexte {
-  font-size: 2vh;
+  font-size: 2.5vh;
   color: #CCCCCC;
   margin-bottom: 7vh;
 }
@@ -679,7 +679,7 @@ header {
   }
 
   #forminscription {
-    height: 65vh;
+    height: auto;
     width: 30vw;
     background-color: white;
     display: flex;
@@ -776,7 +776,7 @@ input::-webkit-input-placeholder {
 
   #formlogin {
     width: 30vw;
-    height: 45vh;
+    height: 55vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -786,7 +786,7 @@ input::-webkit-input-placeholder {
 
   #loginright {
     width: 25vw;
-    height: 35vh;
+    height: 45vh;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
@@ -799,11 +799,12 @@ input::-webkit-input-placeholder {
     text-decoration: underline;
     color : #FA5501;
     text-align: center;
+    margin-top: 5vh;
   }
 
   #titlelogin {
     color: #FA5501;
-    font-size: 3vh;
+    font-size: 3.5vh;
     font-weight: normal;
     text-transform: uppercase;
     margin-top: 5vh;
@@ -825,7 +826,7 @@ input::-webkit-input-placeholder {
     border: 1px solid #FA5501;
     text-decoration: none;
     color:white;
-    font-size: 2vh;
+    font-size: 2.5vh;
     background-color: #FA5501;
     }
 
@@ -835,14 +836,14 @@ input::-webkit-input-placeholder {
 
   #grdtxtlogin {
     color:#FA5501;
-    font-size: 2.3vh;
+    font-size: 3.5vh;
     text-align: center;
     margin-bottom: 3vh;
   }
 
   #txtlogin {
     color:white;
-    font-size: 1.7vh;
+    font-size: 2.3vh;
     margin-bottom: 3vh;
     text-align: center;
   }
@@ -1620,14 +1621,14 @@ input::-webkit-input-placeholder {
 
     #explainchoice {
       color: black;
-      font-size: 2vh;
+      font-size: 2.5vh;
       width: 60vw;
       text-align: center;
     }
 
     #explainchoice span {
       color: #FA5501;
-      font-size: 2vh;
+      font-size: 2.5vh;
     }
 
     .choice {
@@ -2737,7 +2738,7 @@ input::-webkit-input-placeholder {
 
   #conceptexplain1 {
     position: relative;
-    bottom: 20vh;
+    bottom: 15vh;
     left: 0;
     width: 80vw;
     padding: 2vh;
@@ -2752,7 +2753,7 @@ input::-webkit-input-placeholder {
     position: relative;
     padding: 2vh;
     left: 0;
-    bottom: 15vh;
+    bottom: 10vh;
   }
 
   /* ----> NOS OFFRES MOBILE <---- */

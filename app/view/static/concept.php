@@ -50,7 +50,7 @@
 
 		<div id="conceptdown">
 
-			  <div id="conceptexplain2">Grâce à nos partenariats avec des fonds et des entreprises qualifiés, nous mettons les entrepreneurs dans les meilleures dispositions pour qu’ils réussissent leurs projets.
+			  <div id="conceptexplain2">Grâce à nos partenariats avec des fonds d'investissement et des entreprises qualifiés, nous mettons les entrepreneurs dans les meilleures dispositions pour qu’ils réussissent leurs projets.
 					Bénéficier d’un bon environnement de travail est primordiale.</br></br> Voilà pourquoi nous cherchons à construire un environnement dynamique et rassurant.
 
 					Le leitmotiv chez The French Hub c’est : ” Il faut favoriser la réussite dans les meilleures conditions, et cela passe par une implication de tout instant de la part des fondateurs”
