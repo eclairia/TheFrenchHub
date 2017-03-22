@@ -7,6 +7,11 @@
                 <input name="article_title" type="text" class="form-control" id="article_title" maxLenght="200" required />
             </div>
 
+            <div class="form-group col-lg-6 col-sm-6">
+                <label for="article_link">Lien vers l'article: </label>
+                <input name="article_link" type="text" class="form-control" id="article_link" required />
+            </div>
+
             <div class="form-group col-lg-12 col-sm-12">
                 <p id="erreur_article_content"></p>
                 <label for="article_content">Contenu: </label>
