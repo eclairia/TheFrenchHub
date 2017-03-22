@@ -1,4 +1,5 @@
 <?php
+    define("_BASE_URL", true);
     ini_set('display_errors', '1');
     ini_set('error_reporting', E_ALL);
 	//On récupère l'adresse IP du client en prévoyant le cas du proxy

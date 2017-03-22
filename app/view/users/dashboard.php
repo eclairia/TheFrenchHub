@@ -1,4 +1,4 @@
-
+<?php if (!defined("_BASE_URL")) die("Ressource interdite !"); ?>
 <?php include_once 'app/view/layout/header_front.inc.php'; ?>
 
 <div id="allcontentdashboardtop">
