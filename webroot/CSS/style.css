@@ -874,6 +874,7 @@ input::-webkit-input-placeholder {
 }
 
 #rotatetitle {
+
   width: 16vw;
   height: 16vw;
   border: 2px solid white;
@@ -883,15 +884,93 @@ input::-webkit-input-placeholder {
   justify-content: center;
 }
 
+.noneteamhover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.titleteamhover {
+  color: #FA5501;
+  font-size: 2.7vh;
+}
+
+.noneteamhover div {
+  width: 40%;
+}
+
+#romain:hover .noneteamhover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 2vh;
+  color: white;
+}
+
+#adrien:hover .noneteamhover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 2vh;
+  color: white;
+}
+
+#carla:hover .noneteamhover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 2vh;
+  color: white;
+}
+
+#amel:hover .noneteamhover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 2vh;
+  color: white;
+}
+
+#guillaume:hover .noneteamhover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 2vh;
+  color: white;
+}
+
+#louis:hover .noneteamhover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 2vh;
+  color: white;
+}
+
 #titreequipe {
   transform: rotate(-45deg);
   color: white;
   font-weight: normal;
-  font-size: 2.3em;
+  font-size: 3.5vh;
   text-align: center;
 }
 
 #amel {
+  position: relative;
   background: url(../IMG/amel.jpg);
   background-size: cover;
   background-position: center;
@@ -900,6 +979,7 @@ input::-webkit-input-placeholder {
 }
 
 #guillaume {
+  position: relative;
   background: url(../IMG/guillaume.jpg);
   background-size: cover;
   background-position: center;
@@ -908,6 +988,7 @@ input::-webkit-input-placeholder {
 }
 
 #carla {
+  position: relative;
   background: url(../IMG/carla.jpg);
   background-size: cover;
   background-position: center;
@@ -916,6 +997,7 @@ input::-webkit-input-placeholder {
 }
 
 #louis {
+  position: relative;
   background: url(../IMG/louis.jpg);
   background-size: cover;
   background-position: center;
@@ -924,6 +1006,7 @@ input::-webkit-input-placeholder {
 }
 
 #adrien {
+  position: relative;
   background: url(../IMG/adrien.jpg);
   background-size: cover;
   background-position: center;
@@ -932,6 +1015,7 @@ input::-webkit-input-placeholder {
 }
 
 #romain {
+  position: relative;
   background: url(../IMG/romain.jpg);
   background-size: cover;
   background-position: center;
@@ -957,6 +1041,10 @@ input::-webkit-input-placeholder {
 .textcompany span {
   font-weight: bold;
   color: #FA5501;
+}
+
+.basteamspace {
+  margin-bottom: 7vh;
 }
 
 .companyteam2 {
@@ -3515,6 +3603,199 @@ input::-webkit-input-placeholder {
         color:#62D3D0;
         background-color: white;
       }
+
+      /* ----> EQUIPE MOBILE <---- */
+
+      #rotatetitle {
+        width: 40vw;
+        height: 40vw;
+        border: 2px solid white;
+        transform: rotate(45deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .titleteamhover {
+        color: #FA5501;
+        font-size: 2.7vh;
+      }
+
+      .noneteamhover div {
+        width: 40%;
+      }
+
+      #romain:hover .noneteamhover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 2vh;
+        color: white;
+      }
+
+      #adrien:hover .noneteamhover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 2vh;
+        color: white;
+      }
+
+      #carla:hover .noneteamhover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 2vh;
+        color: white;
+      }
+
+      #amel:hover .noneteamhover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 2vh;
+        color: white;
+      }
+
+      #guillaume:hover .noneteamhover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 2vh;
+        color: white;
+      }
+
+      #louis:hover .noneteamhover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 2vh;
+        color: white;
+      }
+
+      #titreequipe {
+        transform: rotate(-45deg);
+        color: white;
+        font-weight: normal;
+        font-size: 3.5vh;
+        text-align: center;
+      }
+
+      #amel {
+        position: relative;
+        background: url(../IMG/amel.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50%;
+        width: 100vw;
+      }
+
+      #guillaume {
+        position: relative;
+        background: url(../IMG/guillaume.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50%;
+        width: 100vw;
+      }
+
+      #carla {
+        position: relative;
+        background: url(../IMG/carla.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50%;
+        width: 100vw;
+      }
+
+      #louis {
+        position: relative;
+        background: url(../IMG/louis.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50%;
+        width: 100vw;
+      }
+
+      #adrien {
+        position: relative;
+        background: url(../IMG/adrien.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50%;
+        width: 100vw;
+      }
+
+      #romain {
+        position: relative;
+        background: url(../IMG/romain.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50%;
+        width: 100vw;
+      }
+
+      .textcompany {
+        font-size: 2.3vh;
+        width: 80vw;
+        text-align: center;
+      }
+
+      .textcompany2 {
+        font-size: 2.3vh;
+        width: 80vw;
+        text-align: center;
+      }
+
+      .textcompany2 span {
+        font-size: 3vh;
+        font-weight: bold;
+        color: #62D3D0;
+      }
+
+      .textcompany span {
+        font-size: 3vh;
+        font-weight: bold;
+        color: #FA5501;
+      }
+
+      .basteamspace {
+        margin-bottom: 7vh;
+      }
+
+      .companyteam2 {
+        width: 100%;
+        height: 100vh;
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: right;
+      }
+
+      .companyteam {
+        width: 100%;
+        height: 100vh;
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+
 
 
 }
