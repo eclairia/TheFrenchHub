@@ -9,14 +9,16 @@
     <form id="formlogin" method="post" action="?module=users&action=login">
 
       <div>
-        <input class="formwidth borderform2 " name="user_login" type="text" placeholder="Identifiant" value="<?php if(isset($_COOKIE['user_login']))
+        <p id="erreur_login"></p>
+        <input class="formwidth borderform2" id="user_login" name="user_login" type="text" placeholder="Identifiant" value="<?php if(isset($_COOKIE['user_login']))
         {
           echo $_COOKIE['user_login'];
         } ?>" required>
       </div>
 
       <div>
-        <input class="formwidth borderform2" name="user_password" type="password" placeholder="Mot de passe" value="<?php if(isset($_COOKIE['user_password']))
+        <p id="erreur_password"></p>
+        <input class="formwidth borderform2" id="user_password" name="user_password" type="password" placeholder="Mot de passe" value="<?php if(isset($_COOKIE['user_password']))
         {
           echo $_COOKIE['user_password'];
         } ?>" required>
@@ -52,4 +54,6 @@
   </div>
 
 </div>
+
+<script type="text/javascript" src="webroot/JS/form_login.js"></script>
 <?php include_once 'app/view/layout/footer_front.inc.php'; ?>
