@@ -38,9 +38,9 @@ else
     $liste_param_paypal = recup_param_paypal($resultat_paypal); // Lance notre fonction qui dispatche le résultat obtenu en un array
 
     // On affiche tous les paramètres afin d'avoir un aperçu global des valeurs exploitables (pour vos traitements). Une fois que votre page sera comme vous le voulez, supprimez ces 3 lignes. Les visiteurs n'auront aucune raison de voir ces valeurs s'afficher.
-    echo "<pre>";
+    /*echo "<pre>";
     print_r($liste_param_paypal);
-    echo "</pre>";
+    echo "</pre>";*/
 
     // Si la requête a été traitée avec succès
     if ($liste_param_paypal['ACK'] == 'Success')
@@ -50,21 +50,11 @@ else
         $retour = valide_order();
         if($retour)
         {
-            define("PAGE_TITLE", "Succès de la commande");
-            include_once('app/view/users/return.php');
+            location("users", "dashboard", "notif=orderok");
         }
-
-        ?><!--TODO:  Modèle pour l'update de l'état de la commande--><?php
-
-
-        //location('static', 'home', 'notif=orderok');
-        //mysql_query("UPDATE commandes SET etat='OK' WHERE id_commande='".$liste_param_paypal['TRANSACTIONID']."'");
     }
     else // En cas d'échec, affiche la première erreur trouvée.
     {echo "<p>Erreur de communication avec le serveur PayPal.<br />".$liste_param_paypal['L_SHORTMESSAGE0']."<br />".$liste_param_paypal['L_LONGMESSAGE0']."</p>";}
 }
 // On ferme notre session cURL.
 curl_close($ch);
-?>
-
-<!--TODO:  Redirection sur traitement.php avec paramètre get token après update-->

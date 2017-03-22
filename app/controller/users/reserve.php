@@ -5,12 +5,12 @@
  * Date: 11/03/2017
  * Time: 00:59
  */
-$_POST = array(
+/*$_POST = array(
             "order_price" => "3000",
             "user_project" => "2",
             "time_slot_begin_disponibility" => "1", // id à la place
             "time_slot_end_disponibility" => "6 month"
-);
+);*/
 
 include("lib/paypal_api.php"); // On importe la page créée précédemment
 $requete = construit_url_paypal(); // Construit les options de base
@@ -51,14 +51,7 @@ else
     if ($liste_param_paypal['ACK'] == 'Success')
     {
         // on fait un Insert de la commande pour la tracer
-    ?>
-        <!--TODO:  Transformer countable comme le select pour calculer le nombre de membres à mettre dans le prochain modèle-->
 
-        <!--TODO:  Modèle update pour reserve time slot-->
-        <!--TODO:  Modèle update pour begin project date-->
-        <!--TODO:  Modèle update pour user time slot-->
-        <!--TODO:  Modèle insert pour orders-->
-    <?php
         $nb_reservations = count_table(
                             array("table1" => "tfh_additionnal_members",
                                   "table2" => "tfh_projects",
