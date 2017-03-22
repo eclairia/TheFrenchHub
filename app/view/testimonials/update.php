@@ -27,7 +27,7 @@
             </div>
 
             <input type="hidden" name="testimonial_id" value="<?= $_GET['id']; ?>">
-            <input type="submit" class="btn btn-lg btn-success" value="Ajouter un Témoignage">
+            <input type="submit" class="btn btn-lg btn-success" value="Modifier le Témoignage">
         </form>
     </div>
 </div>
