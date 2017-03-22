@@ -1,6 +1,7 @@
 <?php include("app/view/layout/header_back.inc.php"); ?>
 
 	<div class="col-lg-10 col-sm-10">
+		<p id="erreur_update_article" class='col-lg-10 bg-danger'><p>
 		<form method="POST" action="?module=articles&action=update" enctype="multipart/form-data" id="form_update_article">
 			<div class="form-group col-lg-6 col-sm-6">
 				<p id="erreur_update_article_title"></p>

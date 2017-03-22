@@ -8,6 +8,7 @@
 
 include_once("app/view/layout/header_back.inc.php"); ?>
     <div class="col-lg-10 col-sm-10">
+        <p id="erreur_update_timeslot" class='col-lg-10 bg-danger'><p>
         <form method="POST" action="?module=time_slots&action=update&id=<?= $_GET['id'] ?>" enctype="multipart/form-data" id="form_update_timeslot">
             <div class="form-group col-lg-12 col-sm-12">
                 <label for="time_slot_begin_disponibility">Date de commencement: </label>

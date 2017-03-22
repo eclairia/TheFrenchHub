@@ -8,6 +8,7 @@
 include_once("app/view/layout/header_back.inc.php"); ?>
 
 <div class="col-lg-10 col-sm-10">
+    <p id="erreur_update_admin" class='col-lg-10 bg-danger'><p>
     <form method="POST" action="?module=admin&action=update" id="form_update_admin">
         <div class="form-group col-lg-6 col-sm-6">
             <p id="erreur_update_admin_name"></p>
@@ -31,12 +32,7 @@ include_once("app/view/layout/header_back.inc.php"); ?>
             <p id="erreur_update_admin_password"></p>
             <label for="admin_password">Admin password</label>
             <input type="password" name="admin_password" class="form-control" id="update_admin_password">
-        </div>
-
-        <div class="form-group col-lg-6 col-sm-6">
-            <p id="erreur_update_admin_id"></p>
-            <input type="text" name="admin_id" class="form-control" id="update_admin_id" value="<?= $admin[0]['admin_ID'] ?>">
-        </div>        
+        </div>      
 
         <div class="form-group col-lg-6 col-sm-6">
             <p id="erreur_update_admin_level"></p>

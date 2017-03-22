@@ -1,5 +1,6 @@
 <?php include_once("app/view/layout/header_back.inc.php"); ?>
     <div class="col-lg-10 col-sm-10">
+        <p id="erreur_article"></p>
         <form method="POST" action="?module=articles&action=new" enctype="multipart/form-data" id="form_article">
             <div class="form-group col-lg-6 col-sm-6">
                 <p id="erreur_article_title"></p>
