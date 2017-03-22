@@ -20,12 +20,4 @@ document.getElementById("form_login").onsubmit = function(e)
 		document.getElementById("erreur_admin_password").style.color="red";
 		document.getElementById("admin_password").style.borderColor="red";
 	}
-
-	else if(document.getElementById("admin_password").value.length < 8)
-	{
-		e.preventDefault();
-		document.getElementById("erreur_admin_password").innerHTML = "8 caractères minimum";
-		document.getElementById("erreur_admin_password").style.color="red";		
-		document.getElementById("admin_password").style.borderColor="red";
-	}
 }
