@@ -31,10 +31,12 @@
 
                     <div class="underselectchoice" id="animtranslate<?= $i ?>">
                         <form class="formvalid" method="post" action="?module=users&action=reserve">
+                            <?php echo (isset($_SESSION['user']) ? ($user_project[0]['project_confirmation'] == 1 ? "" : "<p>Votre projet doit être validé !</p>") : "<p>Votre projet doit être validé !</p>"  );?>
+
                             <input type="hidden" name="order_price" value="<?= $service['service_price']; ?>">
                             <input type="hidden" name="user_project" value="<?= $_SESSION['user']['user_project']; ?>">
 
-                            <select class="borderformvalid" name="time_slot_begin_disponibility">
+                            <select class="borderformvalid" name="time_slot_begin_disponibility" <?php echo (isset($_SESSION['user']) ? ($user_project[0]['project_confirmation'] == 1 ? "" : "disabled") : "disabled"  );?>>
                                 <option value="">Choisissez une date</option>
                             <?php
                                 foreach ($time_slots as $time_slot)
@@ -47,7 +49,7 @@
                             </select>
 
                             <input type="hidden" name="time_slot_end_disponibility" value="<?= $service['service_duration'] ?> month">
-                            <input type="submit" value="Valider" class="validatechoice">
+                            <input type="submit" value="Valider" class="validatechoice" <?php echo (isset($_SESSION['user']) ? ($user_project[0]['project_confirmation'] == 1 ? "" : "disabled") : "disabled"  );?>>
                         </form>
                     </div>
                 </div>
