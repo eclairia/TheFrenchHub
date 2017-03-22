@@ -13,25 +13,25 @@ include_once("app/view/layout/header_back.inc.php"); ?>
         <div class="form-group col-lg-6 col-sm-6">
             <p id="erreur_update_admin_name"></p>
             <label for="admin_name">Admin Name</label>
-            <input type="text" name="admin_name" class="form-control" id="update_admin_name" value="<?= $admin[0]['admin_name'] ?>">
+            <input type="text" name="admin_name" class="form-control" id="update_admin_name" value="<?= $admin[0]['admin_name'] ?>" required>
         </div>
 
         <div class="form-group col-lg-6 col-sm-6">
             <p id="erreur_update_admin_mail"></p>
             <label for="admin_mail">Admin mail</label>
-            <input type="email" name="admin_mail" class="form-control" id="update_admin_mail" value="<?= $admin[0]['admin_mail'] ?>">
+            <input type="email" name="admin_mail" class="form-control" id="update_admin_mail" value="<?= $admin[0]['admin_mail'] ?>" required>
         </div>
 
         <div class="form-group col-lg-6 col-sm-6">
             <p id="erreur_update_admin_login"></p>
             <label for="admin_login">Admin login</label>
-            <input type="text" name="admin_login" class="form-control" id="update_admin_login" value="<?= $admin[0]['admin_login'] ?>">
+            <input type="text" name="admin_login" class="form-control" id="update_admin_login" value="<?= $admin[0]['admin_login'] ?>" required>
         </div>
 
         <div class="form-group col-lg-6 col-sm-6">
             <p id="erreur_update_admin_password"></p>
             <label for="admin_password">Admin password</label>
-            <input type="password" name="admin_password" class="form-control" id="update_admin_password">
+            <input type="password" name="admin_password" class="form-control" id="update_admin_password" required>
         </div>      
 
         <div class="form-group col-lg-6 col-sm-6">

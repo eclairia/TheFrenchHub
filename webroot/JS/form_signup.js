@@ -39,13 +39,13 @@ document.getElementById("forminscription").onsubmit = function(e)
 		document.getElementById("user_birth").style.borderColor="red";
 	}	
 
-	else if(document.getElementById("user_mail").value == "")
-	{
-		e.preventDefault();
-		document.getElementById("erreur_mail").innerHTML = "Veuillez remplir ce champs";
+    else if(document.getElementById('user_mail').value.trim() == "" || (document.getElementById('user_mail').value.indexOf("@")<=0) || (document.getElementById('user_mail').value.indexOf(".")<=0))
+    {
+		e.preventDefault(); 
+		document.getElementById("erreur_mail").innerHTML = "Mauvais format ou champs est vide";
 		document.getElementById("erreur_mail").style.color="red";
 		document.getElementById("user_mail").style.borderColor="red";
-	}
+    }
 
 	else if(document.getElementById("user_login").value == "")
 	{

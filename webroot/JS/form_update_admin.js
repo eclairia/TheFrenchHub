@@ -19,13 +19,13 @@ document.getElementById("form_update_admin").onsubmit = function(e)
 		document.getElementById("update_admin_name").style.borderColor="red";
 	}
 
-	else if(document.getElementById("update_admin_mail").value == "")
-	{
-		e.preventDefault();
-		document.getElementById("erreur_update_admin").innerHTML = "Veuillez remplir le champs admin mail";
+    else if(document.getElementById('update_admin_mail').value.trim() == "" || (document.getElementById('update_admin_mail').value.indexOf("@")<=0) || (document.getElementById('update_admin_mail').value.indexOf(".")<=0))
+    {
+		e.preventDefault(); 
+		document.getElementById("erreur_update_admin").innerHTML = "L'adresse mail rentrée n'a pas le bon format ou le champs est vide";
 		document.getElementById("erreur_update_admin").style.color="red";
 		document.getElementById("update_admin_mail").style.borderColor="red";
-	}
+    }
 
 	else if(document.getElementById("update_admin_login").value == "")
 	{
