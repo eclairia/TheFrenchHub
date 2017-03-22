@@ -3,9 +3,9 @@ document.getElementById("form_update_service").onsubmit = function(e)
 	document.getElementById("erreur_update_service_description").innerHTML = "";	
 	document.getElementById("update_service_description").style.borderColor="green";
 	document.getElementById("erreur_update_service_price").innerHTML = "";	
-	document.getElementById("erreur_update_service_price").style.borderColor="green";
-	document.getElementById("service_duration").innerHTML = "";	
-	document.getElementById("service_duration").style.borderColor="green";		
+	document.getElementById("update_service_price").style.borderColor="green";
+	document.getElementById("erreur_update_service_duration").innerHTML = "";	
+	document.getElementById("update_service_duration").style.borderColor="green";		
 
 	if(document.getElementById("update_service_description").value == "")
 	{
@@ -23,11 +23,11 @@ document.getElementById("form_update_service").onsubmit = function(e)
 		document.getElementById("update_service_price").style.borderColor="red";
 	}
 
-	else if(document.getElementById("service_duration").value == "")
+	else if(document.getElementById("update_service_duration").value == "")
 	{
 		e.preventDefault();
-		document.getElementById("erreur_service_duration").innerHTML = "Veuillez remplir ce champs";
-		document.getElementById("erreur_service_duration").style.color="red";
-		document.getElementById("service_duration").style.borderColor="red";
+		document.getElementById("erreur_update_service_duration").innerHTML = "Veuillez remplir ce champs";
+		document.getElementById("erreur_update_service_duration").style.color="red";
+		document.getElementById("update_service_duration").style.borderColor="red";
 	}
 }

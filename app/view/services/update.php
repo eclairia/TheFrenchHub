@@ -11,19 +11,19 @@ include_once("app/view/layout/header_back.inc.php"); ?>
         <div class="form-group col-lg-12 col-sm-12">
             <p id="erreur_update_service_description"></p>
             <label for="service_description">Description: </label>
-            <textarea name="service_description" class="form-control" id="update_service_description" rows="10" cols="100" required ><?= $service[0]['service_description'] ?></textarea>
+            <textarea name="service_description" class="form-control" id="update_service_description" rows="10" cols="100" required><?= $service[0]['service_description'] ?></textarea>
         </div>
 
         <div class="form-group col-lg-3 col-sm-3 col-lg-offset-3 col-md-offset-3">
             <p id="erreur_update_service_price"></p>
             <label for="service_price">Prix: </label>
-            <input name="service_price" class="form-control" id="update_service_price" type="number" value="<?= $service[0]['service_price'] ?>" required/>
+            <input name="service_price" class="form-control" id="update_service_price" type="number" value="<?= $service[0]['service_price'] ?>" required />
         </div>
 
         <div class="form-group col-lg-3 col-sm-3">
-        <p id="erreur_update_service_duration"></p>
+            <p id="erreur_update_service_duration"></p>
             <label for="service_duration">Durée: </label>
-            <input name="service_duration" class="form-control" id="update_service_duration" type="number" value="<?= $service[0]['service_duration'] ?>" required/>
+            <input name="service_duration" class="form-control" id="update_service_duration" type="number" value="<?= $service[0]['service_duration'] ?>" required />
         </div>
 
         <div class="form-group col-lg-6 col-sm-6 text-center col-lg-offset-3 col-md-offset-3">
