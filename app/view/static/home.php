@@ -60,7 +60,7 @@
                         foreach ($testimonials as $testimonial)
                         {
                     ?>
-                            <li>
+                            <li class="moveSlider">
                                 <div class="photoslider">
                                     <img src="<?= IMG_TESTIMONIAL_URL . $testimonial['testimonial_photo_url']; ?>" alt=""/>
                                 </div>
@@ -100,91 +100,6 @@
                     <?php
                         }
                     ?>
-
-<!-- commentaire 2 -->
-<!--<li>
-	<div class="photoslider">
-		<img src="webroot/IMG/guillaume2.png" alt=""/>
-	</div>
-
-	<div class="commentaireslider">
-
-	<div class="inslider">
-		<div class="nomcommslider">
-			<p>Guillaume Hulin</p>
-		</div>
-
-		<div class="postcommslider">
-			<p>CEO de The French Hub</p>
-		</div>
-
-		<div class="hr">
-
-		</div>
-
-		<div class="textecommslider">
-			<p>Un service très professionnel, je recommande vivement l'aventure</p>
-		</div>
-
-		</div>
-	</div>
-
-
-	<div class="arrows">
-		<div class="upSlide">
-			<img src="webroot/IMG/icons/up.png" alt=""/>
-		</div>
-
-		<div class="downSlide">
-			<img src="webroot/IMG/icons/down.png" alt=""/>
-		</div>
-	</div>
-</li>
-
-<!-- commentaire 3 -->
-
-<li>
-	<div class="photoslider">
-		<img src="webroot/IMG/guillaume2.png" alt=""/>
-	</div>
-
-	<div class="commentaireslider">
-
-	<div class="inslider">
-		<div class="nomcommslider">
-			<p>Guillaume Hulin</p>
-		</div>
-
-		<div class="postcommslider">
-			<p>CEO de The French Hub</p>
-		</div>
-
-		<div class="hr">
-
-		</div>
-
-		<div class="textecommslider">
-			<p>Un service très professionnel, je recommande vivement l'aventure</p>
-		</div>
-
-		</div>
-	</div>
-
-
-	<div class="arrows">
-		<div class="upSlide">
-			<img src="webroot/IMG/icons/up.png" alt=""/>
-		</div>
-
-		<div class="downSlide">
-			<img src="webroot/IMG/icons/down.png" alt=""/>
-		</div>
-	</div>
-</li>-->
-
-
-<!-- fin commentaires slider -->
-
 				</ul>
 			</div>
 		</div>
@@ -294,5 +209,5 @@
 	<!-- Fin Nous rejoindre -->
 
 	<!-- Footer -->
-	<script type="text/javascript" src="webroot/JS/sliderTestimonials"></script>
+	<script type="text/javascript" src="webroot/JS/sliderTestimonials.js"></script>
 	<?php include_once 'app/view/layout/footer_front.inc.php'; ?>
