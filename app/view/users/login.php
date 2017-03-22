@@ -18,7 +18,7 @@
 
       <div>
         <p id="erreur_password"></p>
-        <input class="formwidth borderform2" id="user_password" name="user_password" type="password" value="<?php if(isset($_COOKIE['user_password']))
+        <input class="formwidth borderform2" id="user_password" placeholder="Mot de passe" name="user_password" type="password" value="<?php if(isset($_COOKIE['user_password']))
         {
           echo $_COOKIE['user_password'];
         } ?>" required>

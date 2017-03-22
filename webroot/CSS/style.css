@@ -2217,7 +2217,53 @@ input::-webkit-input-placeholder {
  opacity: 0.6;
 }
 
+/* ----> PAGE RESET PASSWORD <---- */
 
+#allcontentreset {
+  width: 100%;
+  height: 80vh;
+  background: url(../IMG/pattern2.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formreset {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+#formreset form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+}
+
+/* ----> ERREUR 404 <---- */
+
+#echec {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#echec img{
+  margin-top: 5vh;
+  width: 50%;
+  z-index:1;
+}
+
+.title404 {
+  margin-top: 5vh
+}
 /* ----> VERSION MOBILE <---- */
 
 @media screen and (max-width: 1080px)
