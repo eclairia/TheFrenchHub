@@ -857,7 +857,7 @@ input::-webkit-input-placeholder {
 #backgroundequipe {
   width: 100%;
   height: 50vh;
-  background-image: url(../IMG/bg-team.jpg);
+  background-image: url(../IMG/pattern2.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -867,15 +867,15 @@ input::-webkit-input-placeholder {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #rotatetitle {
-  width: 13vw;
-  height: 25vh;
+  width: 16vw;
+  height: 16vw;
   border: 2px solid white;
   transform: rotate(45deg);
   display: flex;
@@ -886,118 +886,100 @@ input::-webkit-input-placeholder {
 #titreequipe {
   transform: rotate(-45deg);
   color: white;
-  text-transform: uppercase;
   font-weight: normal;
-  font-size: 3em;
+  font-size: 2.3em;
   text-align: center;
-}
-
-#membres {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 7vh;
-  width: 100%;
-}
-
-#teamhaut {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  margin-bottom: 7vh;
-}
-
-#teambas {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  margin-bottom: 7vh;
-}
-
-.divmember {
-  width: 13vw;
-  height: 25vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
 
 #amel {
   background: url(../IMG/amel.jpg);
   background-size: cover;
   background-position: center;
+  height: 100%;
+  width: 20vw;
 }
 
 #guillaume {
   background: url(../IMG/guillaume.jpg);
   background-size: cover;
   background-position: center;
+  height: 100%;
+  width: 20vw;
 }
 
 #carla {
   background: url(../IMG/carla.jpg);
   background-size: cover;
   background-position: center;
+  height: 100%;
+  width: 20vw;
 }
 
 #louis {
   background: url(../IMG/louis.jpg);
   background-size: cover;
   background-position: center;
+  height: 100%;
+  width: 20vw;
 }
 
 #adrien {
   background: url(../IMG/adrien.jpg);
   background-size: cover;
   background-position: center;
+  height: 100%;
+  width: 20vw;
 }
 
 #romain {
   background: url(../IMG/romain.jpg);
   background-size: cover;
   background-position: center;
-}
-
-.teamdisplaynone {
-  position: absolute;
-  width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
+  width: 20vw;
 }
 
-.textnone {
-  color: #FA5501;
-  text-transform: uppercase;
-  font-weight: normal;
+.textcompany {
   font-size: 2vh;
-  text-align: center;
+  width: 60vw;
 }
 
-.poles {
-  text-transform: none;
-  color: white;
+.textcompany2 {
+  font-size: 2vh;
+  width: 60vw;
 }
 
-.divmember:hover .teamdisplaynone {
-  display: block;
-  position: absolute;
+.textcompany2 span {
+  font-weight: bold;
+  color: #62D3D0;
+}
+
+.textcompany span {
+  font-weight: bold;
+  color: #FA5501;
+}
+
+.companyteam2 {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  height: 35vh;
+  margin-top: 10vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 5vh;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  text-align: right;
 }
+
+.companyteam {
+  width: 100%;
+  height: 35vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
 
 /* ----> CONCEPT <---- */
 
@@ -1608,15 +1590,15 @@ input::-webkit-input-placeholder {
     }
 
     #animtranslate1.animoffre {
-      top: 0vw;
+      top: -2vw;
     }
 
     #animtranslate2.animoffre {
-      top: 0vw;
+      top: -2vw;
     }
 
     #animtranslate3.animoffre {
-      top: 0vw;
+      top: -2vw;
     }
 
     #explainchoice {
@@ -2788,6 +2770,18 @@ input::-webkit-input-placeholder {
   #animtranslate3 {
     top: -80vw;
     transition: top 1s;
+  }
+
+  #animtranslate1.animoffre {
+    top: -10vw;
+  }
+
+  #animtranslate2.animoffre {
+    top: -10vw;
+  }
+
+  #animtranslate3.animoffre {
+    top: -10vw;
   }
 
   #explainchoice {

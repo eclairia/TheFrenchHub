@@ -12,7 +12,7 @@ function reserve_time_slot($slot, $nb_reservation)
 
         $query->bindValue(':time_slot_ID', $slot['time_slot_ID'], PDO::PARAM_INT);
         $query->bindValue(':time_slot_nb_reservations', $nb_reservation, PDO::PARAM_INT);
-        $query->bindValue(':time_slot_end_disponibility', $slot['time_slot_end_disponibility'], PDO::PARAM_INT);
+        $query->bindValue(':time_slot_end_disponibility', $slot['time_slot_end_disponibility'], PDO::PARAM_STR);
 
         $query->execute();
 

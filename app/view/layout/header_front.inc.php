@@ -47,8 +47,8 @@
                 else
                 {
             ?>
-              <a class="linknav" href="?module=users&action=dashboard">Dashboard</a>
-          		<a class="linknav" href="?module=users&action=logout">Déconnexion</a>
+              <a class="linknav2" href="?module=users&action=dashboard">Dashboard</a>
+          		<a class="linknav2" href="?module=users&action=logout">Déconnexion</a>
             <?php
                 }
 			?>

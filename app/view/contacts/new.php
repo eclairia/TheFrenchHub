@@ -31,10 +31,10 @@
 
 			</select>
 
-			<textarea class="formwidthdash borderformdash" placeholder="Tapez votre message ici" name="contact_message"></textarea>
+			<textarea class="formwidthdash borderformdash" name="contact_message">Tapez votre message ici</textarea>
 
 			<div>
-				<input class="formwidth boutonform"  type="submit" placeholder="Envoyer" >
+				<input class="formwidth boutonform"  type="submit" value="Envoyer" >
 			</div>
 
 		</form>

@@ -5,14 +5,8 @@
  * Date: 11/03/2017
  * Time: 00:59
  */
-/*$_POST = array(
-            "order_price" => "3000",
-            "user_project" => "2",
-            "time_slot_begin_disponibility" => "1", // id à la place
-            "time_slot_end_disponibility" => "6 month"
-);*/
 
-include("lib/paypal_api.php"); // On importe la page créée précédemment
+include("lib/paypal_api.php"); // On importe les informations redondantes à passer en paramètre au serveur paypal
 $requete = construit_url_paypal(); // Construit les options de base
 
 // La fonction urlencode permet d'encoder au format URL les espaces, slash, deux points, etc.)

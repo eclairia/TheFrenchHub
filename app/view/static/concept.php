@@ -37,7 +37,7 @@
 				<div>
 
 					<div id="conceptexplain1">Chez The French Hub, il est question de réunir des individus de différentes horizons, de les faire travailler ensemble,  pour voir émerger des solutions innovantes.
-           Nous échangeons dans un monde où les barrières n’existent plus. Voilà l’avantage sur lequel s’appuie The French Hub !</br></br>
+           Nous échangeons dans un monde où les barrières n’existent plus. Voilà l’avantage sur lequel s’appuie The French Hub !<br><br>
 					 De la sorte, ce hub alimente la notion d’interconnectivité et de transmission entre des entrepreneurs venus du monde entier. Qui travaille ensemble, auprès de spécialistes, pour repenser notre monde et … pourquoi pas … le révolutionner.
 					</div>
 
@@ -51,7 +51,7 @@
 		<div id="conceptdown">
 
 			  <div id="conceptexplain2">Grâce à nos partenariats avec des fonds d'investissement et des entreprises qualifiés, nous mettons les entrepreneurs dans les meilleures dispositions pour qu’ils réussissent leurs projets.
-					Bénéficier d’un bon environnement de travail est primordiale.</br></br> Voilà pourquoi nous cherchons à construire un environnement dynamique et rassurant.
+					Bénéficier d’un bon environnement de travail est primordiale.<br><br> Voilà pourquoi nous cherchons à construire un environnement dynamique et rassurant.
 
 					Le leitmotiv chez The French Hub c’est : ” Il faut favoriser la réussite dans les meilleures conditions, et cela passe par une implication de tout instant de la part des fondateurs”
 				</div>

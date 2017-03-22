@@ -41,7 +41,7 @@
                             </div>
 
                             <div class="buttonarticle">
-                                <a href="#" target="_blank">Voir</a>
+                                <a href="<?= $article['article_link'] ?>" target="_blank">Voir</a>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                             </div>
 
                             <div class="buttonarticle2">
-                                <a href="#" target="_blank">Voir</a>
+                                <a href="<?= $article['article_link'] ?>" target="_blank">Voir</a>
                             </div>
                         </div>
 
@@ -86,6 +86,7 @@
                 }
             }
         ?>
+        </div>
     </div>
 
 <?php include_once 'app/view/layout/footer_front.inc.php'; ?>

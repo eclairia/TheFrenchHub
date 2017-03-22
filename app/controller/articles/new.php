@@ -23,7 +23,7 @@
         {
             include_once("app/model/articles/insert_article.php");
             $_SESSION["admin"]["admin_ID"] = intval($_SESSION["admin"]["admin_ID"]);
-            $retour = insert_article($_POST, $_FILES, $article_picture_url, $_SESSION["admin"]["admin_ID"]);
+            $retour = insert_article($_POST, $article_picture_url, $_SESSION["admin"]["admin_ID"]);
             
             if(!$retour)
             {
