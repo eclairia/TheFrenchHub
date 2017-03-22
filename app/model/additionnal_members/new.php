@@ -5,6 +5,7 @@
  * Date: 20/03/2017
  * Time: 19:01
  */
+    if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function add_member($additionnal_member)
     {
         global $pdo;

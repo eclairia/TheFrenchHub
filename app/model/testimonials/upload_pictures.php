@@ -1,7 +1,6 @@
 <?php
-
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 //Contrôler l'extension
-
 function upload_pictures($file)
 {
 

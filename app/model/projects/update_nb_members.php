@@ -1,5 +1,5 @@
 <?php
-
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function update_nb_members($id, $nb_members)
 	{
 		global $pdo;

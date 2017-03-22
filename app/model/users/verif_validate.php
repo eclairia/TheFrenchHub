@@ -1,4 +1,5 @@
 <?php
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function verif_validate($key, $user_confirmed)
 	{
 	    global $pdo;

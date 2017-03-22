@@ -1,4 +1,5 @@
-<?php include_once("app/view/layout/footer_back.inc.php"); ?>
+<?php if (!defined("_BASE_URL")) die("Ressource interdite !");
+include_once("app/view/layout/footer_back.inc.php"); ?>
 
     <form method="POST" action="?module=users&action=new" enctype="multipart/form-data" id="form_user">	<br><br>
         <label>First name: </label><input type="text" name="user_first_name"><br><br>

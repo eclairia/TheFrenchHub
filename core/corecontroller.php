@@ -1,5 +1,5 @@
 <?php
-
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function location($module, $action, $get="")
 	{
 			$url = "Location:?module=". $module . "&action=" . $action;

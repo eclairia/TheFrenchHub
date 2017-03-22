@@ -1,7 +1,7 @@
 <?php
     //protection("user", "users", "login", USER_LAMBDA);
-
-    $_SESSION['user']['user_project'] = $_SESSION['user']['user_project'] == null ? 0 : $_SESSION['user']['user_project'];
+  if (!defined("_BASE_URL")) die("Ressource interdite !");
+  $_SESSION['user']['user_project'] = $_SESSION['user']['user_project'] == null ? 0 : $_SESSION['user']['user_project'];
 
 	$user_project = select_table_value(
         		array("table1" => "tfh_users",

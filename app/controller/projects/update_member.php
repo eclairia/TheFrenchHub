@@ -1,4 +1,5 @@
 <?php
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	if(empty($_POST))
 	{
 		define("PAGE_TITLE", 'Insérer un utilisateur dans un projet');

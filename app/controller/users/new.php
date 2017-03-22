@@ -1,4 +1,5 @@
 <?php
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	if(empty($_POST))
 	{
 		//Appel de la vue correspondante

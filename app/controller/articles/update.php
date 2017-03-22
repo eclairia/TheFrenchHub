@@ -1,4 +1,5 @@
 <?php
+    if (!defined("_BASE_URL")) die("Ressource interdite !");
 	protection("admin", "admin", "login", "USER_ADMIN");
 
 	if((empty($_GET['id'])) && (!isset($_POST['article_ID'])))

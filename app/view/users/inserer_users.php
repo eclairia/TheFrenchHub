@@ -1,3 +1,4 @@
+<?php if (!defined("_BASE_URL")) die("Ressource interdite !"); ?>
 <form method="POST" action="?module=utilisateur&action=insert_users">	
 	<input type="text" name="user_first_name">
 	<input type="text" name="user_last_name">

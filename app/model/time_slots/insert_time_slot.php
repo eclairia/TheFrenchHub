@@ -1,5 +1,5 @@
 <?php
-
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function insert_time_slot($slot)
 	{	
 		global $pdo;

@@ -5,6 +5,7 @@
  * Date: 13/03/2017
  * Time: 11:38
  */
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 include_once("app/view/layout/header_back.inc.php"); ?>
 
 <div class="col-lg-10 col-sm-10">

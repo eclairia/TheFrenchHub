@@ -1,4 +1,5 @@
 <?php
+    if (!defined("_BASE_URL")) die("Ressource interdite !");
     $services = select_table(array("table1" => "tfh_services"));
     $time_slots = select_table(array("table1" => "tfh_time_slots"));
 

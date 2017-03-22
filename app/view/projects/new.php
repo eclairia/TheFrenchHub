@@ -1,3 +1,4 @@
+  <?php if (!defined("_BASE_URL")) die("Ressource interdite !"); ?>
   <form method="POST" action="?module=projects&action=new" id="form_project">
     <table>
         <h2>Créer un projet</h2><br>

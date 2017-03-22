@@ -1,4 +1,5 @@
 <?php
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	if(!isset($_GET["id"]))
 	{
 		location("time_slots", "list", "notif=noid");

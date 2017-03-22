@@ -1,5 +1,5 @@
 <?php
-
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 function assign_project($projectID)
 {
     global $pdo;

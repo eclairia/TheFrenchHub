@@ -1,4 +1,5 @@
 <?php
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	protection("admin", "admin", "new", USER_ADMIN);
 	
 	if(empty($_POST))

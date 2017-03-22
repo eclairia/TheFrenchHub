@@ -1,5 +1,5 @@
 <?php
-
+    if (!defined("_BASE_URL")) die("Ressource interdite !");
 	if(!isset($_POST["user_login"]))
 	{
 		define("PAGE_TITLE", "Connectez vous à votre compte the French Hub");

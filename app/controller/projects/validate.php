@@ -1,7 +1,5 @@
 <?php
-	// var_dump($_GET['key']);
-	// die();
-
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	if($_GET['key'])
 	{
 		//Faire select_table users pour récupérer la clé

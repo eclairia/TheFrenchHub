@@ -1,5 +1,5 @@
 <?php
-
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 function prevent_user($project_ID)
 {
     global $pdo;

@@ -1,5 +1,5 @@
 <?php
-
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function update_password($user_mail, $user_password)
 	{
 		global $pdo;

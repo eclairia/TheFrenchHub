@@ -1,5 +1,5 @@
 <?php
-
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 function sendmail($mail_expediteur, $nom_expediteur, $mail_replyto, $mail_destinataires, $bcc, $sujet, $message_text, $message_html, $fichiers)
 {
     $frontiere = md5(uniqid(mt_rand()));

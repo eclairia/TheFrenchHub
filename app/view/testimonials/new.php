@@ -1,4 +1,5 @@
-<?php include_once 'app/view/layout/header_back.inc.php'; ?>
+<?php if (!defined("_BASE_URL")) die("Ressource interdite !");
+include_once 'app/view/layout/header_back.inc.php'; ?>
     <div class="col-lg-10 col-sm-10">
         <p id="erreur_testimonial" class='col-lg-10 bg-danger'><p>
         <form method="POST" action="?module=testimonials&action=new" enctype="multipart/form-data" id="form_testimonial">

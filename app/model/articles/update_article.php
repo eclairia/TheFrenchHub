@@ -1,5 +1,5 @@
 <?php
-
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function update_article($article, $url)
 	{
 		// var_dump($article);

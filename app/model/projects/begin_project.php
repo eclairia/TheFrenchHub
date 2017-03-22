@@ -1,4 +1,5 @@
 <?php
+    if (!defined("_BASE_URL")) die("Ressource interdite !");
     function begin_project($date, $user_project)
     {
         global $pdo;
