@@ -1,37 +1,27 @@
 <?php	
 	if(!isset($_POST["project_name"]))
 	{
-		define("PAGE_TITLE", "Création d'un projet");
-		include_once("app/view/projects/new.php");
+		location("users", "dashboard", "notif=project_entry");
 	}
 	else
 	{
-		$projects = select_table(
-			array("table1" => "tfh_projects",
-					"table2" => "tfh_users"),
-			array(
-					"where_column" => "project_ID",
-					"where_value" => "user_project"
-				));
+        include_once("app/model/projects/upload_presentation.php");
+        $file_project = upload_presentation($_FILES);
 
 		include_once("app/model/projects/insert_project.php");
-		$_POST["project_nb_members"] = intval($_POST["project_nb_members"]);
-		$retour = insert_project($_POST);
-		// var_dump($retour);
-		// die();
-		//Appel du model pour insérer le user_project
-		include_once("app/model/projects/insert_user_project.php");
-		// var_dump($projects);
-		// die();
-		$projects[0]["project_ID"] = intval($projects[0]["project_ID"]);
-		$retour2 = insert_user_project($projects, $_SESSION["user"]["user_login"]);
+		$retour = insert_project($_POST, $file_project);
 
-		if(!$retour && !$retour2)
+        $_SESSION['user']['user_project'] = $retour;
+
+        include_once("app/model/projects/assign_project.php");
+        $retour = assign_project($retour);
+
+		if(!$retour)
 		{
-			location("projects", "new", "notif=nok");
+			location("users", "dashboard", "notif=not_add_project");
 		}
 		else
 		{
-			location("projects", "index", "notif=ok");
+			location("users", "dashboard", "notif=ok");
 		}
 	}
