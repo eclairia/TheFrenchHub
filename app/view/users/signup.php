@@ -24,7 +24,7 @@
 
             <div>
                 <p id="erreur_birth"></p>
-                <input class="formwidth borderform" id="user_birth" name="user_birth" type="date" min="1940/01/01" placeholder="Date de naissance" required>
+                <input class="formwidth borderform" id="user_birth" name="user_birth" type="date" required>
             </div>
 
             <div>
@@ -49,11 +49,11 @@
 
             <div>
                 <input type="hidden" name="user_level" value="0">
-                <input class="formwidth boutonform" type="submit" placeholder="Inscription">
+                <input class="formwidth boutonform" type="submit" value="Inscription">
             </div>
 
             <div>
-                <input class="formwidth boutonform" type="reset" placeholder="Réinitialiser">
+                <input class="formwidth boutonform" type="reset" value="Réinitialiser">
             </div>
         </form>
     </div>

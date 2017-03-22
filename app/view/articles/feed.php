@@ -86,6 +86,7 @@
                 }
             }
         ?>
+        </div>
     </div>
 
 <?php include_once 'app/view/layout/footer_front.inc.php'; ?>
