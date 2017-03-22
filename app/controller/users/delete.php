@@ -1,4 +1,5 @@
 <?php
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	if( (!isset($_GET['user_login'])) && (!isset($_GET['user_password'])) )
 	{
 		location("users", "list", "notif=noid");

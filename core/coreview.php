@@ -1,5 +1,5 @@
 <?php
-
+    if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function paginate($nb_enregistrements, $nb_par_page, $module, $action, $options = "")
 	{
 		$nb_pages = ceil($nb_enregistrements/$nb_par_page);

@@ -5,7 +5,7 @@
  * Date: 17/03/2017
  * Time: 17:58
  */
-
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 include_once "app/view/layout/header_back.inc.php"; ?>
 
     <div class="table-responsive" xmlns="http://www.w3.org/1999/html">

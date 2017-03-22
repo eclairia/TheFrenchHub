@@ -5,7 +5,7 @@
  * Date: 11/03/2017
  * Time: 02:46
  */
-
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 //session_start();
 include("lib/paypal_api.php"); // On importe la page créée précédemment
 $requete = construit_url_paypal(); // Construit les options de base

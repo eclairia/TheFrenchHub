@@ -1,3 +1,4 @@
+<?php if (!defined("_BASE_URL")) die("Ressource interdite !"); ?>
 <p><img src="<?= 'webroot/IMG/articles/' . $article["article_picture_url"]; ?>"></p>
 <p><?= $article["article_title"]; ?></p>
 <p><?= $article["article_ID"]; ?></p>

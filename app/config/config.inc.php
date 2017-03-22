@@ -1,5 +1,5 @@
 <?php
-
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	define("PAGE_LANG", "fr");
 	define("PAGE_CHARSET", "utf-8");
 
@@ -14,7 +14,6 @@
 
 	define("USER_CONFIRMED", 1);
 
-	define("IMG_URL", "webroot/IMG/");
 	define("SALT", "gt5zfgty7qg!yegh8");
 
     define("MAIL_EXPEDITEUR", "frenchhubofficiel@gmail.com");

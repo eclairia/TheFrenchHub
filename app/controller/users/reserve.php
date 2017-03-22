@@ -5,7 +5,7 @@
  * Date: 11/03/2017
  * Time: 00:59
  */
-
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 include("lib/paypal_api.php"); // On importe les informations redondantes à passer en paramètre au serveur paypal
 $requete = construit_url_paypal(); // Construit les options de base
 

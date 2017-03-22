@@ -5,7 +5,7 @@
  * Date: 17/03/2017
  * Time: 17:59
  */
-
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 protection("admin", "admin", "login", "USER_ADMIN");
 
 if(!isset($_POST["time_slot_begin_disponibility"]))

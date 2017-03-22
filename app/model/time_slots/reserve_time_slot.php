@@ -1,4 +1,5 @@
 <?php
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 function reserve_time_slot($slot, $nb_reservation)
 {
     global $pdo;

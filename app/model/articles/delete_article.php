@@ -1,4 +1,5 @@
 <?php
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function delete_article($user_login, $user_password)
 	{
 		try

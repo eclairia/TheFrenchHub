@@ -1,5 +1,6 @@
 <?php
 
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function insert_admin($admin)
 	{	
 		global $pdo;

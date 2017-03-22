@@ -1,4 +1,5 @@
 <?php
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 function valide_order()
 {
     global $pdo;

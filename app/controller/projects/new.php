@@ -1,4 +1,5 @@
 <?php	
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	if(!isset($_POST["project_name"]))
 	{
 		location("users", "dashboard", "notif=project_entry");

@@ -1,3 +1,4 @@
+<?php if (!defined("_BASE_URL")) die("Ressource interdite !"); ?>
 <form method="POST" action="?module=projects&action=update_member">
 	<input type="radio" name="user_civility"><label>M</label>
 	<input type="radio" name="user_civility"><label>Mme</label><br><br>

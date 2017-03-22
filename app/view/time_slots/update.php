@@ -5,7 +5,7 @@
  * Date: 17/03/2017
  * Time: 17:59
  */
-
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 include_once("app/view/layout/header_back.inc.php"); ?>
     <div class="col-lg-10 col-sm-10">
         <p id="erreur_update_timeslot" class='col-lg-10 bg-danger'><p>

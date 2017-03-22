@@ -5,7 +5,7 @@
  * Date: 11/03/2017
  * Time: 00:45
  */
-
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 function construit_url_paypal()
 {
     $api_paypal = 'https://api-3t.sandbox.paypal.com/nvp?'; // Site de l'API PayPal. On ajoute déjà le ? afin de concaténer directement les paramètres.

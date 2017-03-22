@@ -5,6 +5,7 @@
  * Date: 17/03/2017
  * Time: 15:55
  */
+if (!defined("_BASE_URL")) die("Ressource interdite !");
 include_once("app/view/layout/header_back.inc.php"); ?>
 <div class="col-lg-10 col-sm-10">
     <p id="erreur_service" class='col-lg-10 bg-danger'><p>

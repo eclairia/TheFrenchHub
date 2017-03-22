@@ -1,5 +1,5 @@
 <?php
-
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function insert_project($project, $file_project)
 	{
 		global $pdo;

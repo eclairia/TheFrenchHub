@@ -6,6 +6,8 @@
  * Time: 18:19
  */
 
+if (!defined("_BASE_URL")) die("Ressource interdite !");
+
 if($_POST['additionnal_member_mail'])
 {
     include_once("app/model/additionnal_members/new.php");

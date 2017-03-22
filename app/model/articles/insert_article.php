@@ -1,5 +1,5 @@
 <?php
-
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function insert_article($article, $article_picture_url,  $admin_id)
 	{
 		global $pdo;

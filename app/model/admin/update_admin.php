@@ -1,5 +1,5 @@
 <?php
-
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	function update_admin($admin_name, $admin_mail, $admin_login, $admin_password, $admin_id)
 	{
 		global $pdo;

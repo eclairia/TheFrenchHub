@@ -1,4 +1,5 @@
-<?php include_once 'app/view/layout/header_back.inc.php'; ?>
+<?php if (!defined("_BASE_URL")) die("Ressource interdite !");
+include_once 'app/view/layout/header_back.inc.php'; ?>
     <p id="erreur_update_testimonial" class='col-lg-10 bg-danger'><p>
     <div class="col-lg-10 col-sm-10">
         <form method="POST" action="?module=testimonials&action=update&id=<?= $_GET['id']; ?>" enctype="multipart/form-data" id="form_update_testimonial">

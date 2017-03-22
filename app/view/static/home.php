@@ -1,4 +1,5 @@
-	<?php include_once 'app/view/layout/header_front.inc.php'; ?>
+	<?php if (!defined("_BASE_URL")) die("Ressource interdite !");
+	include_once 'app/view/layout/header_front.inc.php'; ?>
 
 	<!-- Header -->
 	<header>

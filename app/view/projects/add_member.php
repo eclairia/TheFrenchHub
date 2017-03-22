@@ -1,3 +1,4 @@
+<?php if (!defined("_BASE_URL")) die("Ressource interdite !"); ?>
 <form method="POST" action="?module=projects&action=add_member" id="form_add_project_users">
 	<label>Prénom du membre à ajouter: </label><input type="text" name="user_first_name" required><br><br>
 	<label>Nom du membre à ajouter: </label><input type="text" name="user_last_name" required>	<br><br>

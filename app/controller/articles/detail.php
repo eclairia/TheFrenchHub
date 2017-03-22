@@ -1,4 +1,5 @@
 <?php
+	if (!defined("_BASE_URL")) die("Ressource interdite !");
 	if(isset($_GET["id"]) || ($_POST["article_id"]))
 	{
 		$_GET["id"] = intval($_GET["id"]);
